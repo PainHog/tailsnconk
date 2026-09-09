@@ -82,7 +82,6 @@ function main(): void {
   writeFileSync(join(OUT_DIR, 'cocktails-meta.gen.ts'), metaOut);
 
   const audit = {
-    generatedAt: new Date().toISOString(),
     totalCocktails: COCKTAILS.length,
     totalIngredients: INGREDIENTS.length,
     coverageByBase: coverageByBase(),

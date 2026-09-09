@@ -49,21 +49,50 @@ interface SwapTarget {
  * Replacements are real non-alcoholic / allergen-free product categories, not
  * invented cocktail ingredients.
  */
+function zp(replacementSlug: string, replacementName: string): Record<string, SwapTarget> {
+  return { 'zero-proof': { replacementSlug, replacementName } };
+}
+
+const NA_WHISKEY = zp('na-whiskey', 'Non-alcoholic whiskey');
+const NA_GIN = zp('na-gin', 'Non-alcoholic gin');
+const NA_CLEAR = zp('na-clear-spirit', 'Non-alcoholic clear spirit');
+const NA_RUM = zp('na-rum', 'Non-alcoholic rum');
+const NA_AGAVE = zp('na-agave', 'Non-alcoholic agave spirit');
+const NA_BRANDY = zp('na-brandy', 'Non-alcoholic brandy');
+const NA_ORANGE = zp('na-orange', 'Non-alcoholic orange liqueur');
+
 const SWAPS: Record<string, Record<string, SwapTarget>> = {
-  bourbon: { 'zero-proof': { replacementSlug: 'na-whiskey', replacementName: 'Non-alcoholic whiskey' } },
-  'rye-whiskey': { 'zero-proof': { replacementSlug: 'na-whiskey', replacementName: 'Non-alcoholic whiskey' } },
-  'tequila-blanco': { 'zero-proof': { replacementSlug: 'na-agave', replacementName: 'Non-alcoholic agave spirit' } },
-  'white-rum': { 'zero-proof': { replacementSlug: 'na-rum', replacementName: 'Non-alcoholic white rum' } },
-  'london-dry-gin': { 'zero-proof': { replacementSlug: 'na-gin', replacementName: 'Non-alcoholic gin' } },
-  vodka: { 'zero-proof': { replacementSlug: 'na-clear-spirit', replacementName: 'Non-alcoholic clear spirit' } },
-  'orange-liqueur': { 'zero-proof': { replacementSlug: 'na-orange', replacementName: 'Non-alcoholic orange liqueur' } },
-  campari: { 'zero-proof': { replacementSlug: 'na-bitter-aperitif', replacementName: 'Non-alcoholic bitter aperitif' } },
-  'coffee-liqueur': { 'zero-proof': { replacementSlug: 'na-coffee', replacementName: 'Non-alcoholic coffee liqueur' } },
-  aperol: { 'zero-proof': { replacementSlug: 'na-orange-aperitif', replacementName: 'Non-alcoholic orange aperitif' } },
-  'sweet-vermouth': { 'zero-proof': { replacementSlug: 'na-sweet-vermouth', replacementName: 'Non-alcoholic sweet vermouth' } },
-  'dry-vermouth': { 'zero-proof': { replacementSlug: 'na-dry-vermouth', replacementName: 'Non-alcoholic dry vermouth' } },
-  prosecco: { 'zero-proof': { replacementSlug: 'na-sparkling', replacementName: 'Sparkling grape juice' } },
+  // Whiskey family
+  bourbon: NA_WHISKEY, 'rye-whiskey': NA_WHISKEY, scotch: NA_WHISKEY, 'islay-scotch': NA_WHISKEY,
+  'irish-whiskey': NA_WHISKEY, 'canadian-whisky': NA_WHISKEY, whiskey: NA_WHISKEY,
+  // Gin family
+  gin: NA_GIN, 'old-tom-gin': NA_GIN,
+  // Vodka family
+  vodka: NA_CLEAR, 'vodka-citron': NA_CLEAR, 'vanilla-vodka': NA_CLEAR,
+  // Rum family
+  'white-rum': NA_RUM, 'gold-rum': NA_RUM, 'aged-rum': NA_RUM, 'dark-rum': NA_RUM,
+  'overproof-rum': NA_RUM, cachaca: NA_RUM,
+  // Agave
+  'tequila-blanco': NA_AGAVE, 'tequila-reposado': NA_AGAVE, mezcal: NA_AGAVE,
+  // Brandy family
+  brandy: NA_BRANDY, cognac: NA_BRANDY, calvados: NA_BRANDY, pisco: NA_BRANDY, grappa: NA_BRANDY,
+  // Liqueurs
+  'orange-liqueur': NA_ORANGE, 'orange-curacao': NA_ORANGE, 'grand-marnier': NA_ORANGE,
+  campari: zp('na-bitter-aperitif', 'Non-alcoholic bitter aperitif'),
+  aperol: zp('na-orange-aperitif', 'Non-alcoholic orange aperitif'),
+  'coffee-liqueur': zp('na-coffee', 'Non-alcoholic coffee liqueur'),
+  amaretto: zp('na-amaretto', 'Non-alcoholic almond (orgeat) syrup'),
+  'st-germain': zp('elderflower-cordial', 'Elderflower cordial'),
+  // Fortified / sparkling
+  'sweet-vermouth': zp('na-sweet-vermouth', 'Non-alcoholic sweet vermouth'),
+  'dry-vermouth': zp('na-dry-vermouth', 'Non-alcoholic dry vermouth'),
+  'lillet-blanc': zp('na-aperitif-wine', 'Non-alcoholic aperitif wine'),
+  prosecco: zp('na-sparkling', 'Non-alcoholic sparkling'),
+  champagne: zp('na-sparkling', 'Non-alcoholic sparkling'),
+  // Allergen
   'egg-white': { 'egg-free': { replacementSlug: 'aquafaba', replacementName: 'Aquafaba' } },
+  egg: { 'egg-free': { replacementSlug: 'aquafaba', replacementName: 'Aquafaba' } },
+  'egg-yolk': { 'egg-free': { replacementSlug: 'aquafaba', replacementName: 'Aquafaba' } },
 };
 
 export type PartStatus = 'kept' | 'swapped' | 'unresolvable';

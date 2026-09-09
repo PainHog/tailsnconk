@@ -9,8 +9,10 @@ structure, RLS patterns, and build chain, adapted to the cocktail niche. It
 shares **no data or infrastructure** with any other project; everything here is
 this product’s own.
 
-> Status: scaffold with a **validated 15-cocktail seed dataset**. Replace/extend
-> the dataset with the real one later, then re-run `npm run gen:meta`.
+> Status: **198 validated cocktails** and 161 canonical ingredients, assembled
+> by the ingestion pipeline (below). Every ingredient is normalized to a canonical
+> slug and every recipe passes an audit. Grow the catalog by adding sources and
+> re-running `npm run ingest && npm run gen:meta`.
 
 ---
 
@@ -40,8 +42,9 @@ shallow grouping used only for SEO hubs and as the optional spin "pin."
 ```
 packages/core/      Framework-free engine + data (no React). Unit-tested.
   src/types.ts        Domain types (Cocktail, Ingredient, SpinFilters, Constraint)
-  src/ingredients.ts  Canonical ingredient table (the "bar shelf")
-  src/cocktails/*.ts  Seed catalog, one file per base spirit
+  src/ingredients.ts  Ingredient helpers ("bar shelf"; data in data/ingredients.gen.ts)
+  src/cocktails/      Catalog helpers (data in data/cocktails.gen.ts)
+  src/data/*.gen.ts   GENERATED catalog + ingredients + audit (npm run ingest)
   src/spin.ts         DISCOVERY engine — eligibleItems (primary) + trySpin (secondary)
   src/diet.ts         VARIANT engine — zero-proof / allergen rewriting (secondary)
   src/collections.ts  Crawlable SEO hubs (min-size gate)
@@ -52,9 +55,11 @@ apps/mobile/        Expo app (web + native), static web export
   src/app/            expo-router file-based routes
   src/lib/backend/    THE BACKEND SEAM — local (AsyncStorage) or supabase
   src/components/     UI incl. the working <AdSlot/>
+  src/constants/backdrop.ts  the all-over-print cocktail background (SVG tile)
   scripts/           export-time steps (sitemap, JSON-LD inject, ratings/overrides bake…)
 supabase/           NEW project migrations, RLS policies, Edge Functions
 scripts/            check-secrets, seo-audit, coverage, pin pipeline
+scripts/ingest/     cocktail ingestion pipeline (normalize, merge, audit → data/*.gen.ts)
 .github/workflows/  CI + manual pin sync
 ```
 
@@ -97,16 +102,36 @@ npm run build           # full static web export → apps/mobile/dist
 
 ## Recipe data & validation
 
-The 15 seed cocktails were each **audited against authoritative sources** (IBA
-official specs, Difford’s Guide, Liquor.com, Serious Eats, VinePair, etc.) to
-confirm the canonical build — no invented ingredients, simplest widely-accepted
-proportions, IBA/most-common version chosen when sources differ. Each cocktail
-carries its `sources` for provenance. **Re-run that audit on any new dataset
-before shipping it.**
+The catalog is assembled by an **ingestion pipeline** (`npm run ingest`,
+`scripts/ingest/`) that merges four sources, de-duplicates by slug, normalizes
+every ingredient to a canonical slug, recomputes each drink’s base spirit and
+ABV band, and runs an audit (cross-source ingredient agreement, integrity,
+sanity). Sources:
 
-Ingredient slugs are normalized so the same real-world ingredient is one slug
-everywhere (that’s what makes the availability engine correct). `gen:meta` fails
-the build if a cocktail references an unknown ingredient.
+- **Curated** (`scripts/ingest/curated.json`) — our hand-validated classics, top priority.
+- **Research** (`scripts/ingest/researched.json`) — ~119 cocktails validated by
+  Opus + Exa agents against ≥2 reputable sources each (IBA, Difford’s, Liquor.com,
+  Serious Eats, Punch, VinePair, …), with original one-line descriptions.
+- **IBA official** — the International Bartenders Association list (via
+  rasmusab/iba-cocktails, MIT).
+- **stevana/cocktails** — a clean classic set with a canonical ingredient
+  vocabulary (BSD-2).
+
+We ingest the **facts** (ingredients, measures, method type) — not third-party
+prose; descriptions are our own or synthesized. Attribution + licenses are in
+[`THIRD_PARTY_NOTICES.md`](./THIRD_PARTY_NOTICES.md). Raw source snapshots are
+fetched into `scripts/ingest/.cache/` (gitignored) and are **not** redistributed;
+the committed artifact is our normalized data under `packages/core/src/data/*.gen.ts`.
+
+The audit snapshot (`packages/core/src/data/audit.gen.ts`) records cross-source
+agreement and any low-agreement drinks to review. `gen:meta` fails the build if a
+cocktail references an unknown ingredient.
+
+**On "every cocktail":** clean, permissively-licensed, reachable sources cap out
+around a few hundred here (TheCocktailDB and larger scraped sets are blocked or
+licence-encumbered in this environment). To scale toward thousands, add a bulk
+licensed source as another adapter in `scripts/ingest/` — the pipeline is built
+for it.
 
 ---
 
@@ -135,7 +160,10 @@ reuse another project’s keys. Copy `.env.example` → `.env` and fill in blank
    Analytics + R2 for the pin pipeline.
 6. **Brand:** replace placeholder copy — `SITE_*`/`SOCIAL_LINKS` in
    `packages/core/src/seo.ts`, the legal pages, theme colors, and add real
-   `icon`/`splash`/`favicon` assets referenced from `apps/mobile/app.json`.
+   `icon`/`splash`/`favicon` assets referenced from `apps/mobile/app.json`. The
+   all-over-print backdrop is `apps/mobile/src/constants/backdrop.ts`. The site
+   is locked to a light theme for launch (dark tokens remain in `theme.ts`;
+   re-enable once static-export color-scheme detection is wired to a toggle).
 
 The site is designed to run fully in **local mode** until step 1 is done, so you
 can develop and demo the tools with zero infrastructure.

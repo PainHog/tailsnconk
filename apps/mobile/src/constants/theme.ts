@@ -3,8 +3,6 @@
  * accent). Swap colors/type for the real brand before launch.
  */
 
-import { useColorScheme } from 'react-native';
-
 export const palette = {
   amber: '#C8892B',
   amberBright: '#E8A93C',
@@ -45,9 +43,16 @@ export const font = {
   weight: { regular: '400', medium: '600', bold: '800' },
 } as const;
 
+/**
+ * Active theme. Locked to the light palette for launch: the static web export's
+ * color-scheme detection is unreliable (the effect and the render can disagree),
+ * which would desync the CSS backdrop from the component theme. `light` and
+ * `dark` tokens are both kept so dark mode can be re-enabled once scheme
+ * detection is wired reliably (e.g. a persisted user toggle).
+ */
 export function useTheme(): ThemeColors {
-  const scheme = useColorScheme();
-  return scheme === 'light' ? light : dark;
+  return light;
 }
 
 export const themes = { dark, light };
+

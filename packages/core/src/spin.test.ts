@@ -32,9 +32,15 @@ test('availability: owned set must contain every REQUIRED ingredient', () => {
   const daiquiri = getCocktail('daiquiri')!;
   const owned = new Set(requiredSlugs(daiquiri));
   assert.ok(canMakeWith(daiquiri, owned));
-  // A rum/lime/syrup bar makes the Daiquiri but not the Mojito (needs mint + soda).
+  // A rum/lime/syrup bar makes the Daiquiri...
   const list = eligibleItems(COCKTAILS, { owned: [...owned] });
-  assert.deepEqual(list.map((c) => c.slug), ['daiquiri']);
+  assert.ok(list.some((c) => c.slug === 'daiquiri'));
+  // ...and every returned cocktail's required set is a subset of what's owned.
+  for (const c of list) {
+    for (const slug of requiredSlugs(c)) assert.ok(owned.has(slug), `${c.slug} needs ${slug}`);
+  }
+  // ...but not the Mojito (needs mint + soda water).
+  assert.ok(!list.some((c) => c.slug === 'mojito'));
 });
 
 test('availability: optional ingredients never block', () => {

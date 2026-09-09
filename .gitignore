@@ -41,6 +41,9 @@ yarn-debug.log*
 yarn-error.log*
 *.log
 
+# === Ingestion raw source cache (scraped third-party data; not redistributed) ===
+scripts/ingest/.cache/
+
 # === Supabase local ===
 supabase/.branches/
 supabase/.temp/

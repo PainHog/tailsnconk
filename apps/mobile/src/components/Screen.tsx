@@ -1,12 +1,12 @@
 import React from 'react';
 import { ScrollView } from 'react-native';
 import { Container } from './ui';
-import { spacing, useTheme } from '@/constants/theme';
+import { spacing } from '@/constants/theme';
 
 export function Screen({ children }: { children: React.ReactNode }) {
-  const t = useTheme();
+  // Transparent so the all-over-print backdrop (app/+html.tsx) shows behind content.
   return (
-    <ScrollView style={{ flex: 1, backgroundColor: t.bg }} contentContainerStyle={{ paddingBottom: spacing.xxl * 2 }}>
+    <ScrollView style={{ flex: 1, backgroundColor: 'transparent' }} contentContainerStyle={{ paddingBottom: spacing.xxl * 2 }}>
       <Container>{children}</Container>
     </ScrollView>
   );

@@ -6,6 +6,7 @@ import { Divider } from './ui';
 import { spacing, useTheme, font } from '@/constants/theme';
 
 const LINKS: Array<{ href: string; label: string }> = [
+  { href: '/guide', label: 'Home Bar Guide' },
   { href: '/about', label: 'About' },
   { href: '/privacy', label: 'Privacy' },
   { href: '/terms', label: 'Terms' },

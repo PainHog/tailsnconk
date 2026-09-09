@@ -1,0 +1,6726 @@
+[
+  {
+    "slug": "mai-tai",
+    "name": "Mai Tai",
+    "description": "Trader Vic's benchmark tiki drink, balancing aged rum against orange curaçao, almondy orgeat, and fresh lime for a deceptively simple rum showcase.",
+    "spirit_base": "rum",
+    "abv_band": "medium",
+    "glass": "rocks",
+    "method": "shake",
+    "tags": [
+      "tiki",
+      "classic"
+    ],
+    "ingredients": [
+      {
+        "name": "Aged rum",
+        "type": "spirit",
+        "amount": "2",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh lime juice",
+        "type": "juice",
+        "amount": "0.75",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Orange curaçao",
+        "type": "liqueur",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Orgeat",
+        "type": "syrup",
+        "amount": "0.25",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Simple syrup",
+        "type": "syrup",
+        "amount": "0.25",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Mint sprig",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "sprig",
+        "optional": true
+      },
+      {
+        "name": "Spent lime shell",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "shell",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://iba-world.com/cocktails/mai-tai/",
+      "https://ultimatemaitai.com/about/history/vics-history/",
+      "https://www.diffordsguide.com/cocktails/recipe/1219/mai-tai-trader-vics"
+    ],
+    "notes": "Canonical Trader Vic build. Original (1944) used 17-year-old Jamaican J. Wray & Nephew rum; IBA and many bartenders split the base between an aged Jamaican and a Martinique/aged rum (1 oz each). Some omit the simple syrup and rely on orgeat plus curaçao for sweetness."
+  },
+  {
+    "slug": "pina-colada",
+    "name": "Piña Colada",
+    "description": "Puerto Rico's blended national cocktail of rum, cream of coconut, and pineapple, whipped into a frosty tropical staple.",
+    "spirit_base": "rum",
+    "abv_band": "medium",
+    "glass": "hurricane",
+    "method": "blend",
+    "tags": [
+      "tiki",
+      "classic"
+    ],
+    "ingredients": [
+      {
+        "name": "White rum",
+        "type": "spirit",
+        "amount": "2",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Coconut cream",
+        "type": "mixer",
+        "amount": "1.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Pineapple juice",
+        "type": "juice",
+        "amount": "1.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh lime juice",
+        "type": "juice",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": true
+      },
+      {
+        "name": "Pineapple wedge",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "wedge",
+        "optional": true
+      },
+      {
+        "name": "Maraschino cherry",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "cherry",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://iba-world.com/cocktails/pina-colada/",
+      "https://www.liquor.com/recipes/pina-colada/",
+      "https://www.foodandwine.com/pina-colada-cocktail-recipe-11791517"
+    ],
+    "notes": "Sources differ: IBA blends white rum, coconut cream and pineapple (~1 part coconut) with no lime, while craft sources (Liquor.com, Food & Wine) use equal 1.5 oz coconut cream and pineapple, add a little lime, and often shake over pebble ice rather than blend. Ratios vary from 1 coconut:3 pineapple upward; 'cream of coconut' (sweetened, e.g. Coco López) is required."
+  },
+  {
+    "slug": "painkiller",
+    "name": "Painkiller",
+    "description": "A richer, nutmeg-dusted cousin of the Piña Colada built on navy rum with pineapple, orange, and coconut cream.",
+    "spirit_base": "rum",
+    "abv_band": "medium",
+    "glass": "hurricane",
+    "method": "shake",
+    "tags": [
+      "tiki",
+      "classic"
+    ],
+    "ingredients": [
+      {
+        "name": "Dark rum",
+        "type": "spirit",
+        "amount": "2",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Pineapple juice",
+        "type": "juice",
+        "amount": "4",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Orange juice",
+        "type": "juice",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Coconut cream",
+        "type": "mixer",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Grated nutmeg",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "pinch",
+        "optional": true
+      },
+      {
+        "name": "Pineapple wedge",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "wedge",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://pussersrum.com/blogs/cocktails/pussers-painkiller",
+      "https://www.liquor.com/recipes/painkiller/",
+      "https://www.foodandwine.com/painkiller-cocktail-recipe-11749373"
+    ],
+    "notes": "The name is trademarked to Pusser's Rum, but any navy/dark rum works. Follows the 4-1-1 juice ratio (pineapple-orange-coconut) plus 2 oz rum; freshly grated nutmeg is essential to the profile. Can also be blended."
+  },
+  {
+    "slug": "dark-n-stormy",
+    "name": "Dark 'n Stormy",
+    "description": "A two-ingredient Bermuda highball where dark rum is floated over spicy ginger beer for a stormy layered look.",
+    "spirit_base": "rum",
+    "abv_band": "medium",
+    "glass": "highball",
+    "method": "build",
+    "tags": [
+      "classic"
+    ],
+    "ingredients": [
+      {
+        "name": "Dark rum",
+        "type": "spirit",
+        "amount": "2",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Ginger beer",
+        "type": "mixer",
+        "amount": "4",
+        "unit": "top",
+        "optional": false
+      },
+      {
+        "name": "Fresh lime juice",
+        "type": "juice",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": true
+      },
+      {
+        "name": "Lime wedge",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "wedge",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://goslings.com/recipes/dark-n-stormy/",
+      "https://www.seriouseats.com/dark-and-stormy-cocktail-the-spotted-pig-recipe",
+      "https://iba-world.com/cocktails/dark-n-stormy/"
+    ],
+    "notes": "The name is a registered trademark of Gosling's, requiring Gosling's Black Seal rum. Classically just built with ginger beer and a rum float; a lime wedge is the standard garnish, and some (Serious Eats, IBA) add a small amount of fresh lime juice."
+  },
+  {
+    "slug": "hurricane",
+    "name": "Hurricane",
+    "description": "A boozy New Orleans classic packing two rums and tart passion fruit into a fruity, ruby-red sipper.",
+    "spirit_base": "rum",
+    "abv_band": "high",
+    "glass": "hurricane",
+    "method": "shake",
+    "tags": [
+      "tiki",
+      "classic"
+    ],
+    "ingredients": [
+      {
+        "name": "White rum",
+        "type": "spirit",
+        "amount": "2",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Dark rum",
+        "type": "spirit",
+        "amount": "2",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Passion fruit syrup",
+        "type": "syrup",
+        "amount": "2",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh lime juice",
+        "type": "juice",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Orange juice",
+        "type": "juice",
+        "amount": "1",
+        "unit": "oz",
+        "optional": true
+      },
+      {
+        "name": "Grenadine",
+        "type": "syrup",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": true
+      },
+      {
+        "name": "Orange slice",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "slice",
+        "optional": true
+      },
+      {
+        "name": "Maraschino cherry",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "cherry",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://www.neworleans.com/drink/cocktails/hurricane/",
+      "https://www.thespruceeats.com/hurricane-cocktail-recipe-759275",
+      "https://www.foodandwine.com/hurricane-cocktail-recipe-8649214"
+    ],
+    "notes": "Proportions vary widely and the original recipe was never firmly documented. Earliest versions used gold rum with passion fruit syrup (fassionola) and lemon; the common modern build splits light and dark rum and rounds it out with orange juice and grenadine. Passion fruit is the defining flavor (syrup, or purée plus simple syrup)."
+  },
+  {
+    "slug": "zombie",
+    "name": "Zombie",
+    "description": "Don the Beachcomber's original tiki bombshell, layering three rums with lime, falernum, and secret spice mixes into a famously potent punch.",
+    "spirit_base": "rum",
+    "abv_band": "high",
+    "glass": "highball",
+    "method": "blend",
+    "tags": [
+      "tiki",
+      "classic"
+    ],
+    "ingredients": [
+      {
+        "name": "Dark rum",
+        "type": "spirit",
+        "amount": "1.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Aged rum",
+        "type": "spirit",
+        "amount": "1.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Overproof rum",
+        "type": "spirit",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh lime juice",
+        "type": "juice",
+        "amount": "0.75",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Falernum",
+        "type": "liqueur",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Don's Mix",
+        "type": "syrup",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Grenadine",
+        "type": "syrup",
+        "amount": "0.25",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Angostura bitters",
+        "type": "bitters",
+        "amount": "1",
+        "unit": "dash",
+        "optional": false
+      },
+      {
+        "name": "Absinthe",
+        "type": "spirit",
+        "amount": "6",
+        "unit": "drops",
+        "optional": false
+      },
+      {
+        "name": "Mint sprig",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "sprig",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://punchdrink.com/recipes/zombie/",
+      "https://beachbumberry.com/recipe-zombie.html",
+      "https://iba-world.com/cocktails/zombie/"
+    ],
+    "notes": "Beachbum Berry's reconstruction of Don the Beachcomber's 1934 original (dark Jamaican rum, gold Puerto Rican rum, 151-proof Demerara rum). Don's Mix is 2 parts fresh grapefruit juice to 1 part cinnamon syrup. Flash-blend with crushed ice; IBA lists an identical spec."
+  },
+  {
+    "slug": "jungle-bird",
+    "name": "Jungle Bird",
+    "description": "A Malaysian tiki original that folds bitter Campari into rum, pineapple, and lime for a bittersweet tropical balance.",
+    "spirit_base": "rum",
+    "abv_band": "medium",
+    "glass": "rocks",
+    "method": "shake",
+    "tags": [
+      "tiki",
+      "classic"
+    ],
+    "ingredients": [
+      {
+        "name": "Dark rum",
+        "type": "spirit",
+        "amount": "1.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Campari",
+        "type": "liqueur",
+        "amount": "0.75",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Pineapple juice",
+        "type": "juice",
+        "amount": "1.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh lime juice",
+        "type": "juice",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Simple syrup",
+        "type": "syrup",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Pineapple wedge",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "wedge",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://punchdrink.com/articles/ultimate-best-jungle-bird-cocktail-recipe/",
+      "https://www.epicurious.com/recipes/food/views/jungle-bird-cocktail-rum-amaro",
+      "https://www.washingtonpost.com/recipes/jungle-bird-cocktail/"
+    ],
+    "notes": "Created at the Kuala Lumpur Hilton in the 1970s. The original used dark Jamaican rum, 0.75 oz lime and a full 4 oz pineapple juice; Giuseppe González's shorter blackstrap-rum version (1.5 oz pineapple) is the widely accepted modern standard shown here."
+  },
+  {
+    "slug": "navy-grog",
+    "name": "Navy Grog",
+    "description": "A Don the Beachcomber tropical built on a trio of rums with lime, grapefruit, and honey, traditionally served around an ice cone.",
+    "spirit_base": "rum",
+    "abv_band": "high",
+    "glass": "rocks",
+    "method": "shake",
+    "tags": [
+      "tiki",
+      "classic"
+    ],
+    "ingredients": [
+      {
+        "name": "Aged rum",
+        "type": "spirit",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Dark rum",
+        "type": "spirit",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Demerara rum",
+        "type": "spirit",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh lime juice",
+        "type": "juice",
+        "amount": "0.75",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Grapefruit juice",
+        "type": "juice",
+        "amount": "0.75",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Honey syrup",
+        "type": "syrup",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Soda water",
+        "type": "mixer",
+        "amount": "0.75",
+        "unit": "oz",
+        "optional": false
+      }
+    ],
+    "sources": [
+      "https://beachbumberry.com/recipe-navygrog.html",
+      "https://imbibemagazine.com/recipe/navy-grog/",
+      "https://vinepair.com/cocktail-recipe/navy-grog/"
+    ],
+    "notes": "Don the Beachcomber recipe via Beachbum Berry (gold Puerto Rican, dark Jamaican, aged Demerara rums). Honey syrup is 1:1 honey and water. Variations add a dash of Angostura (VinePair) or allspice dram (Imbibe); traditionally served with a straw set in a cone of shaved ice."
+  },
+  {
+    "slug": "fog-cutter",
+    "name": "Fog Cutter",
+    "description": "A notoriously strong Trader Vic tropical stacking rum, brandy, and gin under a fragrant sherry float.",
+    "spirit_base": "rum",
+    "abv_band": "high",
+    "glass": "collins",
+    "method": "shake",
+    "tags": [
+      "tiki",
+      "classic"
+    ],
+    "ingredients": [
+      {
+        "name": "White rum",
+        "type": "spirit",
+        "amount": "2",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Brandy",
+        "type": "spirit",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Gin",
+        "type": "spirit",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh lemon juice",
+        "type": "juice",
+        "amount": "2",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Orange juice",
+        "type": "juice",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Orgeat",
+        "type": "syrup",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Sherry",
+        "type": "wine",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Mint sprig",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "sprig",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://www.diffordsguide.com/cocktails/recipe/778/fog-cutter",
+      "https://www.foodandwine.com/fog-cutter-recipe-11773699",
+      "https://forgottencocktails.com/the-fogcutter-trader-vics/"
+    ],
+    "notes": "Trader Vic's 1972 build. The sherry (oloroso or amontillado) float is the signature. Some cut the lemon to 1.5 oz for a less tart drink; Donn Beach's variant swapped in pisco for the brandy."
+  },
+  {
+    "slug": "scorpion",
+    "name": "Scorpion",
+    "description": "A Trader Vic tiki classic blending rum and brandy with orange, lemon, and orgeat into a smooth but sneaky sting.",
+    "spirit_base": "rum",
+    "abv_band": "high",
+    "glass": "rocks",
+    "method": "blend",
+    "tags": [
+      "tiki",
+      "classic"
+    ],
+    "ingredients": [
+      {
+        "name": "White rum",
+        "type": "spirit",
+        "amount": "2",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Brandy",
+        "type": "spirit",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Orange juice",
+        "type": "juice",
+        "amount": "2",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh lemon juice",
+        "type": "juice",
+        "amount": "1.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Orgeat",
+        "type": "syrup",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Orange slice",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "slice",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://www.diffordsguide.com/cocktails/recipe/1756/scorpion",
+      "https://wiki.webtender.com/wiki/Scorpion",
+      "https://www.thealchemistmagazine.ca/2019/04/18/scorpion/"
+    ],
+    "notes": "Trader Vic's individual-serving spec from his 1972 Bartender's Guide, classically blended (also served as a shared bowl). Countless bar versions differ wildly; some (Robb Report) trim the orange to 1 oz and lemon to 0.75 oz for a boozier balance."
+  },
+  {
+    "slug": "bahama-mama",
+    "name": "Bahama Mama",
+    "description": "A fruity Caribbean beach cocktail mixing dark and coconut rums with pineapple, coffee liqueur, and a splash of grenadine.",
+    "spirit_base": "rum",
+    "abv_band": "medium",
+    "glass": "hurricane",
+    "method": "shake",
+    "tags": [
+      "tiki",
+      "classic"
+    ],
+    "ingredients": [
+      {
+        "name": "Dark rum",
+        "type": "spirit",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Coconut rum",
+        "type": "liqueur",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Coffee liqueur",
+        "type": "liqueur",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Pineapple juice",
+        "type": "juice",
+        "amount": "2",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Orange juice",
+        "type": "juice",
+        "amount": "1",
+        "unit": "oz",
+        "optional": true
+      },
+      {
+        "name": "Grenadine",
+        "type": "syrup",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh lime juice",
+        "type": "juice",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": true
+      },
+      {
+        "name": "Pineapple wedge",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "wedge",
+        "optional": true
+      },
+      {
+        "name": "Maraschino cherry",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "cherry",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://www.foodandwine.com/bahama-mama-cocktail-recipe-11782264",
+      "https://www.thespruceeats.com/bahama-mama-rum-cocktail-759591",
+      "https://mybartender.com/recipe/bahama-mama/"
+    ],
+    "notes": "Highly variable; the recurring thumbprint is two rums plus pineapple, coconut and coffee. Some versions omit the coffee liqueur and lean on grenadine and orange juice, while stricter old-school specs (Food & Wine, The Spruce Eats) drop grenadine and use overproof rum plus lemon."
+  },
+  {
+    "slug": "blue-hawaii",
+    "name": "Blue Hawaii",
+    "description": "Harry Yee's electric-blue Waikiki creation combining rum, vodka, blue curaçao, and pineapple.",
+    "spirit_base": "rum",
+    "abv_band": "medium",
+    "glass": "hurricane",
+    "method": "shake",
+    "tags": [
+      "tiki",
+      "classic"
+    ],
+    "ingredients": [
+      {
+        "name": "White rum",
+        "type": "spirit",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Vodka",
+        "type": "spirit",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Blue curaçao",
+        "type": "liqueur",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Pineapple juice",
+        "type": "juice",
+        "amount": "2",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh lemon juice",
+        "type": "juice",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Simple syrup",
+        "type": "syrup",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Pineapple wedge",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "wedge",
+        "optional": true
+      },
+      {
+        "name": "Orchid",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "flower",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://www.staradvertiser.com/2018/10/23/food/spirited-conversations/spirited-conversations-harry-yees-famous-blue-hawaii-allows-for-variation/",
+      "https://stories.hilton.com/hilton-history/creating-the-blue-hawaii",
+      "https://wiki.webtender.com/wiki/Blue_Hawaii"
+    ],
+    "notes": "Created by Harry Yee at the Hilton Hawaiian Village in 1957. The original 1 oz 'sweet and sour' is old-school lemon juice plus simple syrup (split here 0.5/0.5). Yee insisted on vodka (not gin); not to be confused with the Blue Hawaiian, which uses coconut cream. Some specs use 0.75 oz each of rum and vodka with 3 oz pineapple."
+  },
+  {
+    "slug": "chi-chi",
+    "name": "Chi Chi",
+    "description": "A creamy pineapple-and-coconut cooler that swaps the Piña Colada's rum for vodka.",
+    "spirit_base": "vodka",
+    "abv_band": "medium",
+    "glass": "hurricane",
+    "method": "blend",
+    "tags": [
+      "tiki",
+      "classic"
+    ],
+    "ingredients": [
+      {
+        "name": "Vodka",
+        "type": "spirit",
+        "amount": "1.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Pineapple juice",
+        "type": "juice",
+        "amount": "4",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Coconut cream",
+        "type": "mixer",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Pineapple wedge",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "wedge",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://www.foodandwine.com/chi-chi-12001127",
+      "https://www.thekitchn.com/chi-chi-cocktail-recipe-23735632",
+      "https://thecoconutmama.com/chi-chi-cocktail/"
+    ],
+    "notes": "Essentially a Piña Colada made with vodka instead of rum. Blended with ice or shaken and poured over crushed ice; uses cream of coconut (Coco López). Vodka amount ranges from 1.5 to 2 oz across sources."
+  },
+  {
+    "slug": "airmail",
+    "name": "Airmail",
+    "description": "A sparkling rum sour brightened with honey and lime and topped with champagne.",
+    "spirit_base": "rum",
+    "abv_band": "medium",
+    "glass": "flute",
+    "method": "shake",
+    "tags": [
+      "classic"
+    ],
+    "ingredients": [
+      {
+        "name": "Aged rum",
+        "type": "spirit",
+        "amount": "1.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh lime juice",
+        "type": "juice",
+        "amount": "0.75",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Honey syrup",
+        "type": "syrup",
+        "amount": "0.75",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Champagne",
+        "type": "wine",
+        "amount": "2",
+        "unit": "top",
+        "optional": false
+      },
+      {
+        "name": "Lime wedge",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "wedge",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://vinepair.com/cocktail-recipe/air-mail/",
+      "https://www.foodandwine.com/airmail-cocktail-recipe-11707182",
+      "https://www.diffordsguide.com/cocktails/recipe/27/air-mail"
+    ],
+    "notes": "A rum riff on the French 75 / Daiquiri dating to the 1930s-40s. Gold or white rum are both used; honey syrup is typically 1:1. There is longstanding debate over the glass (flute/coupe served up vs. Difford's preferred highball over ice)."
+  },
+  {
+    "slug": "hemingway-daiquiri",
+    "name": "Hemingway Daiquiri",
+    "description": "A dry, sugarless Daiquiri variation from Havana's El Floridita, laced with grapefruit and maraschino.",
+    "spirit_base": "rum",
+    "abv_band": "medium",
+    "glass": "coupe",
+    "method": "shake",
+    "tags": [
+      "classic"
+    ],
+    "ingredients": [
+      {
+        "name": "White rum",
+        "type": "spirit",
+        "amount": "2",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh lime juice",
+        "type": "juice",
+        "amount": "0.75",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Grapefruit juice",
+        "type": "juice",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Maraschino liqueur",
+        "type": "liqueur",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Lime wheel",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "wheel",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://www.foodandwine.com/hemingway-daiquiri-recipe-8680967",
+      "https://www.southernliving.com/recipes/hemingway-daiquiri",
+      "https://iba-world.com/cocktails/hemingway-special/"
+    ],
+    "notes": "Created by Constantino Ribalaigua Vert at El Floridita; the maraschino replaces the usual sugar (Hemingway was diabetic), so it is traditionally unsweetened. Sources differ on the citrus: IBA's Hemingway Special uses more grapefruit (~1.33 oz) and less lime, while modern craft specs favor more lime; some bartenders add ~0.25 oz simple syrup. Doubling the rum makes the 'Papa Doble.'"
+  },
+  {
+    "slug": "cuba-libre",
+    "name": "Cuba Libre",
+    "description": "The classic rum-and-cola highball lifted by a squeeze of fresh lime.",
+    "spirit_base": "rum",
+    "abv_band": "medium",
+    "glass": "highball",
+    "method": "build",
+    "tags": [
+      "classic"
+    ],
+    "ingredients": [
+      {
+        "name": "White rum",
+        "type": "spirit",
+        "amount": "2",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Cola",
+        "type": "mixer",
+        "amount": "4",
+        "unit": "top",
+        "optional": false
+      },
+      {
+        "name": "Fresh lime juice",
+        "type": "juice",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Lime wedge",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "wedge",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://iba-world.com/iba-cocktail/cuba-libre/",
+      "https://www.thespruceeats.com/cuba-libre-recipe-759291",
+      "https://www.washingtonpost.com/recipes/cuba-libre/"
+    ],
+    "notes": "Distinguished from a plain rum and Coke by the fresh lime, which cuts the cola's sweetness. Built over ice; traditionally a Cuban-style light rum."
+  },
+  {
+    "slug": "caipirinha",
+    "name": "Caipirinha",
+    "description": "Brazil's national drink, muddling fresh lime and sugar with grassy cachaça over ice.",
+    "spirit_base": "other",
+    "abv_band": "medium",
+    "glass": "rocks",
+    "method": "muddle",
+    "tags": [
+      "classic"
+    ],
+    "ingredients": [
+      {
+        "name": "Cachaça",
+        "type": "spirit",
+        "amount": "2",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh lime",
+        "type": "juice",
+        "amount": "1",
+        "unit": "lime",
+        "optional": false
+      },
+      {
+        "name": "Sugar",
+        "type": "other",
+        "amount": "2",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "name": "Lime wheel",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "wheel",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://iba-world.com/cocktails/caipirinha/",
+      "https://www.liquor.com/recipes/caipirinha/",
+      "https://vinepair.com/cocktail-recipe/caipirinha/"
+    ],
+    "notes": "Built by muddling lime wedges with granulated sugar (the friction extracts the peel oils, so simple syrup is not a proper substitute), then adding cachaça and ice. Amounts vary: half to a whole lime and 2-4 tsp sugar (IBA calls for 1 lime and 4 tsp)."
+  },
+  {
+    "slug": "ti-punch",
+    "name": "Ti' Punch",
+    "description": "The spirit-forward ritual drink of Martinique, marrying rhum agricole with cane syrup and a pressed disc of lime.",
+    "spirit_base": "rum",
+    "abv_band": "high",
+    "glass": "rocks",
+    "method": "build",
+    "tags": [
+      "classic"
+    ],
+    "ingredients": [
+      {
+        "name": "Rhum agricole",
+        "type": "spirit",
+        "amount": "2",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Cane syrup",
+        "type": "syrup",
+        "amount": "0.25",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh lime",
+        "type": "juice",
+        "amount": "1",
+        "unit": "disc",
+        "optional": false
+      }
+    ],
+    "sources": [
+      "https://www.seriouseats.com/ti-punch",
+      "https://www.liquor.com/recipes/ti-punch/",
+      "https://cocktail-society.com/recipes/ti-punch-cocktail/"
+    ],
+    "notes": "The national drink of Martinique and Guadeloupe, built to personal taste ('chacun prépare sa propre mort'). Uses white rhum agricole and cane (sugarcane) syrup; a lime disc/wheel is squeezed and dropped in. Traditionally served at room temperature with ice optional; sweetener ranges from a barspoon to ~2 tsp."
+  },
+  {
+    "slug": "rum-runner",
+    "name": "Rum Runner",
+    "description": "A sweet Florida Keys tiki blend of two rums with banana and blackberry liqueurs, tropical juices, and grenadine.",
+    "spirit_base": "rum",
+    "abv_band": "high",
+    "glass": "hurricane",
+    "method": "shake",
+    "tags": [
+      "tiki",
+      "classic"
+    ],
+    "ingredients": [
+      {
+        "name": "White rum",
+        "type": "spirit",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Dark rum",
+        "type": "spirit",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Banana liqueur",
+        "type": "liqueur",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Blackberry liqueur",
+        "type": "liqueur",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Pineapple juice",
+        "type": "juice",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Orange juice",
+        "type": "juice",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Grenadine",
+        "type": "syrup",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh lime juice",
+        "type": "juice",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": true
+      },
+      {
+        "name": "Overproof rum",
+        "type": "spirit",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": true
+      },
+      {
+        "name": "Maraschino cherry",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "cherry",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://www.tasteofhome.com/recipes/rum-runner/",
+      "https://www.anediblemosaic.com/rum-runner-cocktail/",
+      "https://www.liquor.com/rum-runner-cocktail-recipe-5196356"
+    ],
+    "notes": "From the Holiday Isle Tiki Bar in Islamorada, FL (early 1970s). The familiar shaken/frozen version uses equal parts light and dark rum, banana and blackberry liqueurs plus pineapple and orange juice and grenadine (shown here). Beachbum Berry's 'original' spec is frozen, omits the juices, and floats 151 rum; a 151 float is a common optional addition."
+  },
+  {
+    "slug": "planters-punch",
+    "name": "Planter's Punch",
+    "description": "A venerable Jamaican rum punch built on the old sour-sweet-strong-weak rhyme with dark rum, citrus, and bitters.",
+    "spirit_base": "rum",
+    "abv_band": "medium",
+    "glass": "collins",
+    "method": "shake",
+    "tags": [
+      "tiki",
+      "classic"
+    ],
+    "ingredients": [
+      {
+        "name": "Dark rum",
+        "type": "spirit",
+        "amount": "2",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh lime juice",
+        "type": "juice",
+        "amount": "0.75",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Orange juice",
+        "type": "juice",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Pineapple juice",
+        "type": "juice",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Grenadine",
+        "type": "syrup",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Simple syrup",
+        "type": "syrup",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": true
+      },
+      {
+        "name": "Angostura bitters",
+        "type": "bitters",
+        "amount": "2",
+        "unit": "dash",
+        "optional": false
+      },
+      {
+        "name": "Orange slice",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "slice",
+        "optional": true
+      },
+      {
+        "name": "Maraschino cherry",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "cherry",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://iba-world.com/iba-cocktail/planters-punch/",
+      "https://jiggerandjoy.com/drinks/planters-punch",
+      "https://www.cookswithcocktails.com/planters-punch-cocktail/"
+    ],
+    "notes": "One of the most variable classics. The purist formula is the Jamaican rhyme 'one of sour, two of sweet, three of strong, four of weak' (rum, lime, sugar/demerara syrup, water) plus a dash of bitters; the current IBA spec is minimalist (Jamaican rum, lime, sugarcane juice). The fruity dark-rum-and-tropical-juice version shown here is the most widely made."
+  },
+  {
+    "slug": "paloma",
+    "name": "Paloma",
+    "description": "Mexico's beloved highball of blanco tequila and lime lengthened with sparkling grapefruit soda over ice.",
+    "spirit_base": "tequila",
+    "abv_band": "low",
+    "glass": "highball",
+    "method": "build",
+    "tags": [
+      "refreshing",
+      "classic",
+      "citrusy"
+    ],
+    "ingredients": [
+      {
+        "name": "Tequila (blanco)",
+        "type": "spirit",
+        "amount": "2",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh lime juice",
+        "type": "juice",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Salt",
+        "type": "other",
+        "amount": "1",
+        "unit": "pinch",
+        "optional": true
+      },
+      {
+        "name": "Grapefruit soda",
+        "type": "mixer",
+        "amount": "4",
+        "unit": "top",
+        "optional": false
+      },
+      {
+        "name": "Lime wheel",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "wheel",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://www.liquor.com/recipes/paloma/",
+      "https://vinepair.com/cocktail-recipe/paloma/"
+    ],
+    "notes": "Classic build is tequila, lime and grapefruit soda over ice with an optional pinch of salt; some versions shake the tequila/lime first, but building in the glass is the most common and traditional."
+  },
+  {
+    "slug": "ranch-water",
+    "name": "Ranch Water",
+    "description": "A bone-dry West Texas highball of blanco tequila and lime topped with fizzy mineral water.",
+    "spirit_base": "tequila",
+    "abv_band": "low",
+    "glass": "highball",
+    "method": "build",
+    "tags": [
+      "refreshing",
+      "easy",
+      "citrusy"
+    ],
+    "ingredients": [
+      {
+        "name": "Tequila (blanco)",
+        "type": "spirit",
+        "amount": "2",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh lime juice",
+        "type": "juice",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Sparkling mineral water",
+        "type": "mixer",
+        "amount": "5",
+        "unit": "top",
+        "optional": false
+      },
+      {
+        "name": "Lime wedge",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "wedge",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://www.foodandwine.com/ranch-water-recipe-8696936",
+      "https://www.texasmonthly.com/recipe/ranch-water-cocktail-recipe/"
+    ],
+    "notes": "Topo Chico is the traditional sparkling mineral water; sources vary between 1.5-2 oz tequila and 0.5-1 oz lime. Built directly in the glass."
+  },
+  {
+    "slug": "tommys-margarita",
+    "name": "Tommy's Margarita",
+    "description": "The agave-forward Margarita that swaps orange liqueur for agave syrup to spotlight the tequila.",
+    "spirit_base": "tequila",
+    "abv_band": "medium",
+    "glass": "rocks",
+    "method": "shake",
+    "tags": [
+      "modern-classic",
+      "citrusy",
+      "agave-forward"
+    ],
+    "ingredients": [
+      {
+        "name": "Tequila (blanco)",
+        "type": "spirit",
+        "amount": "2",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh lime juice",
+        "type": "juice",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Agave syrup",
+        "type": "syrup",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Salt",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "rim",
+        "optional": true
+      },
+      {
+        "name": "Lime wedge",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "wedge",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://www.liquor.com/recipes/tommys-margarita/",
+      "https://punchdrink.com/recipes/tommys-margarita/"
+    ],
+    "notes": "Created by Julio Bermejo at Tommy's Mexican Restaurant, San Francisco. Uses 100% agave tequila and agave nectar/syrup in place of orange liqueur; served on the rocks with an optional salt rim."
+  },
+  {
+    "slug": "mezcal-margarita",
+    "name": "Mezcal Margarita",
+    "description": "A smoky take on the Margarita built on mezcal with lime, orange liqueur and a touch of agave.",
+    "spirit_base": "other",
+    "abv_band": "medium",
+    "glass": "rocks",
+    "method": "shake",
+    "tags": [
+      "smoky",
+      "citrusy",
+      "modern-classic"
+    ],
+    "ingredients": [
+      {
+        "name": "Mezcal",
+        "type": "spirit",
+        "amount": "2",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Orange liqueur",
+        "type": "liqueur",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh lime juice",
+        "type": "juice",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Agave syrup",
+        "type": "syrup",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Salt",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "rim",
+        "optional": true
+      },
+      {
+        "name": "Lime wheel",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "wheel",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://vinepair.com/cocktail-recipe/mezcal-margarita-recipe/",
+      "https://tequilaoclock.com/mezcal-margarita/"
+    ],
+    "notes": "Also called a Mezcalita. Essentially a Margarita with mezcal for the base spirit; some recipes drop the agave and use only orange liqueur, but the lime/orange liqueur/agave build is the most widely accepted. Spirit base marked 'other' as mezcal is not tequila."
+  },
+  {
+    "slug": "el-diablo",
+    "name": "El Diablo",
+    "description": "A scarlet tequila highball where crème de cassis and lime meet a spicy ginger beer top.",
+    "spirit_base": "tequila",
+    "abv_band": "medium",
+    "glass": "collins",
+    "method": "shake",
+    "tags": [
+      "refreshing",
+      "classic",
+      "fruity"
+    ],
+    "ingredients": [
+      {
+        "name": "Tequila (reposado)",
+        "type": "spirit",
+        "amount": "1.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Crème de cassis",
+        "type": "liqueur",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh lime juice",
+        "type": "juice",
+        "amount": "0.75",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Ginger beer",
+        "type": "mixer",
+        "amount": "3",
+        "unit": "top",
+        "optional": false
+      },
+      {
+        "name": "Lime wedge",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "wedge",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://www.diffordsguide.com/cocktails/recipe/700/el-diablo-cocktail",
+      "https://cooking.nytimes.com/recipes/1023028-classic-el-diablo"
+    ],
+    "notes": "Trader Vic's mid-century classic (originally 'Mexican El Diablo'). Reposado is most common though some use blanco; the first three ingredients are shaken then topped with ginger beer (original called for ginger ale)."
+  },
+  {
+    "slug": "mexican-mule",
+    "name": "Mexican Mule",
+    "description": "The Moscow Mule reimagined with tequila, lime and spicy ginger beer over ice.",
+    "spirit_base": "tequila",
+    "abv_band": "low",
+    "glass": "copper mug",
+    "method": "build",
+    "tags": [
+      "refreshing",
+      "easy",
+      "spicy"
+    ],
+    "ingredients": [
+      {
+        "name": "Tequila (blanco)",
+        "type": "spirit",
+        "amount": "2",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh lime juice",
+        "type": "juice",
+        "amount": "0.75",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Ginger beer",
+        "type": "mixer",
+        "amount": "4",
+        "unit": "top",
+        "optional": false
+      },
+      {
+        "name": "Lime wedge",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "wedge",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://www.acouplecooks.com/mexican-mule/",
+      "https://www.patrontequila.com/cocktails/patron-silver/jalisco-mule.html"
+    ],
+    "notes": "Tequila buck; a Moscow Mule with tequila in place of vodka. Built in a copper mug or highball; lime ranges 0.5-1 oz across sources."
+  },
+  {
+    "slug": "oaxaca-old-fashioned",
+    "name": "Oaxaca Old Fashioned",
+    "description": "Phil Ward's agave riff on the Old Fashioned blending reposado tequila and mezcal with agave and bitters.",
+    "spirit_base": "tequila",
+    "abv_band": "high",
+    "glass": "rocks",
+    "method": "stir",
+    "tags": [
+      "modern-classic",
+      "spirit-forward",
+      "smoky"
+    ],
+    "ingredients": [
+      {
+        "name": "Tequila (reposado)",
+        "type": "spirit",
+        "amount": "1.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Mezcal",
+        "type": "spirit",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Agave syrup",
+        "type": "syrup",
+        "amount": "0.25",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Angostura bitters",
+        "type": "bitters",
+        "amount": "2",
+        "unit": "dash",
+        "optional": false
+      },
+      {
+        "name": "Orange twist",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "twist",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://punchdrink.com/recipes/oaxaca-old-fashioned/",
+      "https://www.deathandcompanymarket.com/blogs/recipes/oaxaca-old-fashioned"
+    ],
+    "notes": "Created by Phil Ward at Death & Co (2007). Agave nectar is roughly one barspoon/teaspoon (~0.25 oz). Stirred and served over a large ice cube with a flamed orange twist; bitters counts vary from 1-2 dashes."
+  },
+  {
+    "slug": "naked-and-famous",
+    "name": "Naked and Famous",
+    "description": "An equal-parts modern classic marrying smoky mezcal with Yellow Chartreuse, Aperol and lime.",
+    "spirit_base": "other",
+    "abv_band": "medium",
+    "glass": "coupe",
+    "method": "shake",
+    "tags": [
+      "modern-classic",
+      "smoky",
+      "bittersweet"
+    ],
+    "ingredients": [
+      {
+        "name": "Mezcal",
+        "type": "spirit",
+        "amount": "0.75",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Yellow Chartreuse",
+        "type": "liqueur",
+        "amount": "0.75",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Aperol",
+        "type": "liqueur",
+        "amount": "0.75",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh lime juice",
+        "type": "juice",
+        "amount": "0.75",
+        "unit": "oz",
+        "optional": false
+      }
+    ],
+    "sources": [
+      "https://www.deathandcompanymarket.com/blogs/recipes/naked-famous",
+      "https://www.epicurious.com/recipes/food/views/naked-and-famous-cocktail"
+    ],
+    "notes": "Created by Joaquin Simo (2011) as an equal-parts Last Word/Paper Plane riff. Shaken and double-strained into a coupe; traditionally served with no garnish. Spirit base 'other' for mezcal."
+  },
+  {
+    "slug": "division-bell",
+    "name": "Division Bell",
+    "description": "Phil Ward's mezcal-driven Last Word variation balanced by Aperol, maraschino and fresh lime.",
+    "spirit_base": "other",
+    "abv_band": "medium",
+    "glass": "coupe",
+    "method": "shake",
+    "tags": [
+      "modern-classic",
+      "smoky",
+      "bittersweet"
+    ],
+    "ingredients": [
+      {
+        "name": "Mezcal",
+        "type": "spirit",
+        "amount": "1.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Aperol",
+        "type": "liqueur",
+        "amount": "0.75",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Maraschino liqueur",
+        "type": "liqueur",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh lime juice",
+        "type": "juice",
+        "amount": "0.75",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Grapefruit twist",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "twist",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://www.epicurious.com/recipes/food/views/division-bell-phil-ward-mezcal-emma-janzen",
+      "https://vinepair.com/cocktail-recipe/division-bell/"
+    ],
+    "notes": "Created by Phil Ward at Mayahuel. Original spec is 1.5 mezcal / 0.75 Aperol / 0.5 maraschino / 0.75 lime (used here); some newer sources (Del Maguey, Food & Wine) list 1 oz mezcal / 0.25 oz maraschino. Grapefruit twist expressed and discarded. Spirit base 'other' for mezcal."
+  },
+  {
+    "slug": "tequila-sour",
+    "name": "Tequila Sour",
+    "description": "A tangy agave sour of tequila, citrus and simple syrup shaken to a silky egg-white foam.",
+    "spirit_base": "tequila",
+    "abv_band": "medium",
+    "glass": "coupe",
+    "method": "shake",
+    "tags": [
+      "sour",
+      "classic",
+      "citrusy"
+    ],
+    "ingredients": [
+      {
+        "name": "Tequila (reposado)",
+        "type": "spirit",
+        "amount": "2",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh lemon juice",
+        "type": "juice",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Simple syrup",
+        "type": "syrup",
+        "amount": "0.75",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Egg white",
+        "type": "other",
+        "amount": "1",
+        "unit": "count",
+        "optional": true
+      },
+      {
+        "name": "Angostura bitters",
+        "type": "bitters",
+        "amount": "2",
+        "unit": "dash",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://mixthatdrink.com/tequila-sour-recipe/",
+      "https://www.oliversmarket.com/recipes/tequila-sour/"
+    ],
+    "notes": "Follows the classic sour template (2 spirit / 1 citrus / 0.75 syrup). Lemon is the most common citrus though many versions add or substitute lime; egg white and a couple dashes of bitters are standard-but-optional. Reposado or blanco both used."
+  },
+  {
+    "slug": "matador",
+    "name": "Matador",
+    "description": "Trader Vic's tropical shaken cooler of tequila, pineapple juice and fresh lime.",
+    "spirit_base": "tequila",
+    "abv_band": "low",
+    "glass": "coupe",
+    "method": "shake",
+    "tags": [
+      "tropical",
+      "classic",
+      "fruity"
+    ],
+    "ingredients": [
+      {
+        "name": "Tequila (blanco)",
+        "type": "spirit",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Pineapple juice",
+        "type": "juice",
+        "amount": "2",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh lime juice",
+        "type": "juice",
+        "amount": "0.75",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Lime wheel",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "wheel",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://punchdrink.com/recipes/tequila-matador/",
+      "https://www.diffordsguide.com/cocktails/recipe/19658/tequila-matador"
+    ],
+    "notes": "Trader Vic's 1972 build: 1 tequila / 2 pineapple / juice of half a lime (~0.75 oz), shaken and served up. Some modern versions add simple syrup or a dash of bitters, but the three-ingredient build is canonical."
+  },
+  {
+    "slug": "batanga",
+    "name": "Batanga",
+    "description": "La Capilla's legendary salted highball of blanco tequila, lime and cola stirred with a knife.",
+    "spirit_base": "tequila",
+    "abv_band": "low",
+    "glass": "highball",
+    "method": "build",
+    "tags": [
+      "refreshing",
+      "classic",
+      "easy"
+    ],
+    "ingredients": [
+      {
+        "name": "Tequila (blanco)",
+        "type": "spirit",
+        "amount": "2",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh lime juice",
+        "type": "juice",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Cola",
+        "type": "mixer",
+        "amount": "4",
+        "unit": "top",
+        "optional": false
+      },
+      {
+        "name": "Salt",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "rim",
+        "optional": false
+      }
+    ],
+    "sources": [
+      "https://imbibemagazine.com/recipe/batanga/",
+      "https://www.diffordsguide.com/cocktails/recipe/540/batanga"
+    ],
+    "notes": "Created by Don Javier Delgado Corona at La Capilla in Tequila, Mexico. Essentially a salted tequila Cuba Libre; the salt rim is a defining feature so it is not marked optional. Traditionally stirred with the lime knife."
+  },
+  {
+    "slug": "rosita",
+    "name": "Rosita",
+    "description": "A tequila-based, Negroni-style aperitif of Campari, sweet and dry vermouth with a dash of bitters.",
+    "spirit_base": "tequila",
+    "abv_band": "high",
+    "glass": "rocks",
+    "method": "stir",
+    "tags": [
+      "spirit-forward",
+      "bittersweet",
+      "classic"
+    ],
+    "ingredients": [
+      {
+        "name": "Tequila (reposado)",
+        "type": "spirit",
+        "amount": "1.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Campari",
+        "type": "liqueur",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Sweet vermouth",
+        "type": "wine",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Dry vermouth",
+        "type": "wine",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Angostura bitters",
+        "type": "bitters",
+        "amount": "1",
+        "unit": "dash",
+        "optional": false
+      },
+      {
+        "name": "Orange twist",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "twist",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://www.epicurious.com/recipes/food/views/rosita-tequiila-campari-cocktail-jim-meehan",
+      "https://www.esquire.com/food-drink/drinks/a55121/best-rosita-cocktail-recipe/"
+    ],
+    "notes": "Dates to the 1970s (Mexican Bartender's Guide); this is Jim Meehan's popularized spec of 1.5 reposado, split 0.5 each Campari/sweet/dry vermouth, 1 dash Angostura. Stirred and served over ice (some serve up in a coupe)."
+  },
+  {
+    "slug": "siesta",
+    "name": "Siesta",
+    "description": "Katie Stipe's bittersweet blush cocktail of blanco tequila, Campari, grapefruit, lime and simple syrup.",
+    "spirit_base": "tequila",
+    "abv_band": "medium",
+    "glass": "coupe",
+    "method": "shake",
+    "tags": [
+      "modern-classic",
+      "bittersweet",
+      "citrusy"
+    ],
+    "ingredients": [
+      {
+        "name": "Tequila (blanco)",
+        "type": "spirit",
+        "amount": "2",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Campari",
+        "type": "liqueur",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh lime juice",
+        "type": "juice",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh grapefruit juice",
+        "type": "juice",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Simple syrup",
+        "type": "syrup",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Grapefruit twist",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "twist",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://www.seriouseats.com/siesta-campari-tequila-cocktail-recipe",
+      "https://www.saveur.com/recipes/siesta-cocktail/"
+    ],
+    "notes": "Created by Katie Stipe (2006) as a tequila/Campari riff on the Hemingway Daiquiri. Original Serious Eats spec used here (equal 0.5 splits); Saveur/VinePair bump lime and simple syrup to 0.75 oz and adjust Campari."
+  },
+  {
+    "slug": "juan-collins",
+    "name": "Juan Collins",
+    "description": "The Tom Collins made Mexican with tequila, lemon, simple syrup and a soda water top.",
+    "spirit_base": "tequila",
+    "abv_band": "low",
+    "glass": "collins",
+    "method": "build",
+    "tags": [
+      "refreshing",
+      "classic",
+      "citrusy"
+    ],
+    "ingredients": [
+      {
+        "name": "Tequila (blanco)",
+        "type": "spirit",
+        "amount": "2",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh lemon juice",
+        "type": "juice",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Simple syrup",
+        "type": "syrup",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Soda water",
+        "type": "mixer",
+        "amount": "3",
+        "unit": "top",
+        "optional": false
+      },
+      {
+        "name": "Lemon wheel",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "wheel",
+        "optional": true
+      },
+      {
+        "name": "Maraschino cherry",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "cherry",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://www.lcbo.com/en/recipe/juan-collins/L201808003",
+      "https://www.thespruceeats.com/juan-collins-recipe-760837"
+    ],
+    "notes": "A Collins-family drink (tequila replaces gin), also called Tequila Collins. Some recipes use agave nectar instead of simple syrup; lemon is standard though lime is sometimes used."
+  },
+  {
+    "slug": "spicy-margarita",
+    "name": "Spicy Margarita",
+    "description": "The classic Margarita with fresh jalapeño muddled in for a bright chili kick.",
+    "spirit_base": "tequila",
+    "abv_band": "medium",
+    "glass": "rocks",
+    "method": "shake",
+    "tags": [
+      "spicy",
+      "citrusy",
+      "modern-classic"
+    ],
+    "ingredients": [
+      {
+        "name": "Tequila (blanco)",
+        "type": "spirit",
+        "amount": "2",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Orange liqueur",
+        "type": "liqueur",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh lime juice",
+        "type": "juice",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Agave syrup",
+        "type": "syrup",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Jalapeño",
+        "type": "other",
+        "amount": "2",
+        "unit": "slice",
+        "optional": false
+      },
+      {
+        "name": "Salt",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "rim",
+        "optional": true
+      },
+      {
+        "name": "Jalapeño slice",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "slice",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://www.liquor.com/recipes/spicy-margarita/",
+      "https://www.tasteofhome.com/recipes/spicy-margarita/"
+    ],
+    "notes": "A Margarita with jalapeño coins muddled in the shaker before shaking. Uses the standard orange-liqueur + agave sweetening; Tajin is a popular rim alternative to plain salt."
+  },
+  {
+    "slug": "tequila-sunrise",
+    "name": "Tequila Sunrise",
+    "description": "A layered highball where grenadine sinks through tequila and orange juice to mimic a sunrise.",
+    "spirit_base": "tequila",
+    "abv_band": "low",
+    "glass": "highball",
+    "method": "build",
+    "tags": [
+      "classic",
+      "fruity",
+      "easy"
+    ],
+    "ingredients": [
+      {
+        "name": "Tequila (blanco)",
+        "type": "spirit",
+        "amount": "2",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh orange juice",
+        "type": "juice",
+        "amount": "4",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Grenadine",
+        "type": "syrup",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Orange slice",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "slice",
+        "optional": true
+      },
+      {
+        "name": "Maraschino cherry",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "cherry",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://www.liquor.com/recipes/tequila-sunrise/",
+      "https://www.thekitchn.com/tequila-sunrise-recipe-23662589"
+    ],
+    "notes": "Built and left unstirred so the grenadine settles to the bottom for the sunrise gradient. Grenadine ranges 0.25-0.5 oz across sources."
+  },
+  {
+    "slug": "cantarito",
+    "name": "Cantarito",
+    "description": "Jalisco's citrus-loaded cousin of the Paloma with tequila, grapefruit, orange and lime topped with grapefruit soda.",
+    "spirit_base": "tequila",
+    "abv_band": "low",
+    "glass": "highball",
+    "method": "build",
+    "tags": [
+      "refreshing",
+      "citrusy",
+      "classic"
+    ],
+    "ingredients": [
+      {
+        "name": "Tequila (blanco)",
+        "type": "spirit",
+        "amount": "2",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh grapefruit juice",
+        "type": "juice",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh orange juice",
+        "type": "juice",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh lime juice",
+        "type": "juice",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Salt",
+        "type": "other",
+        "amount": "1",
+        "unit": "pinch",
+        "optional": true
+      },
+      {
+        "name": "Grapefruit soda",
+        "type": "mixer",
+        "amount": "3",
+        "unit": "top",
+        "optional": false
+      },
+      {
+        "name": "Grapefruit wedge",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "wedge",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://www.tasteofhome.com/recipes/cantarito-cocktail/",
+      "https://cocktail-society.com/recipes/cantarito/"
+    ],
+    "notes": "Traditionally served in an unglazed clay cup (cantarito). Built version used here; some sources shake the tequila/juices then top with grapefruit soda. Traditionally rimmed with salt or Tajin."
+  },
+  {
+    "slug": "mezcal-mule",
+    "name": "Mezcal Mule",
+    "description": "A smoky spin on the Moscow Mule pairing mezcal with lime and spicy ginger beer.",
+    "spirit_base": "other",
+    "abv_band": "low",
+    "glass": "copper mug",
+    "method": "build",
+    "tags": [
+      "smoky",
+      "refreshing",
+      "spicy"
+    ],
+    "ingredients": [
+      {
+        "name": "Mezcal",
+        "type": "spirit",
+        "amount": "2",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh lime juice",
+        "type": "juice",
+        "amount": "0.75",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Ginger beer",
+        "type": "mixer",
+        "amount": "4",
+        "unit": "top",
+        "optional": false
+      },
+      {
+        "name": "Lime wedge",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "wedge",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://www.simplyrecipes.com/mezcal-mule-recipe-5270613",
+      "https://www.peelwithzeal.com/mezcal-mule/"
+    ],
+    "notes": "A 1:1 swap of mezcal for vodka in the Moscow Mule. Built in a copper mug or double rocks glass; lime ranges 0.5-1 oz and some add optional simple syrup. Spirit base 'other' for mezcal."
+  },
+  {
+    "slug": "charro-negro",
+    "name": "Charro Negro",
+    "description": "Mexico's festive tequila-and-cola highball brightened with a squeeze of fresh lime.",
+    "spirit_base": "tequila",
+    "abv_band": "low",
+    "glass": "highball",
+    "method": "build",
+    "tags": [
+      "easy",
+      "refreshing",
+      "classic"
+    ],
+    "ingredients": [
+      {
+        "name": "Tequila (blanco)",
+        "type": "spirit",
+        "amount": "2",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh lime juice",
+        "type": "juice",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Cola",
+        "type": "mixer",
+        "amount": "4",
+        "unit": "top",
+        "optional": false
+      },
+      {
+        "name": "Lime wedge",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "wedge",
+        "optional": true
+      },
+      {
+        "name": "Salt",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "rim",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://www.culinaryhill.com/charro-negro/",
+      "https://www.baconismagic.ca/mexico/charro-negro/"
+    ],
+    "notes": "A tequila Cuba Libre; the salt rim is optional here (it is the defining feature of the closely related Batanga). Mexican Coca-Cola made with cane sugar is traditional."
+  },
+  {
+    "slug": "boulevardier",
+    "name": "Boulevardier",
+    "description": "A whiskey-forward cousin of the Negroni, stirring bourbon with Campari and sweet vermouth into a bittersweet, spirit-driven sipper.",
+    "spirit_base": "whiskey",
+    "abv_band": "high",
+    "glass": "rocks",
+    "method": "stir",
+    "tags": [
+      "classic",
+      "bitter",
+      "spirit-forward"
+    ],
+    "ingredients": [
+      {
+        "name": "Bourbon",
+        "type": "spirit",
+        "amount": "1.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Campari",
+        "type": "liqueur",
+        "amount": "0.75",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Sweet vermouth",
+        "type": "wine",
+        "amount": "0.75",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Orange twist",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "twist",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://www.diffordsguide.com/cocktails/recipe/2955/boulevardier",
+      "https://cooking.nytimes.com/recipes/1016009-boulevardier"
+    ],
+    "notes": "The 1927 original is equal parts (1:1:1); the modern standard bumps the whiskey to a 2:1:1 ratio (1.5 bourbon to 0.75 each), which is the build used here. Rye is a common substitution. Served over ice or up."
+  },
+  {
+    "slug": "vieux-carre",
+    "name": "Vieux Carré",
+    "description": "A layered New Orleans classic that stirs rye and cognac with sweet vermouth, Bénédictine, and two bitters for rich, spiced complexity.",
+    "spirit_base": "whiskey",
+    "abv_band": "high",
+    "glass": "rocks",
+    "method": "stir",
+    "tags": [
+      "classic",
+      "spirit-forward",
+      "new orleans"
+    ],
+    "ingredients": [
+      {
+        "name": "Rye whiskey",
+        "type": "spirit",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Cognac",
+        "type": "spirit",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Sweet vermouth",
+        "type": "wine",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Bénédictine",
+        "type": "liqueur",
+        "amount": "0.25",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Angostura bitters",
+        "type": "bitters",
+        "amount": "2",
+        "unit": "dash",
+        "optional": false
+      },
+      {
+        "name": "Peychaud's bitters",
+        "type": "bitters",
+        "amount": "2",
+        "unit": "dash",
+        "optional": false
+      },
+      {
+        "name": "Lemon twist",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "twist",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://www.epicurious.com/recipes/food/views/vieux-carre",
+      "https://www.saveur.com/article/recipes/hotel-monteleones-vieux-carre/"
+    ],
+    "notes": "Most modern builds use equal parts (1 oz each) rye, cognac, and sweet vermouth; the original Hotel Monteleone spec was 0.5 oz each. Bénédictine ranges from a barspoon/tsp up to 0.25 oz."
+  },
+  {
+    "slug": "gold-rush",
+    "name": "Gold Rush",
+    "description": "A modern three-ingredient bourbon sour that swaps sugar for honey syrup, yielding a silky, citrus-bright drink.",
+    "spirit_base": "whiskey",
+    "abv_band": "medium",
+    "glass": "rocks",
+    "method": "shake",
+    "tags": [
+      "modern classic",
+      "sour"
+    ],
+    "ingredients": [
+      {
+        "name": "Bourbon",
+        "type": "spirit",
+        "amount": "2",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh lemon juice",
+        "type": "juice",
+        "amount": "0.75",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Honey syrup",
+        "type": "syrup",
+        "amount": "0.75",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Lemon twist",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "twist",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://punchdrink.com/recipes/gold-rush/",
+      "https://www.washingtonpost.com/recipes/gold-rush/"
+    ],
+    "notes": "Created at Milk & Honey (NYC) in the early 2000s. Honey syrup is typically 3:1 honey:water; served over a large cube. Some versions use 0.5 oz honey loosened with warm water."
+  },
+  {
+    "slug": "whiskey-smash",
+    "name": "Whiskey Smash",
+    "description": "A refreshing bourbon smash built by muddling lemon and fresh mint with simple syrup before shaking over ice.",
+    "spirit_base": "whiskey",
+    "abv_band": "medium",
+    "glass": "rocks",
+    "method": "muddle",
+    "tags": [
+      "classic",
+      "refreshing",
+      "mint"
+    ],
+    "ingredients": [
+      {
+        "name": "Bourbon",
+        "type": "spirit",
+        "amount": "2",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh lemon juice",
+        "type": "juice",
+        "amount": "0.75",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Simple syrup",
+        "type": "syrup",
+        "amount": "0.75",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Mint leaves",
+        "type": "other",
+        "amount": "8",
+        "unit": "leaves",
+        "optional": false
+      },
+      {
+        "name": "Mint sprig",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "sprig",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://www.foodandwine.com/whiskey-smash-cocktail-recipe-11736661",
+      "https://www.bonappetit.com/recipe/classic-whiskey-smash"
+    ],
+    "notes": "Traditionally half a lemon cut into wedges is muddled rather than measured juice (~0.75 oz equivalent); simple syrup ranges 0.5-0.75 oz. Muddled, then shaken and strained over fresh ice."
+  },
+  {
+    "slug": "new-york-sour",
+    "name": "New York Sour",
+    "description": "A whiskey sour crowned with a floated layer of dry red wine that adds tannic berry depth and a striking two-tone look.",
+    "spirit_base": "whiskey",
+    "abv_band": "medium",
+    "glass": "rocks",
+    "method": "shake",
+    "tags": [
+      "classic",
+      "sour"
+    ],
+    "ingredients": [
+      {
+        "name": "Rye whiskey",
+        "type": "spirit",
+        "amount": "2",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh lemon juice",
+        "type": "juice",
+        "amount": "0.75",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Simple syrup",
+        "type": "syrup",
+        "amount": "0.75",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Red wine",
+        "type": "wine",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Egg white",
+        "type": "other",
+        "amount": "1",
+        "unit": "each",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://www.epicurious.com/recipes/food/views/new-york-sour-cocktail",
+      "https://vinepair.com/cocktail-recipe/new-york-sour/"
+    ],
+    "notes": "Rye is classic (bourbon also works); a dry red like Malbec or Merlot is floated on top over the back of a spoon. Lemon juice ranges 0.75-1 oz; egg white is optional."
+  },
+  {
+    "slug": "paper-plane",
+    "name": "Paper Plane",
+    "description": "An equal-parts modern classic balancing bourbon, Aperol, Amaro Nonino, and fresh lemon into a bittersweet, frothy sour.",
+    "spirit_base": "whiskey",
+    "abv_band": "medium",
+    "glass": "coupe",
+    "method": "shake",
+    "tags": [
+      "modern classic",
+      "sour",
+      "bitter"
+    ],
+    "ingredients": [
+      {
+        "name": "Bourbon",
+        "type": "spirit",
+        "amount": "0.75",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Aperol",
+        "type": "liqueur",
+        "amount": "0.75",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Amaro Nonino",
+        "type": "liqueur",
+        "amount": "0.75",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh lemon juice",
+        "type": "juice",
+        "amount": "0.75",
+        "unit": "oz",
+        "optional": false
+      }
+    ],
+    "sources": [
+      "https://www.foodandwine.com/recipes/paper-plane",
+      "https://www.thekitchn.com/paper-plane-cocktail-recipe-23549303"
+    ],
+    "notes": "Created by Sam Ross in 2008; strict 1:1:1:1 ratio (0.75 oz each). Traditionally served with no garnish to preserve the froth."
+  },
+  {
+    "slug": "penicillin",
+    "name": "Penicillin",
+    "description": "A modern scotch sour of blended whisky, honey-ginger syrup, and lemon finished with a smoky float of Islay single malt.",
+    "spirit_base": "whiskey",
+    "abv_band": "high",
+    "glass": "rocks",
+    "method": "shake",
+    "tags": [
+      "modern classic",
+      "sour",
+      "smoky"
+    ],
+    "ingredients": [
+      {
+        "name": "Blended scotch",
+        "type": "spirit",
+        "amount": "2",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh lemon juice",
+        "type": "juice",
+        "amount": "0.75",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Honey-ginger syrup",
+        "type": "syrup",
+        "amount": "0.75",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Islay scotch",
+        "type": "spirit",
+        "amount": "0.25",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Candied ginger",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "piece",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://www.liquor.com/recipes/penicillin/",
+      "https://www.foodandwine.com/penicillin-cocktail-recipe-11806993"
+    ],
+    "notes": "Created by Sam Ross (~2005) at Milk & Honey. Shake the first three, strain over ice, then float the peated Islay scotch on top. Difford's substitutes ginger liqueur plus honey syrup, but honey-ginger syrup is the canonical Ross build."
+  },
+  {
+    "slug": "rob-roy",
+    "name": "Rob Roy",
+    "description": "A Manhattan made with scotch, stirring blended whisky with sweet vermouth and aromatic bitters.",
+    "spirit_base": "whiskey",
+    "abv_band": "high",
+    "glass": "coupe",
+    "method": "stir",
+    "tags": [
+      "classic",
+      "spirit-forward"
+    ],
+    "ingredients": [
+      {
+        "name": "Blended scotch",
+        "type": "spirit",
+        "amount": "2",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Sweet vermouth",
+        "type": "wine",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Angostura bitters",
+        "type": "bitters",
+        "amount": "2",
+        "unit": "dash",
+        "optional": false
+      },
+      {
+        "name": "Maraschino cherry",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "cherry",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://punchdrink.com/recipes/rob-roy/",
+      "https://www.foodandwine.com/rob-roy-cocktail-recipe-11708791"
+    ],
+    "notes": "Standard 2:1 scotch-to-vermouth ratio. A 'perfect' Rob Roy splits sweet and dry vermouth. Garnish with a cherry or lemon twist."
+  },
+  {
+    "slug": "rusty-nail",
+    "name": "Rusty Nail",
+    "description": "A two-ingredient after-dinner sipper of scotch sweetened and rounded with honeyed Drambuie over ice.",
+    "spirit_base": "whiskey",
+    "abv_band": "high",
+    "glass": "rocks",
+    "method": "build",
+    "tags": [
+      "classic",
+      "spirit-forward",
+      "two-ingredient"
+    ],
+    "ingredients": [
+      {
+        "name": "Blended scotch",
+        "type": "spirit",
+        "amount": "1.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Drambuie",
+        "type": "liqueur",
+        "amount": "0.75",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Lemon twist",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "twist",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://drambuie.com/en-gb/cocktails/rusty-nail/",
+      "https://www.diffordsguide.com/cocktails/recipe/1721/rusty-nail"
+    ],
+    "notes": "Ratio is to taste; the 2:1 shown matches Drambuie's own spec, while Difford's notes ~3:1 (scotch:Drambuie) is preferred by most. Built over ice and stirred; some add a couple dashes of Angostura."
+  },
+  {
+    "slug": "godfather",
+    "name": "Godfather",
+    "description": "A simple two-part nightcap pairing smoky scotch with sweet, nutty amaretto over ice.",
+    "spirit_base": "whiskey",
+    "abv_band": "high",
+    "glass": "rocks",
+    "method": "build",
+    "tags": [
+      "classic",
+      "spirit-forward",
+      "two-ingredient"
+    ],
+    "ingredients": [
+      {
+        "name": "Blended scotch",
+        "type": "spirit",
+        "amount": "1.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Amaretto",
+        "type": "liqueur",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      }
+    ],
+    "sources": [
+      "https://www.foodandwine.com/godfather-cocktail-recipe-8759387",
+      "https://www.thespruceeats.com/godfather-cocktail-recipe-761446"
+    ],
+    "notes": "Scotch-to-amaretto ratio varies widely (equal parts up to 4:1) to taste; the 3:1 build here keeps the whisky forward. Built over ice and stirred."
+  },
+  {
+    "slug": "brooklyn",
+    "name": "Brooklyn",
+    "description": "A dry, bitter-edged Manhattan variation stirring rye with dry vermouth, maraschino, and orange-bitter Amer Picon.",
+    "spirit_base": "whiskey",
+    "abv_band": "high",
+    "glass": "coupe",
+    "method": "stir",
+    "tags": [
+      "classic",
+      "spirit-forward"
+    ],
+    "ingredients": [
+      {
+        "name": "Rye whiskey",
+        "type": "spirit",
+        "amount": "2",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Dry vermouth",
+        "type": "wine",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Maraschino liqueur",
+        "type": "liqueur",
+        "amount": "0.25",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Amer Picon",
+        "type": "liqueur",
+        "amount": "0.25",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Maraschino cherry",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "cherry",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://www.diffordsguide.com/cocktails/recipe/2785/brooklyn",
+      "https://www.foodandwine.com/brooklyn-cocktail-recipe-8706986"
+    ],
+    "notes": "The modern standard uses dry vermouth (the 1908 Grohusko original used sweet Italian vermouth). Authentic Amer Picon is hard to source in the US; substitutes include Amaro Ciociaro, Bigallet China-China, or Ramazzotti."
+  },
+  {
+    "slug": "greenpoint",
+    "name": "Greenpoint",
+    "description": "A Brooklyn-inspired modern classic layering rye and sweet vermouth with herbal Yellow Chartreuse and two bitters.",
+    "spirit_base": "whiskey",
+    "abv_band": "high",
+    "glass": "coupe",
+    "method": "stir",
+    "tags": [
+      "modern classic",
+      "spirit-forward"
+    ],
+    "ingredients": [
+      {
+        "name": "Rye whiskey",
+        "type": "spirit",
+        "amount": "2",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Yellow Chartreuse",
+        "type": "liqueur",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Sweet vermouth",
+        "type": "wine",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Angostura bitters",
+        "type": "bitters",
+        "amount": "1",
+        "unit": "dash",
+        "optional": false
+      },
+      {
+        "name": "Orange bitters",
+        "type": "bitters",
+        "amount": "1",
+        "unit": "dash",
+        "optional": false
+      },
+      {
+        "name": "Lemon twist",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "twist",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://www.liquor.com/recipes/greenpoint/",
+      "https://vinepair.com/cocktail-recipe/greenpoint/"
+    ],
+    "notes": "Created by Michael McIlroy at Milk & Honey (c. 2005-06). Recipe is consistent across sources."
+  },
+  {
+    "slug": "remember-the-maine",
+    "name": "Remember the Maine",
+    "description": "A rye Manhattan enriched with Cherry Heering and a whisper of absinthe rinsed through the glass.",
+    "spirit_base": "whiskey",
+    "abv_band": "high",
+    "glass": "coupe",
+    "method": "stir",
+    "tags": [
+      "classic",
+      "spirit-forward"
+    ],
+    "ingredients": [
+      {
+        "name": "Rye whiskey",
+        "type": "spirit",
+        "amount": "2",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Sweet vermouth",
+        "type": "wine",
+        "amount": "0.75",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Cherry Heering",
+        "type": "liqueur",
+        "amount": "0.33",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Absinthe",
+        "type": "spirit",
+        "amount": "0.25",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Brandied cherry",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "cherry",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://www.seriouseats.com/remember-the-maine-cocktail-recipe",
+      "https://punchdrink.com/recipes/remember-the-maine/"
+    ],
+    "notes": "From Charles H. Baker's 1939 Gentleman's Companion. Absinthe (~1/2 tsp) is used as a glass rinse; Cherry Heering is roughly 2 tsp (~0.33 oz). Stir the whiskey, vermouth, and Heering, then strain into the rinsed glass."
+  },
+  {
+    "slug": "kentucky-mule",
+    "name": "Kentucky Mule",
+    "description": "A bourbon take on the Moscow Mule, built over ice with fresh lime and topped with spicy ginger beer.",
+    "spirit_base": "whiskey",
+    "abv_band": "low",
+    "glass": "highball",
+    "method": "build",
+    "tags": [
+      "classic",
+      "refreshing",
+      "highball"
+    ],
+    "ingredients": [
+      {
+        "name": "Bourbon",
+        "type": "spirit",
+        "amount": "2",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh lime juice",
+        "type": "juice",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Ginger beer",
+        "type": "mixer",
+        "amount": "1",
+        "unit": "top",
+        "optional": false
+      },
+      {
+        "name": "Mint sprig",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "sprig",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://www.foodandwine.com/kentucky-mule-cocktail-recipe-8637916",
+      "https://www.foodnetwork.com/recipes/michael-symon/kentucky-mule-2107405"
+    ],
+    "notes": "Traditionally served in a copper mug; about 3-4 oz ginger beer tops the drink. Garnish with mint and/or a lime wedge."
+  },
+  {
+    "slug": "lynchburg-lemonade",
+    "name": "Lynchburg Lemonade",
+    "description": "A tall, fizzy Tennessee-whiskey cooler of Jack Daniel's, triple sec, and lemon lengthened with lemon-lime soda.",
+    "spirit_base": "whiskey",
+    "abv_band": "low",
+    "glass": "highball",
+    "method": "build",
+    "tags": [
+      "classic",
+      "refreshing",
+      "highball"
+    ],
+    "ingredients": [
+      {
+        "name": "Tennessee whiskey",
+        "type": "spirit",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Triple sec",
+        "type": "liqueur",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh lemon juice",
+        "type": "juice",
+        "amount": "0.75",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Simple syrup",
+        "type": "syrup",
+        "amount": "0.25",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Lemon-lime soda",
+        "type": "mixer",
+        "amount": "1",
+        "unit": "top",
+        "optional": false
+      },
+      {
+        "name": "Lemon wedge",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "wedge",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://www.jackdaniels.com/en-us/recipes/lynchburg-lemonade",
+      "https://www.thespruceeats.com/lynchburg-lemonade-recipe-761465"
+    ],
+    "notes": "Jack Daniel's official spec used here; a common alternative build uses 1.5 oz whiskey, 1 oz lemon juice, and skips the simple syrup. Built over ice and topped with ~4 oz lemon-lime soda."
+  },
+  {
+    "slug": "irish-coffee",
+    "name": "Irish Coffee",
+    "description": "A warm, sweetened blend of hot coffee and Irish whiskey crowned with a collar of lightly whipped cream.",
+    "spirit_base": "whiskey",
+    "abv_band": "low",
+    "glass": "mug",
+    "method": "build",
+    "tags": [
+      "classic",
+      "hot",
+      "after-dinner"
+    ],
+    "ingredients": [
+      {
+        "name": "Irish whiskey",
+        "type": "spirit",
+        "amount": "1.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Brown sugar",
+        "type": "syrup",
+        "amount": "2",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "name": "Hot coffee",
+        "type": "mixer",
+        "amount": "1",
+        "unit": "top",
+        "optional": false
+      },
+      {
+        "name": "Whipped cream",
+        "type": "other",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      }
+    ],
+    "sources": [
+      "https://www.foodandwine.com/irish-coffee-recipe-8773431",
+      "https://cooking.nytimes.com/recipes/1016121-irish-coffee"
+    ],
+    "notes": "Sweetener is typically 1-2 tsp demerara/brown sugar or a demerara syrup; ~4 oz hot coffee tops the drink. Lightly whipped cream is floated over the back of a spoon."
+  },
+  {
+    "slug": "hot-toddy",
+    "name": "Hot Toddy",
+    "description": "A soothing hot drink stirring whiskey with honey and lemon and lengthened with hot water.",
+    "spirit_base": "whiskey",
+    "abv_band": "low",
+    "glass": "mug",
+    "method": "build",
+    "tags": [
+      "classic",
+      "hot"
+    ],
+    "ingredients": [
+      {
+        "name": "Bourbon",
+        "type": "spirit",
+        "amount": "1.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Honey",
+        "type": "syrup",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh lemon juice",
+        "type": "juice",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Hot water",
+        "type": "mixer",
+        "amount": "1",
+        "unit": "top",
+        "optional": false
+      },
+      {
+        "name": "Lemon wheel",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "wheel",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://www.epicurious.com/recipes/food/views/classic-hot-toddy",
+      "https://vinepair.com/cocktail-recipe/hot-toddy/"
+    ],
+    "notes": "Any whiskey (bourbon, Scotch, Irish, or rye) works; honey can be swapped for demerara or maple. Topped with ~4 oz hot water; often garnished with a clove-studded lemon and/or a cinnamon stick."
+  },
+  {
+    "slug": "mint-julep",
+    "name": "Mint Julep",
+    "description": "The Kentucky Derby classic, gently muddling fresh mint with sugar before drowning bourbon in a mound of crushed ice.",
+    "spirit_base": "whiskey",
+    "abv_band": "high",
+    "glass": "julep",
+    "method": "muddle",
+    "tags": [
+      "classic",
+      "refreshing",
+      "mint"
+    ],
+    "ingredients": [
+      {
+        "name": "Bourbon",
+        "type": "spirit",
+        "amount": "2.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Simple syrup",
+        "type": "syrup",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Mint leaves",
+        "type": "other",
+        "amount": "8",
+        "unit": "leaves",
+        "optional": false
+      },
+      {
+        "name": "Mint sprig",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "sprig",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://www.kentuckyderby.com/mint-julep/",
+      "https://cooking.nytimes.com/recipes/1016295-mint-julep"
+    ],
+    "notes": "Bourbon ranges 2-2.5 oz and sweetener 0.5-1 oz (sugar or mint simple syrup). Served in a metal julep cup packed with crushed ice."
+  },
+  {
+    "slug": "sazerac",
+    "name": "Sazerac",
+    "description": "A New Orleans icon stirring rye with Peychaud's bitters and sugar, served in an absinthe-rinsed glass with a lemon twist.",
+    "spirit_base": "whiskey",
+    "abv_band": "high",
+    "glass": "rocks",
+    "method": "stir",
+    "tags": [
+      "classic",
+      "spirit-forward",
+      "new orleans"
+    ],
+    "ingredients": [
+      {
+        "name": "Rye whiskey",
+        "type": "spirit",
+        "amount": "2",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Simple syrup",
+        "type": "syrup",
+        "amount": "0.25",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Peychaud's bitters",
+        "type": "bitters",
+        "amount": "3",
+        "unit": "dash",
+        "optional": false
+      },
+      {
+        "name": "Absinthe",
+        "type": "spirit",
+        "amount": "0.25",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Lemon twist",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "twist",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://iba-world.com/iba-cocktail/sazerac/",
+      "https://www.thespruceeats.com/sazerac-cocktail-recipe-760604"
+    ],
+    "notes": "Rye is the standard base (the IBA lists cognac as the pre-Civil-War original). Traditionally a sugar cube is muddled with the bitters in place of simple syrup; absinthe is used as a glass rinse and discarded, and the lemon twist is expressed and often discarded."
+  },
+  {
+    "slug": "blood-and-sand",
+    "name": "Blood and Sand",
+    "description": "A rare equal-parts scotch cocktail shaking blended whisky with Cherry Heering, sweet vermouth, and fresh orange juice.",
+    "spirit_base": "whiskey",
+    "abv_band": "medium",
+    "glass": "coupe",
+    "method": "shake",
+    "tags": [
+      "classic",
+      "fruity"
+    ],
+    "ingredients": [
+      {
+        "name": "Blended scotch",
+        "type": "spirit",
+        "amount": "0.75",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Cherry Heering",
+        "type": "liqueur",
+        "amount": "0.75",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Sweet vermouth",
+        "type": "wine",
+        "amount": "0.75",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh orange juice",
+        "type": "juice",
+        "amount": "0.75",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Orange twist",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "twist",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://punchdrink.com/recipes/blood-and-sand/",
+      "https://www.epicurious.com/recipes/food/views/blood-and-sand"
+    ],
+    "notes": "Equal parts (1:1:1:1) from The Savoy Cocktail Book (1930); Cherry Heering is the preferred cherry liqueur. Use fresh orange juice for balance. Often shown at 1 oz each; 0.75 oz each scales to a standard coupe."
+  },
+  {
+    "slug": "last-word",
+    "name": "Last Word",
+    "description": "A Prohibition-era equal-parts stunner that balances botanical gin, herbal Green Chartreuse, nutty Maraschino, and bright lime into a vivid, complex whole.",
+    "spirit_base": "gin",
+    "abv_band": "high",
+    "glass": "coupe",
+    "method": "shake",
+    "tags": [
+      "classic",
+      "sour",
+      "gin",
+      "equal-parts"
+    ],
+    "ingredients": [
+      {
+        "name": "London dry gin",
+        "type": "spirit",
+        "amount": "0.75",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Green Chartreuse",
+        "type": "liqueur",
+        "amount": "0.75",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Maraschino liqueur",
+        "type": "liqueur",
+        "amount": "0.75",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh lime juice",
+        "type": "juice",
+        "amount": "0.75",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Maraschino cherry",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "cherry",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://iba-world.com/iba-cocktail/last-word/",
+      "https://www.liquor.com/recipes/the-last-word/",
+      "https://www.washingtonpost.com/recipes/the-last-word/"
+    ],
+    "notes": "Universally agreed as equal parts (0.75 oz each). Created at the Detroit Athletic Club c.1915 and revived by Murray Stenson. Garnish (cherry) is optional."
+  },
+  {
+    "slug": "bees-knees",
+    "name": "Bee's Knees",
+    "description": "A Prohibition-era gin sour that swaps sugar for honey syrup, yielding a rounded, floral, lemon-bright refresher.",
+    "spirit_base": "gin",
+    "abv_band": "medium",
+    "glass": "coupe",
+    "method": "shake",
+    "tags": [
+      "classic",
+      "sour",
+      "gin"
+    ],
+    "ingredients": [
+      {
+        "name": "London dry gin",
+        "type": "spirit",
+        "amount": "2",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh lemon juice",
+        "type": "juice",
+        "amount": "0.75",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Honey syrup",
+        "type": "syrup",
+        "amount": "0.75",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Lemon twist",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "twist",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://iba-world.com/iba-cocktail/bees-knees/",
+      "https://www.liquor.com/recipes/bees-knees/",
+      "https://www.foodandwine.com/bees-knees-cocktail-6412656"
+    ],
+    "notes": "Most-common classic build is the three-ingredient gin/lemon/honey sour (Food & Wine, Liquor.com uses 0.5 oz honey). The IBA variant adds fresh orange juice and uses less honey, but the simplest widely-accepted version omits orange juice. Honey syrup is honey diluted with water (typically 3:1 or 1:1)."
+  },
+  {
+    "slug": "southside",
+    "name": "Southside",
+    "description": "A refreshing gin sour brightened with lightly bruised mint, drinking like an elegant, up-served gin mojito.",
+    "spirit_base": "gin",
+    "abv_band": "medium",
+    "glass": "coupe",
+    "method": "shake",
+    "tags": [
+      "classic",
+      "sour",
+      "gin"
+    ],
+    "ingredients": [
+      {
+        "name": "London dry gin",
+        "type": "spirit",
+        "amount": "2",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh lemon juice",
+        "type": "juice",
+        "amount": "0.75",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Simple syrup",
+        "type": "syrup",
+        "amount": "0.75",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Mint leaves",
+        "type": "other",
+        "amount": "8",
+        "unit": "leaves",
+        "optional": false
+      },
+      {
+        "name": "Mint sprig",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "sprig",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://iba-world.com/iba-cocktail/south-side/",
+      "https://www.liquor.com/recipes/south-side/"
+    ],
+    "notes": "Lemon vs lime is the main variation; lemon is the most widely accepted (Liquor.com/21 Club, IBA), though many bars use lime. Mint is gently muddled then shaken. Ratios range from 0.75-1 oz each for citrus and syrup."
+  },
+  {
+    "slug": "gin-fizz",
+    "name": "Gin Fizz",
+    "description": "A tall, effervescent gin sour shaken hard and lengthened with a splash of soda for a crisp, foamy lift.",
+    "spirit_base": "gin",
+    "abv_band": "medium",
+    "glass": "highball",
+    "method": "shake",
+    "tags": [
+      "classic",
+      "fizz",
+      "gin",
+      "refreshing"
+    ],
+    "ingredients": [
+      {
+        "name": "London dry gin",
+        "type": "spirit",
+        "amount": "2",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh lemon juice",
+        "type": "juice",
+        "amount": "0.75",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Simple syrup",
+        "type": "syrup",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Soda water",
+        "type": "mixer",
+        "amount": "1",
+        "unit": "top",
+        "optional": false
+      },
+      {
+        "name": "Lemon slice",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "slice",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://iba-world.com/iba-cocktail/gin-fizz/",
+      "https://en.wikipedia.org/wiki/Gin_fizz"
+    ],
+    "notes": "Classic gin/lemon/sugar shaken and topped with soda. Traditionally served in a tumbler without ice. Adding egg white makes a Silver Fizz. Citrus/syrup amounts vary slightly (IBA uses 1 oz lemon, 0.33 oz syrup)."
+  },
+  {
+    "slug": "ramos-gin-fizz",
+    "name": "Ramos Gin Fizz",
+    "description": "A New Orleans classic whipped to a cloud-like, marshmallowy froth from cream, egg white, citrus, and orange flower water before a soda top.",
+    "spirit_base": "gin",
+    "abv_band": "low",
+    "glass": "highball",
+    "method": "shake",
+    "tags": [
+      "classic",
+      "fizz",
+      "gin",
+      "creamy"
+    ],
+    "ingredients": [
+      {
+        "name": "London dry gin",
+        "type": "spirit",
+        "amount": "2",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh lemon juice",
+        "type": "juice",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh lime juice",
+        "type": "juice",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Simple syrup",
+        "type": "syrup",
+        "amount": "0.75",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Cream",
+        "type": "other",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Egg white",
+        "type": "other",
+        "amount": "1",
+        "unit": "each",
+        "optional": false
+      },
+      {
+        "name": "Orange flower water",
+        "type": "other",
+        "amount": "3",
+        "unit": "dash",
+        "optional": false
+      },
+      {
+        "name": "Soda water",
+        "type": "mixer",
+        "amount": "1",
+        "unit": "top",
+        "optional": false
+      }
+    ],
+    "sources": [
+      "https://iba-world.com/iba-cocktail/ramos-fizz/",
+      "https://www.liquor.com/recipes/ramos-gin-fizz/"
+    ],
+    "notes": "Created by Henry Ramos, New Orleans, 1888. Requires a long dry shake and wet shake to achieve the signature foam. Some recipes add a couple drops of vanilla extract (optional, omitted here as non-essential)."
+  },
+  {
+    "slug": "vesper",
+    "name": "Vesper",
+    "description": "James Bond's bracing, bone-dry martini variation combining gin and vodka with a whisper of aromatized wine, shaken ice-cold.",
+    "spirit_base": "gin",
+    "abv_band": "high",
+    "glass": "coupe",
+    "method": "shake",
+    "tags": [
+      "classic",
+      "spirit-forward",
+      "gin",
+      "martini"
+    ],
+    "ingredients": [
+      {
+        "name": "London dry gin",
+        "type": "spirit",
+        "amount": "3",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Vodka",
+        "type": "spirit",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Lillet Blanc",
+        "type": "wine",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Lemon twist",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "twist",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://iba-world.com/iba-cocktail/vesper/",
+      "https://www.diffordsguide.com/cocktails/recipe/2597/vesper-dry-martini",
+      "https://www.drinklab.org/vesper/"
+    ],
+    "notes": "Ian Fleming's original spec (Casino Royale, 1953): 3 measures gin, 1 vodka, 0.5 Kina Lillet, shaken. Kina Lillet is discontinued; Lillet Blanc is the standard modern substitute, with Cocchi Americano a closer match to the original bitterness. Bond specifies shaken; many bartenders stir. IBA uses a more restrained 0.25 oz Lillet."
+  },
+  {
+    "slug": "martinez",
+    "name": "Martinez",
+    "description": "The martini's rich, faintly sweet ancestor, stirring Old Tom gin with sweet vermouth, a touch of Maraschino, and bitters.",
+    "spirit_base": "gin",
+    "abv_band": "high",
+    "glass": "coupe",
+    "method": "stir",
+    "tags": [
+      "classic",
+      "spirit-forward",
+      "gin"
+    ],
+    "ingredients": [
+      {
+        "name": "Old Tom gin",
+        "type": "spirit",
+        "amount": "1.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Sweet vermouth",
+        "type": "wine",
+        "amount": "1.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Maraschino liqueur",
+        "type": "liqueur",
+        "amount": "0.25",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Orange bitters",
+        "type": "bitters",
+        "amount": "2",
+        "unit": "dash",
+        "optional": false
+      },
+      {
+        "name": "Lemon twist",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "twist",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://iba-world.com/iba-cocktail/martinez/",
+      "https://www.seriouseats.com/martinez-cocktail-gin-cocktail-recipe",
+      "https://www.saveur.com/article/wine-and-drink/martinez/"
+    ],
+    "notes": "Modern consensus (Serious Eats, Saveur, Kindred) is equal parts Old Tom gin and sweet vermouth with a 0.25 oz (or barspoon) Maraschino and 2 dashes bitters. London dry gin is a common substitute; Angostura is often used in place of, or alongside, orange bitters."
+  },
+  {
+    "slug": "bijou",
+    "name": "Bijou",
+    "description": "A jewel-toned, spirit-forward stir of gin, Green Chartreuse, and sweet vermouth, named for the diamond, emerald, and ruby of its parts.",
+    "spirit_base": "gin",
+    "abv_band": "high",
+    "glass": "coupe",
+    "method": "stir",
+    "tags": [
+      "classic",
+      "spirit-forward",
+      "gin"
+    ],
+    "ingredients": [
+      {
+        "name": "London dry gin",
+        "type": "spirit",
+        "amount": "1.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Green Chartreuse",
+        "type": "liqueur",
+        "amount": "0.75",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Sweet vermouth",
+        "type": "wine",
+        "amount": "0.75",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Orange bitters",
+        "type": "bitters",
+        "amount": "2",
+        "unit": "dash",
+        "optional": false
+      },
+      {
+        "name": "Maraschino cherry",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "cherry",
+        "optional": true
+      },
+      {
+        "name": "Lemon twist",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "twist",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://www.diffordsguide.com/cocktails/recipe/3269/bijou-cocktail-diffords-recipe",
+      "https://www.foodandwine.com/bijou-cocktail-recipe-11799811",
+      "https://cocktail-society.com/recipes/bijou-cocktail/"
+    ],
+    "notes": "Not an IBA official cocktail. Harry Johnson's 1900 original is equal parts, but the modern standard dials back the sweeter parts to a 2:1:1 gin-forward build (Food & Wine, Cocktail Society). Traditionally made with Plymouth or Old Tom gin; London dry is widely used and given here."
+  },
+  {
+    "slug": "clover-club",
+    "name": "Clover Club",
+    "description": "A pre-Prohibition Philadelphia classic shaken to a silky, blush-pink froth from raspberry, lemon, and egg white over gin.",
+    "spirit_base": "gin",
+    "abv_band": "medium",
+    "glass": "coupe",
+    "method": "shake",
+    "tags": [
+      "classic",
+      "sour",
+      "gin"
+    ],
+    "ingredients": [
+      {
+        "name": "London dry gin",
+        "type": "spirit",
+        "amount": "1.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh lemon juice",
+        "type": "juice",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Raspberry syrup",
+        "type": "syrup",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Dry vermouth",
+        "type": "wine",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": true
+      },
+      {
+        "name": "Egg white",
+        "type": "other",
+        "amount": "1",
+        "unit": "each",
+        "optional": false
+      },
+      {
+        "name": "Raspberries",
+        "type": "garnish",
+        "amount": "3",
+        "unit": "berries",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://iba-world.com/iba-cocktail/clover-club/",
+      "https://www.diffordsguide.com/cocktails/recipe/2344/clover-club",
+      "https://www.diffordsguide.com/cocktails/recipe/2345/clover-club-diffords-recipe"
+    ],
+    "notes": "The simplest classic (IBA/Savoy) is gin, raspberry syrup, lemon, and egg white. A dry vermouth split is common in modern craft versions (Difford's, Julie Reiner), so it is marked optional here. Requires a dry shake to build the foam."
+  },
+  {
+    "slug": "bramble",
+    "name": "Bramble",
+    "description": "A modern British classic pouring a gin sour over crushed ice, then drizzling blackberry liqueur through it for a bleeding, berry-rich finish.",
+    "spirit_base": "gin",
+    "abv_band": "medium",
+    "glass": "rocks",
+    "method": "shake",
+    "tags": [
+      "classic",
+      "sour",
+      "gin",
+      "modern-classic"
+    ],
+    "ingredients": [
+      {
+        "name": "London dry gin",
+        "type": "spirit",
+        "amount": "2",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh lemon juice",
+        "type": "juice",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Simple syrup",
+        "type": "syrup",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Crème de mûre",
+        "type": "liqueur",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Blackberry",
+        "type": "garnish",
+        "amount": "2",
+        "unit": "berries",
+        "optional": true
+      },
+      {
+        "name": "Lemon slice",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "slice",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://iba-world.com/iba-cocktail/bramble/",
+      "https://www.diffordsguide.com/cocktails/recipe/1024/bramble"
+    ],
+    "notes": "Created by Dick Bradsell in 1980s London. The gin/lemon/syrup base is shaken and strained over crushed ice, then the creme de mure is drizzled over the top. IBA uses 12.5 ml (~0.4 oz) syrup and 15 ml (~0.5 oz) creme de mure."
+  },
+  {
+    "slug": "corpse-reviver-no-2",
+    "name": "Corpse Reviver No. 2",
+    "description": "A bright, equal-parts eye-opener of gin, orange liqueur, aromatized wine, and lemon served in an absinthe-perfumed glass.",
+    "spirit_base": "gin",
+    "abv_band": "high",
+    "glass": "coupe",
+    "method": "shake",
+    "tags": [
+      "classic",
+      "sour",
+      "gin",
+      "equal-parts"
+    ],
+    "ingredients": [
+      {
+        "name": "London dry gin",
+        "type": "spirit",
+        "amount": "0.75",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Cointreau",
+        "type": "liqueur",
+        "amount": "0.75",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Lillet Blanc",
+        "type": "wine",
+        "amount": "0.75",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh lemon juice",
+        "type": "juice",
+        "amount": "0.75",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Absinthe",
+        "type": "spirit",
+        "amount": "1",
+        "unit": "dash",
+        "optional": false
+      },
+      {
+        "name": "Orange twist",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "twist",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://iba-world.com/iba-cocktail/corpse-reviver-2/",
+      "https://www.liquor.com/recipes/corpse-reviver-no-2/",
+      "https://vinepair.com/cocktail-recipe/corpse-reviver-2/"
+    ],
+    "notes": "From Harry Craddock's 1930 Savoy Cocktail Book; equal parts is universal. The absinthe is typically used as a glass rinse rather than measured in. Original called for Kina Lillet; Lillet Blanc is the standard substitute, with Cocchi Americano a closer match."
+  },
+  {
+    "slug": "gin-basil-smash",
+    "name": "Gin Basil Smash",
+    "description": "A vivid green modern classic that muddles a generous handful of basil into a gin sour for a savory, herbaceous punch.",
+    "spirit_base": "gin",
+    "abv_band": "medium",
+    "glass": "rocks",
+    "method": "muddle",
+    "tags": [
+      "classic",
+      "sour",
+      "gin",
+      "modern-classic"
+    ],
+    "ingredients": [
+      {
+        "name": "London dry gin",
+        "type": "spirit",
+        "amount": "2",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh lemon juice",
+        "type": "juice",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Simple syrup",
+        "type": "syrup",
+        "amount": "0.75",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Basil leaves",
+        "type": "other",
+        "amount": "10",
+        "unit": "leaves",
+        "optional": false
+      },
+      {
+        "name": "Basil sprig",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "sprig",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://vinepair.com/cocktail-recipe/gin-basil-smash/",
+      "https://www.diffordsguide.com/cocktails/recipe/3282/gin-basil-smash",
+      "https://www.foodandwine.com/gin-basil-smash-cocktail-recipe-11800161"
+    ],
+    "notes": "Not an IBA official cocktail. Created by Jorg Meyer at Le Lion, Hamburg, in 2008 (originally 'Gin Pesto'). Basil is muddled hard, then shaken and double-strained over fresh ice. VinePair and Food & Wine both use 2 oz gin / 1 oz lemon / 0.75 oz syrup."
+  },
+  {
+    "slug": "white-lady",
+    "name": "White Lady",
+    "description": "A crisp gin sour built on orange liqueur and lemon, the gin-based cousin of the Sidecar, served up and elegant.",
+    "spirit_base": "gin",
+    "abv_band": "medium",
+    "glass": "coupe",
+    "method": "shake",
+    "tags": [
+      "classic",
+      "sour",
+      "gin"
+    ],
+    "ingredients": [
+      {
+        "name": "London dry gin",
+        "type": "spirit",
+        "amount": "2",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Cointreau",
+        "type": "liqueur",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh lemon juice",
+        "type": "juice",
+        "amount": "0.75",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Egg white",
+        "type": "other",
+        "amount": "1",
+        "unit": "each",
+        "optional": true
+      },
+      {
+        "name": "Lemon twist",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "twist",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://iba-world.com/iba-cocktail/white-lady/",
+      "https://www.diffordsguide.com/cocktails/recipe/1602/white-lady"
+    ],
+    "notes": "Attributed to Harry MacElhone. Common US build is 2 oz gin / 1 oz Cointreau / 0.75 oz lemon; the IBA uses a 40/30/20 ml ratio. An egg white for a silkier texture is a widely accepted optional addition."
+  },
+  {
+    "slug": "singapore-sling",
+    "name": "Singapore Sling",
+    "description": "The Raffles Hotel's tropical showpiece, layering gin with cherry, herbal, and orange liqueurs over pineapple, lime, and a dash of bitters.",
+    "spirit_base": "gin",
+    "abv_band": "low",
+    "glass": "hurricane",
+    "method": "shake",
+    "tags": [
+      "classic",
+      "gin",
+      "tropical",
+      "tiki"
+    ],
+    "ingredients": [
+      {
+        "name": "London dry gin",
+        "type": "spirit",
+        "amount": "1.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Cherry Heering",
+        "type": "liqueur",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Cointreau",
+        "type": "liqueur",
+        "amount": "0.25",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Bénédictine",
+        "type": "liqueur",
+        "amount": "0.25",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Pineapple juice",
+        "type": "juice",
+        "amount": "4",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh lime juice",
+        "type": "juice",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Grenadine",
+        "type": "syrup",
+        "amount": "0.25",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Angostura bitters",
+        "type": "bitters",
+        "amount": "1",
+        "unit": "dash",
+        "optional": false
+      },
+      {
+        "name": "Pineapple wedge",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "wedge",
+        "optional": true
+      },
+      {
+        "name": "Maraschino cherry",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "cherry",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://iba-world.com/iba-cocktail/singapore-sling/",
+      "https://www.diffordsguide.com/cocktails/recipe/4627/singapore-sling",
+      "https://www.foodandwine.com/singapore-sling-cocktail-recipe-11735143"
+    ],
+    "notes": "Many historical recipes exist; this is the reconstructed Raffles Hotel / IBA standard, now the most widely served version. Cherry Heering is the accepted cherry brandy. Some builds use less pineapple juice and top with soda water (e.g. Food & Wine)."
+  },
+  {
+    "slug": "gin-rickey",
+    "name": "Gin Rickey",
+    "description": "A bone-dry, sugar-free highball of gin and fresh lime lengthened with soda, prized as an austere warm-weather quencher.",
+    "spirit_base": "gin",
+    "abv_band": "low",
+    "glass": "highball",
+    "method": "build",
+    "tags": [
+      "classic",
+      "highball",
+      "gin",
+      "refreshing"
+    ],
+    "ingredients": [
+      {
+        "name": "London dry gin",
+        "type": "spirit",
+        "amount": "2",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh lime juice",
+        "type": "juice",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Soda water",
+        "type": "mixer",
+        "amount": "1",
+        "unit": "top",
+        "optional": false
+      },
+      {
+        "name": "Lime wedge",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "wedge",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://www.liquor.com/recipes/gin-rickey/",
+      "https://vinepair.com/cocktail-recipe/the-gin-rickey-recipe/"
+    ],
+    "notes": "Not an IBA official cocktail. The defining feature is the absence of any sweetener. Built directly in the glass over ice. Liquor.com and VinePair both use 0.5 oz lime; some sources use up to 1 oz."
+  },
+  {
+    "slug": "french-75",
+    "name": "French 75",
+    "description": "A celebratory sparkling sour that tops a shaken gin, lemon, and sugar base with Champagne for a bright, potent fizz.",
+    "spirit_base": "gin",
+    "abv_band": "medium",
+    "glass": "flute",
+    "method": "shake",
+    "tags": [
+      "classic",
+      "sparkling",
+      "gin"
+    ],
+    "ingredients": [
+      {
+        "name": "London dry gin",
+        "type": "spirit",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh lemon juice",
+        "type": "juice",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Simple syrup",
+        "type": "syrup",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Champagne",
+        "type": "wine",
+        "amount": "1",
+        "unit": "top",
+        "optional": false
+      },
+      {
+        "name": "Lemon twist",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "twist",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://iba-world.com/iba-cocktail/french-75/",
+      "https://www.liquor.com/recipes/french-75-2/",
+      "https://www.foodandwine.com/french-75-cocktail-recipe-11873639"
+    ],
+    "notes": "Gin base is shaken then topped with roughly 3 oz Champagne in a flute. Whether the original used gin or Cognac is debated, but the gin version is the widely accepted modern classic. IBA uses 30 ml gin / 15 ml lemon / 15 ml syrup / 60 ml Champagne."
+  },
+  {
+    "slug": "tom-collins",
+    "name": "Tom Collins",
+    "description": "A tall, sparkling gin lemonade built over ice and topped with soda, the archetypal Collins-style refresher.",
+    "spirit_base": "gin",
+    "abv_band": "low",
+    "glass": "collins",
+    "method": "build",
+    "tags": [
+      "classic",
+      "highball",
+      "gin",
+      "refreshing"
+    ],
+    "ingredients": [
+      {
+        "name": "London dry gin",
+        "type": "spirit",
+        "amount": "2",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh lemon juice",
+        "type": "juice",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Simple syrup",
+        "type": "syrup",
+        "amount": "0.75",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Soda water",
+        "type": "mixer",
+        "amount": "1",
+        "unit": "top",
+        "optional": false
+      },
+      {
+        "name": "Lemon slice",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "slice",
+        "optional": true
+      },
+      {
+        "name": "Maraschino cherry",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "cherry",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://www.thespruceeats.com/tom-collins-recipe-759833",
+      "https://cooking.nytimes.com/recipes/1016344-tom-collins",
+      "https://www.loveandlemons.com/tom-collins-cocktail/"
+    ],
+    "notes": "Not an IBA official cocktail (the IBA lists its whiskey sibling, the John Collins). Traditionally made with Old Tom gin, hence the name; London dry is the most common modern choice. Syrup amount varies from 0.5 to 1 oz across sources; can be shaken then topped instead of built."
+  },
+  {
+    "slug": "army-and-navy",
+    "name": "Army & Navy",
+    "description": "A gin sour enriched with nutty orgeat, giving the classic gin-lemon template a rounded, almond-scented depth.",
+    "spirit_base": "gin",
+    "abv_band": "medium",
+    "glass": "coupe",
+    "method": "shake",
+    "tags": [
+      "classic",
+      "sour",
+      "gin"
+    ],
+    "ingredients": [
+      {
+        "name": "London dry gin",
+        "type": "spirit",
+        "amount": "2",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh lemon juice",
+        "type": "juice",
+        "amount": "0.75",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Orgeat",
+        "type": "syrup",
+        "amount": "0.75",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Angostura bitters",
+        "type": "bitters",
+        "amount": "1",
+        "unit": "dash",
+        "optional": true
+      },
+      {
+        "name": "Lemon twist",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "twist",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://www.liquor.com/army-navy-cocktail-recipe-5225039",
+      "https://punchdrink.com/recipes/army-navy/",
+      "https://vinepair.com/cocktail-recipe/army-and-navy/"
+    ],
+    "notes": "Not an IBA official cocktail. First recorded in David Embury's 1948 The Fine Art of Mixing Drinks. Orgeat (almond syrup) is the defining sweetener. The original had no bitters; a dash of Angostura is a common modern addition (Punch, Liquor.com) and is marked optional here. Lemon amount ranges 0.75-1 oz."
+  },
+  {
+    "slug": "hanky-panky",
+    "name": "Hanky Panky",
+    "description": "A savory, spirit-forward equal-parts martini of gin and sweet vermouth lifted by a bittersweet jolt of Fernet-Branca.",
+    "spirit_base": "gin",
+    "abv_band": "high",
+    "glass": "coupe",
+    "method": "stir",
+    "tags": [
+      "classic",
+      "spirit-forward",
+      "gin"
+    ],
+    "ingredients": [
+      {
+        "name": "London dry gin",
+        "type": "spirit",
+        "amount": "1.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Sweet vermouth",
+        "type": "wine",
+        "amount": "1.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fernet-Branca",
+        "type": "liqueur",
+        "amount": "2",
+        "unit": "dash",
+        "optional": false
+      },
+      {
+        "name": "Orange twist",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "twist",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://iba-world.com/iba-cocktail/hanky-panky/",
+      "https://www.epicurious.com/recipes/food/views/hanky-panky-gin-cocktail",
+      "https://www.seriouseats.com/cocktail-recipe-hanky-panky-gin-fernet-branca"
+    ],
+    "notes": "Created by Ada Coleman at the Savoy's American Bar. Equal parts gin and sweet vermouth is universal; the original uses 2 dashes Fernet-Branca (Epicurious, Serious Eats). The IBA uses a more assertive 7.5 ml (~0.25 oz) Fernet."
+  },
+  {
+    "slug": "long-island-iced-tea",
+    "name": "Long Island Iced Tea",
+    "description": "A deceptively strong highball layering five white spirits with lemon and a cola top that mimics the look of iced tea.",
+    "spirit_base": "other",
+    "abv_band": "high",
+    "glass": "highball",
+    "method": "build",
+    "tags": [
+      "classic",
+      "strong",
+      "iba"
+    ],
+    "ingredients": [
+      {
+        "name": "Vodka",
+        "type": "spirit",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Gin",
+        "type": "spirit",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "White rum",
+        "type": "spirit",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Tequila",
+        "type": "spirit",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Triple sec",
+        "type": "liqueur",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh lemon juice",
+        "type": "juice",
+        "amount": "0.75",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Simple syrup",
+        "type": "syrup",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Cola",
+        "type": "mixer",
+        "amount": "2",
+        "unit": "top",
+        "optional": false
+      },
+      {
+        "name": "Lemon",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "wedge",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://iba-world.com/iba-cocktail/long-island-iced-tea/",
+      "https://mybar.app/app/cocktail/long_island"
+    ],
+    "notes": "Multi-spirit build (equal parts vodka, gin, white rum, tequila, triple sec), so spirit_base marked 'other'. Amounts follow the IBA build (15 ml each spirit) converted to oz; IBA uses ~1 oz simple syrup, reduced here to the more common US 0.5 oz since the cola adds sweetness."
+  },
+  {
+    "slug": "white-russian",
+    "name": "White Russian",
+    "description": "A smooth after-dinner sipper of vodka and coffee liqueur over ice, finished with a silky layer of cream.",
+    "spirit_base": "vodka",
+    "abv_band": "high",
+    "glass": "rocks",
+    "method": "build",
+    "tags": [
+      "classic",
+      "creamy"
+    ],
+    "ingredients": [
+      {
+        "name": "Vodka",
+        "type": "spirit",
+        "amount": "2",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Coffee liqueur",
+        "type": "liqueur",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Cream",
+        "type": "other",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      }
+    ],
+    "sources": [
+      "https://www.diffordsguide.com/cocktails/recipe/2093/white-russian-cocktail",
+      "https://en.wikipedia.org/wiki/White_Russian_(cocktail)"
+    ],
+    "notes": "Widely accepted build is 2 oz vodka, 1 oz coffee liqueur, 1 oz cream. Commonly built over ice with cream floated on top; some shake all three."
+  },
+  {
+    "slug": "mudslide",
+    "name": "Mudslide",
+    "description": "A dessert-like cocktail combining vodka, coffee liqueur and Irish cream into a rich, boozy milkshake of a drink.",
+    "spirit_base": "vodka",
+    "abv_band": "high",
+    "glass": "rocks",
+    "method": "shake",
+    "tags": [
+      "creamy",
+      "dessert"
+    ],
+    "ingredients": [
+      {
+        "name": "Vodka",
+        "type": "spirit",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Coffee liqueur",
+        "type": "liqueur",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Irish cream",
+        "type": "liqueur",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Cream",
+        "type": "other",
+        "amount": "1",
+        "unit": "oz",
+        "optional": true
+      },
+      {
+        "name": "Chocolate shavings",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "pinch",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://www.liquor.com/recipes/mudslide/",
+      "https://www.kahlua.com/en-us/drinks/mudslide-recipe/",
+      "https://www.thespruceeats.com/mudslide-cocktail-recipe-761120"
+    ],
+    "notes": "Canonical build is equal parts vodka, coffee liqueur and Irish cream (per Kahlua). Many versions add heavy cream for a richer, milkshake-style drink (optional here). Often blended with ice cream as a frozen variation."
+  },
+  {
+    "slug": "amaretto-sour",
+    "name": "Amaretto Sour",
+    "description": "A nutty almond-flavored sour balancing sweet amaretto against bright fresh lemon juice.",
+    "spirit_base": "other",
+    "abv_band": "medium",
+    "glass": "rocks",
+    "method": "shake",
+    "tags": [
+      "classic",
+      "sour"
+    ],
+    "ingredients": [
+      {
+        "name": "Amaretto",
+        "type": "liqueur",
+        "amount": "2",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh lemon juice",
+        "type": "juice",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Simple syrup",
+        "type": "syrup",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Egg white",
+        "type": "other",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": true
+      },
+      {
+        "name": "Maraschino cherry",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "cherry",
+        "optional": true
+      },
+      {
+        "name": "Lemon",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "twist",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://www.epicurious.com/recipes/food/views/jeffrey-morgenthalers-amaretto-sour",
+      "https://cooking.nytimes.com/recipes/1018883-amaretto-sour",
+      "https://www.loveandlemons.com/amaretto-sour/"
+    ],
+    "notes": "Simplest classic build is amaretto + fresh lemon + a touch of simple syrup, with egg white optional for froth. The widely praised modern version (Jeffrey Morgenthaler) adds ~0.75 oz overproof bourbon and egg white; base is amaretto (a liqueur) so spirit_base marked 'other'."
+  },
+  {
+    "slug": "lemon-drop",
+    "name": "Lemon Drop",
+    "description": "A tart, sweet-and-sour vodka martini served up in a sugar-rimmed glass.",
+    "spirit_base": "vodka",
+    "abv_band": "high",
+    "glass": "martini",
+    "method": "shake",
+    "tags": [
+      "citrusy",
+      "sour"
+    ],
+    "ingredients": [
+      {
+        "name": "Vodka",
+        "type": "spirit",
+        "amount": "2",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Triple sec",
+        "type": "liqueur",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh lemon juice",
+        "type": "juice",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Simple syrup",
+        "type": "syrup",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Sugar",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "rim",
+        "optional": true
+      },
+      {
+        "name": "Lemon",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "twist",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://www.foodandwine.com/lemon-drop-cocktail-recipe-8656238",
+      "https://www.liquor.com/recipes/lemon-drop/",
+      "https://www.bonappetit.com/recipe/lemon-drop-martini-recipe"
+    ],
+    "notes": "Follows a 2:1:1 sour template (vodka : sweet : sour). Triple sec and simple syrup share the sweet component; sources vary slightly between 0.5 and 0.75 oz triple sec."
+  },
+  {
+    "slug": "appletini",
+    "name": "Appletini",
+    "description": "A bright green late-1990s martini of vodka and sour apple schnapps with a squeeze of fresh lemon.",
+    "spirit_base": "vodka",
+    "abv_band": "high",
+    "glass": "martini",
+    "method": "shake",
+    "tags": [
+      "modern",
+      "sweet"
+    ],
+    "ingredients": [
+      {
+        "name": "Vodka",
+        "type": "spirit",
+        "amount": "1.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Sour apple schnapps",
+        "type": "liqueur",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh lemon juice",
+        "type": "juice",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Apple",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "slice",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://food52.com/recipes/87040-apple-martini",
+      "https://www.liquor.com/recipes/appletini/",
+      "https://www.foodandwine.com/appletini-cocktail-recipe-11730826"
+    ],
+    "notes": "The original Lola's (1996) build was roughly equal parts vodka and sour apple (DeKuyper Pucker) schnapps with a splash of sour mix. Given here as the popular vodka + sour apple schnapps + lemon build; modern craft versions swap in Calvados and fresh apple juice."
+  },
+  {
+    "slug": "kamikaze",
+    "name": "Kamikaze",
+    "description": "A crisp, tart shooter-turned-cocktail of equal parts vodka, triple sec and fresh lime juice.",
+    "spirit_base": "vodka",
+    "abv_band": "high",
+    "glass": "martini",
+    "method": "shake",
+    "tags": [
+      "classic",
+      "sour"
+    ],
+    "ingredients": [
+      {
+        "name": "Vodka",
+        "type": "spirit",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Triple sec",
+        "type": "liqueur",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh lime juice",
+        "type": "juice",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Lime",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "wedge",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Kamikaze_(cocktail)",
+      "https://www.newsbartenders.it/kamikaze-official-cocktails-iba-2011/",
+      "https://cocktailfyi.com/cocktail/kamikaze/"
+    ],
+    "notes": "IBA New Era cocktail: equal parts (1 oz / 3 cl each) vodka, triple sec and fresh lime juice, shaken and strained. Essentially a vodka margarita without the salt; also served as a shot."
+  },
+  {
+    "slug": "woo-woo",
+    "name": "Woo Woo",
+    "description": "A fruity 1980s highball of vodka and peach schnapps lengthened with tart cranberry juice.",
+    "spirit_base": "vodka",
+    "abv_band": "medium",
+    "glass": "highball",
+    "method": "build",
+    "tags": [
+      "fruity",
+      "easy"
+    ],
+    "ingredients": [
+      {
+        "name": "Vodka",
+        "type": "spirit",
+        "amount": "1.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Peach schnapps",
+        "type": "liqueur",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Cranberry juice",
+        "type": "juice",
+        "amount": "3",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh lime juice",
+        "type": "juice",
+        "amount": "0.25",
+        "unit": "oz",
+        "optional": true
+      },
+      {
+        "name": "Lime",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "wedge",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://www.diffordsguide.com/cocktails/recipe/2110/woo-woo",
+      "https://www.bbcgoodfood.com/recipes/woo-woo",
+      "https://www.sugarandsoul.co/woo-woo-cocktail/"
+    ],
+    "notes": "Effectively a Fuzzy Navel made with cranberry instead of orange juice. Vodka-to-schnapps ratio varies (1:1 up to 2:1); a small squeeze of lime is a common optional addition. Often built over ice, though some shake it."
+  },
+  {
+    "slug": "sex-on-the-beach",
+    "name": "Sex on the Beach",
+    "description": "A sweet, fruity beach-bar highball of vodka and peach schnapps with orange and cranberry juices.",
+    "spirit_base": "vodka",
+    "abv_band": "medium",
+    "glass": "highball",
+    "method": "build",
+    "tags": [
+      "fruity",
+      "classic",
+      "iba"
+    ],
+    "ingredients": [
+      {
+        "name": "Vodka",
+        "type": "spirit",
+        "amount": "1.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Peach schnapps",
+        "type": "liqueur",
+        "amount": "0.75",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Orange juice",
+        "type": "juice",
+        "amount": "1.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Cranberry juice",
+        "type": "juice",
+        "amount": "1.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Orange",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "slice",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://iba-world.com/iba-cocktail/sex-on-the-beach/",
+      "https://www.newsbartenders.it/sex-on-the-beach-official-cocktails-iba-2011/"
+    ],
+    "notes": "IBA official build (40 ml vodka, 20 ml peach schnapps, 40 ml orange juice, 40 ml cranberry juice) converted to oz, built in a highball over ice."
+  },
+  {
+    "slug": "sea-breeze",
+    "name": "Sea Breeze",
+    "description": "A refreshing vodka highball where tart cranberry meets bitter grapefruit juice over ice.",
+    "spirit_base": "vodka",
+    "abv_band": "medium",
+    "glass": "highball",
+    "method": "build",
+    "tags": [
+      "refreshing",
+      "classic"
+    ],
+    "ingredients": [
+      {
+        "name": "Vodka",
+        "type": "spirit",
+        "amount": "1.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Cranberry juice",
+        "type": "juice",
+        "amount": "3",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Grapefruit juice",
+        "type": "juice",
+        "amount": "1.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Lime",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "wedge",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://www.diffordsguide.com/cocktails/recipe/1763/seabreeze",
+      "https://cocktailfyi.com/cocktail/sea-breeze/",
+      "https://jiggerandjoy.com/drinks/sea-breeze"
+    ],
+    "notes": "IBA Contemporary Classic. Cranberry-to-grapefruit ratio varies; IBA lists a cranberry-heavy 4:1, while many bar builds use a more balanced ~2:1 as given here. Built over ice."
+  },
+  {
+    "slug": "bay-breeze",
+    "name": "Bay Breeze",
+    "description": "A tropical twist on the vodka-cranberry, adding sweet pineapple juice for a beachy finish.",
+    "spirit_base": "vodka",
+    "abv_band": "medium",
+    "glass": "highball",
+    "method": "build",
+    "tags": [
+      "fruity",
+      "tropical"
+    ],
+    "ingredients": [
+      {
+        "name": "Vodka",
+        "type": "spirit",
+        "amount": "1.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Cranberry juice",
+        "type": "juice",
+        "amount": "2",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Pineapple juice",
+        "type": "juice",
+        "amount": "2",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Lime",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "wedge",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://www.thespruceeats.com/bay-breeze-recipe-761000",
+      "https://www.allrecipes.com/recipe/221302/baybreeze-cocktail/",
+      "https://www.rachelcooks.com/bay-breeze-recipe/"
+    ],
+    "notes": "A Cape Codder variation swapping in pineapple. Equal parts cranberry and pineapple is most common; some prefer 2:1 cranberry to pineapple. Built over ice."
+  },
+  {
+    "slug": "cape-codder",
+    "name": "Cape Codder",
+    "description": "The original name for the vodka cranberry, a simple and refreshing two-ingredient highball with a squeeze of lime.",
+    "spirit_base": "vodka",
+    "abv_band": "medium",
+    "glass": "highball",
+    "method": "build",
+    "tags": [
+      "simple",
+      "classic"
+    ],
+    "ingredients": [
+      {
+        "name": "Vodka",
+        "type": "spirit",
+        "amount": "1.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Cranberry juice",
+        "type": "juice",
+        "amount": "4",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh lime juice",
+        "type": "juice",
+        "amount": "0.25",
+        "unit": "oz",
+        "optional": true
+      },
+      {
+        "name": "Lime",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "wedge",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://www.absolutdrinks.com/en/drinks/cape-cod/",
+      "https://www.foodnetwork.com/recipes/cape-codder-recipe-1956228",
+      "https://www.allrecipes.com/recipe/221308/cape-codder-cocktail/"
+    ],
+    "notes": "Simply vodka and cranberry juice over ice (aka Cape Cod / vodka cranberry). A small squeeze of lime is a common optional touch."
+  },
+  {
+    "slug": "screwdriver",
+    "name": "Screwdriver",
+    "description": "The quintessential two-ingredient brunch highball of vodka and orange juice over ice.",
+    "spirit_base": "vodka",
+    "abv_band": "medium",
+    "glass": "highball",
+    "method": "build",
+    "tags": [
+      "simple",
+      "classic",
+      "iba"
+    ],
+    "ingredients": [
+      {
+        "name": "Vodka",
+        "type": "spirit",
+        "amount": "2",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Orange juice",
+        "type": "juice",
+        "amount": "4",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Orange",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "slice",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://cocktailfyi.com/cocktail/screwdriver/",
+      "https://www.cocktails-road.com/recipes/screwdriver"
+    ],
+    "notes": "IBA Unforgettable. IBA specifies 5 cl vodka to 10 cl orange juice (a 1:2 ratio); given here as the common 2 oz vodka to 4 oz orange juice, built over ice."
+  },
+  {
+    "slug": "harvey-wallbanger",
+    "name": "Harvey Wallbanger",
+    "description": "A 1970s icon: a Screwdriver of vodka and orange juice crowned with a float of herbal-vanilla Galliano.",
+    "spirit_base": "vodka",
+    "abv_band": "medium",
+    "glass": "highball",
+    "method": "build",
+    "tags": [
+      "retro",
+      "classic",
+      "iba"
+    ],
+    "ingredients": [
+      {
+        "name": "Vodka",
+        "type": "spirit",
+        "amount": "1.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Orange juice",
+        "type": "juice",
+        "amount": "4",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Galliano",
+        "type": "liqueur",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Orange",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "slice",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://imbibemagazine.com/recipe/harvey-wallbanger/",
+      "https://cocktailfyi.com/cocktail/harvey-wallbanger/",
+      "https://www.empiremixology.com/empire-blog/harvey-wallbanger"
+    ],
+    "notes": "IBA Contemporary Classic. Build vodka and orange juice over ice, then float the Galliano on top. Galliano is a specific herbal liqueur essential to the drink with no generic substitute."
+  },
+  {
+    "slug": "salty-dog",
+    "name": "Salty Dog",
+    "description": "A Greyhound dressed up with a salt rim, pairing vodka and grapefruit juice for a bittersweet, savory refresher.",
+    "spirit_base": "vodka",
+    "abv_band": "medium",
+    "glass": "highball",
+    "method": "build",
+    "tags": [
+      "citrusy",
+      "classic"
+    ],
+    "ingredients": [
+      {
+        "name": "Vodka",
+        "type": "spirit",
+        "amount": "1.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Grapefruit juice",
+        "type": "juice",
+        "amount": "4",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Salt",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "rim",
+        "optional": false
+      },
+      {
+        "name": "Grapefruit",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "wedge",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://www.diffordsguide.com/cocktails/recipe/1735/salty-dog",
+      "https://www.epicurious.com/recipes/food/views/salty-dog-cocktail",
+      "https://www.brunchgodny.com/all-recipes/2pwfmzy2xnn3ndm-dx8b6-yllxp"
+    ],
+    "notes": "A Greyhound (vodka + grapefruit juice) served in a salt-rimmed glass; the salt rim is what distinguishes the two. Built over ice; some shake it."
+  },
+  {
+    "slug": "vodka-martini",
+    "name": "Vodka Martini",
+    "description": "A crisp, spirit-forward martini of chilled vodka stirred with a whisper of dry vermouth.",
+    "spirit_base": "vodka",
+    "abv_band": "high",
+    "glass": "martini",
+    "method": "stir",
+    "tags": [
+      "classic",
+      "strong"
+    ],
+    "ingredients": [
+      {
+        "name": "Vodka",
+        "type": "spirit",
+        "amount": "2.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Dry vermouth",
+        "type": "wine",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Lemon",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "twist",
+        "optional": true
+      },
+      {
+        "name": "Olive",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "olive",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://www.diffordsguide.com/cocktails/recipe/2054/vodkatini-vodka-martini",
+      "https://www.simplyrecipes.com/recipes/classic_vodka_martini/",
+      "https://www.thespruceeats.com/vodka-martini-recipe-760983"
+    ],
+    "notes": "Vodka-to-vermouth ratio is a matter of taste, commonly 5:1 to 6:1 (2.5 oz vodka : 0.5 oz vermouth here). Traditionally stirred; James Bond's 'shaken' is a stylistic exception. Garnish with a lemon twist or olive."
+  },
+  {
+    "slug": "bloody-mary",
+    "name": "Bloody Mary",
+    "description": "A savory, spiced brunch classic of vodka and tomato juice seasoned with lemon, Worcestershire and hot sauce.",
+    "spirit_base": "vodka",
+    "abv_band": "medium",
+    "glass": "highball",
+    "method": "build",
+    "tags": [
+      "savory",
+      "brunch",
+      "classic",
+      "iba"
+    ],
+    "ingredients": [
+      {
+        "name": "Vodka",
+        "type": "spirit",
+        "amount": "1.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Tomato juice",
+        "type": "juice",
+        "amount": "3",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh lemon juice",
+        "type": "juice",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Worcestershire sauce",
+        "type": "other",
+        "amount": "2",
+        "unit": "dash",
+        "optional": false
+      },
+      {
+        "name": "Hot sauce",
+        "type": "other",
+        "amount": "2",
+        "unit": "dash",
+        "optional": false
+      },
+      {
+        "name": "Celery salt",
+        "type": "other",
+        "amount": "1",
+        "unit": "pinch",
+        "optional": true
+      },
+      {
+        "name": "Black pepper",
+        "type": "other",
+        "amount": "1",
+        "unit": "pinch",
+        "optional": true
+      },
+      {
+        "name": "Celery",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "stalk",
+        "optional": true
+      },
+      {
+        "name": "Lemon",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "wedge",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://iba-world.com/iba-cocktail/bloody-mary/",
+      "https://en.wikipedia.org/wiki/Bloody_Mary_(cocktail)",
+      "https://www.diffordsguide.com/cocktails/recipe/251/bloody-mary"
+    ],
+    "notes": "IBA build (45 ml vodka, 90 ml tomato juice, 15 ml lemon, 2 dashes Worcestershire, Tabasco/celery salt/pepper to taste) converted to oz. Seasonings vary widely; celery salt and pepper marked optional. Stirred/built and served over ice."
+  },
+  {
+    "slug": "pornstar-martini",
+    "name": "Pornstar Martini",
+    "description": "A modern tropical crowd-pleaser of vanilla vodka and passion fruit, served with a sidecar of Prosecco.",
+    "spirit_base": "vodka",
+    "abv_band": "medium",
+    "glass": "martini",
+    "method": "shake",
+    "tags": [
+      "modern",
+      "fruity"
+    ],
+    "ingredients": [
+      {
+        "name": "Vanilla vodka",
+        "type": "spirit",
+        "amount": "2",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Passion fruit liqueur",
+        "type": "liqueur",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Passion fruit purée",
+        "type": "syrup",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Vanilla syrup",
+        "type": "syrup",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh lime juice",
+        "type": "juice",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Prosecco",
+        "type": "wine",
+        "amount": "1.5",
+        "unit": "oz",
+        "optional": true
+      },
+      {
+        "name": "Passion fruit",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "half",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://www.diffordsguide.com/cocktails/recipe/2883/porn-star-martini",
+      "https://www.bonappetit.com/recipe/pornstar-martini",
+      "https://www.marthastewart.com/pornstar-martini-recipe-11743917"
+    ],
+    "notes": "Created by Douglas Ankrah (London, 2002). Vanilla sugar in the original is commonly replaced by vanilla syrup. The shot of Prosecco/sparkling wine is served alongside (optional). Garnished with a floated passion fruit half."
+  },
+  {
+    "slug": "blue-lagoon",
+    "name": "Blue Lagoon",
+    "description": "A vivid electric-blue highball of vodka and blue curaçao lengthened with lemonade.",
+    "spirit_base": "vodka",
+    "abv_band": "medium",
+    "glass": "highball",
+    "method": "build",
+    "tags": [
+      "fruity",
+      "colorful"
+    ],
+    "ingredients": [
+      {
+        "name": "Vodka",
+        "type": "spirit",
+        "amount": "1.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Blue curaçao",
+        "type": "liqueur",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Lemonade",
+        "type": "mixer",
+        "amount": "4",
+        "unit": "top",
+        "optional": false
+      },
+      {
+        "name": "Lemon",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "slice",
+        "optional": true
+      },
+      {
+        "name": "Maraschino cherry",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "cherry",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://www.liquor.com/recipes/blue-lagoon/",
+      "https://en.wikipedia.org/wiki/Blue_Lagoon_(cocktail)",
+      "https://amandascookin.com/blue-lagoon-cocktail/"
+    ],
+    "notes": "Vodka and blue curaçao topped with lemonade (in the UK sense this is lemon-lime soda; US recipes use still lemonade). Often built over ice; some shake the vodka and curaçao before topping."
+  },
+  {
+    "slug": "midori-sour",
+    "name": "Midori Sour",
+    "description": "A retro, bright-green sour built on sweet melon liqueur balanced with fresh citrus and a soda lift.",
+    "spirit_base": "other",
+    "abv_band": "medium",
+    "glass": "highball",
+    "method": "build",
+    "tags": [
+      "retro",
+      "sour",
+      "sweet"
+    ],
+    "ingredients": [
+      {
+        "name": "Melon liqueur",
+        "type": "liqueur",
+        "amount": "2",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh lemon juice",
+        "type": "juice",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Vodka",
+        "type": "spirit",
+        "amount": "1",
+        "unit": "oz",
+        "optional": true
+      },
+      {
+        "name": "Soda water",
+        "type": "mixer",
+        "amount": "2",
+        "unit": "top",
+        "optional": false
+      },
+      {
+        "name": "Lemon",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "wheel",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://www.foodandwine.com/midori-sour-cocktail-recipe-8676465",
+      "https://www.liquor.com/recipes/midori-sour/",
+      "https://www.thespruceeats.com/midori-sour-cocktail-recipe-5206245"
+    ],
+    "notes": "Core is melon liqueur (Midori) plus fresh lemon (often lemon and lime), topped with soda; base is a liqueur so spirit_base marked 'other'. Vodka is a common optional addition to cut the sweetness. Simplest classic ratio is 2:1 Midori to citrus."
+  },
+  {
+    "slug": "garibaldi",
+    "name": "Garibaldi",
+    "description": "A sunny Italian aperitivo pairing bitter Campari with a generous pour of freshly squeezed orange juice over ice.",
+    "spirit_base": "aperitivo",
+    "abv_band": "low",
+    "glass": "highball",
+    "method": "build",
+    "tags": [
+      "classic",
+      "aperitivo",
+      "highball"
+    ],
+    "ingredients": [
+      {
+        "name": "Campari",
+        "type": "liqueur",
+        "amount": "1.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Orange juice",
+        "type": "juice",
+        "amount": "4",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Orange",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "wedge",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://iba-world.com/iba-cocktail/garibaldi/",
+      "https://en.wikipedia.org/wiki/Garibaldi_(cocktail)"
+    ],
+    "notes": "IBA build is 45 ml Campari to 120 ml orange juice; freshly squeezed 'fluffy' juice is traditional."
+  },
+  {
+    "slug": "negroni-sbagliato",
+    "name": "Negroni Sbagliato",
+    "description": "The bubbly 'mistaken' Negroni that swaps gin for sparkling wine, built in equal parts over ice.",
+    "spirit_base": "aperitivo",
+    "abv_band": "medium",
+    "glass": "rocks",
+    "method": "build",
+    "tags": [
+      "classic",
+      "aperitivo",
+      "sparkling"
+    ],
+    "ingredients": [
+      {
+        "name": "Campari",
+        "type": "liqueur",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Sweet vermouth",
+        "type": "wine",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Prosecco",
+        "type": "wine",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Orange",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "slice",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://www.campari.com/our-cocktails/negroni-sbagliato/",
+      "https://www.thekitchn.com/negroni-sbagliato-recipe-23245024"
+    ],
+    "notes": "Canonical build is equal parts (1:1:1) Campari, sweet vermouth and prosecco; some recipes top with more prosecco and add a soda splash."
+  },
+  {
+    "slug": "hugo-spritz",
+    "name": "Hugo Spritz",
+    "description": "A light, floral spritz of elderflower liqueur and prosecco lengthened with soda and a bouquet of fresh mint.",
+    "spirit_base": "other",
+    "abv_band": "low",
+    "glass": "wine",
+    "method": "build",
+    "tags": [
+      "modern",
+      "spritz",
+      "sparkling"
+    ],
+    "ingredients": [
+      {
+        "name": "Prosecco",
+        "type": "wine",
+        "amount": "3",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Elderflower liqueur",
+        "type": "liqueur",
+        "amount": "1.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Soda water",
+        "type": "mixer",
+        "amount": "1",
+        "unit": "top",
+        "optional": false
+      },
+      {
+        "name": "Mint",
+        "type": "garnish",
+        "amount": "8",
+        "unit": "leaves",
+        "optional": false
+      },
+      {
+        "name": "Lime",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "wheel",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://www.diffordsguide.com/cocktails/recipe/5039/hugo-spritz",
+      "https://www.foodandwine.com/hugo-spritz-recipe-8665764"
+    ],
+    "notes": "Ratios vary widely; the classic 3:2:1 spritz formula (prosecco:elderflower:soda) is common, while some builds use as little as 0.5 oz elderflower."
+  },
+  {
+    "slug": "kir",
+    "name": "Kir",
+    "description": "A simple Burgundian aperitif of dry white wine tinted and sweetened with a measure of blackcurrant liqueur.",
+    "spirit_base": "other",
+    "abv_band": "low",
+    "glass": "wine",
+    "method": "build",
+    "tags": [
+      "classic",
+      "wine",
+      "aperitivo"
+    ],
+    "ingredients": [
+      {
+        "name": "Crème de cassis",
+        "type": "liqueur",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "White wine",
+        "type": "wine",
+        "amount": "5",
+        "unit": "oz",
+        "optional": false
+      }
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Kir_(cocktail)",
+      "https://www.diffordsguide.com/cocktails/recipe/1107/kir-aperitif"
+    ],
+    "notes": "Traditionally made with Bourgogne Aligoté; ratio varies from the IBA's 9:1 wine-to-cassis up to the older 1/5, with about 1 part cassis to 5-10 parts wine typical today."
+  },
+  {
+    "slug": "kir-royale",
+    "name": "Kir Royale",
+    "description": "The celebratory upgrade to the Kir, layering crème de cassis under a top of chilled brut Champagne.",
+    "spirit_base": "other",
+    "abv_band": "low",
+    "glass": "flute",
+    "method": "build",
+    "tags": [
+      "classic",
+      "sparkling",
+      "aperitivo"
+    ],
+    "ingredients": [
+      {
+        "name": "Crème de cassis",
+        "type": "liqueur",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Champagne",
+        "type": "wine",
+        "amount": "4",
+        "unit": "top",
+        "optional": false
+      },
+      {
+        "name": "Lemon",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "twist",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://www.diffordsguide.com/cocktails/recipe/1109/kir-royale",
+      "https://www.foodandwine.com/kir-royale-cocktail-recipe-11873510"
+    ],
+    "notes": "Use dry (brut) Champagne or sparkling wine to balance the cassis; 0.5 oz cassis to 4-5 oz sparkling is the standard build."
+  },
+  {
+    "slug": "mimosa",
+    "name": "Mimosa",
+    "description": "The quintessential brunch sparkler combining chilled sparkling wine with fresh orange juice.",
+    "spirit_base": "other",
+    "abv_band": "low",
+    "glass": "flute",
+    "method": "build",
+    "tags": [
+      "classic",
+      "brunch",
+      "sparkling"
+    ],
+    "ingredients": [
+      {
+        "name": "Orange juice",
+        "type": "juice",
+        "amount": "3",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Champagne",
+        "type": "wine",
+        "amount": "3",
+        "unit": "top",
+        "optional": false
+      },
+      {
+        "name": "Orange",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "twist",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://www.foodandwine.com/mimosa-cocktail-recipe-11875428",
+      "https://vinepair.com/cocktail-recipe/mimosa/"
+    ],
+    "notes": "The canonical Ritz-style build is equal parts (1:1) sparkling wine and fresh orange juice; some prefer 2:1 sparkling to juice."
+  },
+  {
+    "slug": "death-in-the-afternoon",
+    "name": "Death in the Afternoon",
+    "description": "Hemingway's potent two-ingredient creation in which absinthe louches to an opalescent cloud under iced Champagne.",
+    "spirit_base": "other",
+    "abv_band": "high",
+    "glass": "coupe",
+    "method": "build",
+    "tags": [
+      "classic",
+      "sparkling"
+    ],
+    "ingredients": [
+      {
+        "name": "Absinthe",
+        "type": "spirit",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Champagne",
+        "type": "wine",
+        "amount": "4",
+        "unit": "top",
+        "optional": false
+      }
+    ],
+    "sources": [
+      "https://www.foodandwine.com/death-in-the-afternoon-recipe-8730011",
+      "https://en.wikipedia.org/wiki/Death_in_the_Afternoon_(cocktail)"
+    ],
+    "notes": "Hemingway's original specified a full jigger (1.5 oz) of absinthe topped with Champagne 'until it attains the proper opalescent milkiness'; modern sources dial the absinthe back to about 1 oz for balance."
+  },
+  {
+    "slug": "grasshopper",
+    "name": "Grasshopper",
+    "description": "A creamy mint-chocolate dessert cocktail of equal parts crème de menthe, crème de cacao and fresh cream.",
+    "spirit_base": "other",
+    "abv_band": "medium",
+    "glass": "coupe",
+    "method": "shake",
+    "tags": [
+      "classic",
+      "dessert",
+      "creamy"
+    ],
+    "ingredients": [
+      {
+        "name": "White crème de cacao",
+        "type": "liqueur",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Crème de menthe",
+        "type": "liqueur",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Cream",
+        "type": "other",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      }
+    ],
+    "sources": [
+      "https://iba-world.com/iba-cocktail/grasshopper/",
+      "https://www.diffordsguide.com/cocktails/recipe/2674/grasshopper"
+    ],
+    "notes": "Uses green crème de menthe; IBA specifies equal parts, though some modern builds increase the cream for balance."
+  },
+  {
+    "slug": "brandy-alexander",
+    "name": "Brandy Alexander",
+    "description": "A silky after-dinner classic of cognac, chocolate crème de cacao and cream, dusted with nutmeg.",
+    "spirit_base": "brandy",
+    "abv_band": "medium",
+    "glass": "coupe",
+    "method": "shake",
+    "tags": [
+      "classic",
+      "dessert",
+      "creamy"
+    ],
+    "ingredients": [
+      {
+        "name": "Cognac",
+        "type": "spirit",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Dark crème de cacao",
+        "type": "liqueur",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Cream",
+        "type": "other",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Nutmeg",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "pinch",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://iba-world.com/iba-cocktail/alexander/",
+      "https://en.wikipedia.org/wiki/Brandy_Alexander"
+    ],
+    "notes": "IBA lists equal parts (30 ml each) of cognac, brown crème de cacao and cream; some producers bump the cognac to a 2:1:1 ratio."
+  },
+  {
+    "slug": "golden-cadillac",
+    "name": "Golden Cadillac",
+    "description": "A golden-hued mid-century dessert cocktail blending herbal Galliano with white crème de cacao and cream.",
+    "spirit_base": "other",
+    "abv_band": "medium",
+    "glass": "coupe",
+    "method": "shake",
+    "tags": [
+      "classic",
+      "dessert",
+      "creamy"
+    ],
+    "ingredients": [
+      {
+        "name": "Galliano",
+        "type": "liqueur",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "White crème de cacao",
+        "type": "liqueur",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Cream",
+        "type": "other",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Chocolate",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "pinch",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://www.liquor.com/recipes/golden-cadillac/",
+      "https://www.foodandwine.com/golden-cadillac-cocktail-recipe-8776923"
+    ],
+    "notes": "Made in equal parts; white crème de cacao is used so it does not muddy the drink's golden color."
+  },
+  {
+    "slug": "pink-squirrel",
+    "name": "Pink Squirrel",
+    "description": "A nutty pink Wisconsin dessert cocktail built on almond-flavored crème de noyaux, crème de cacao and cream.",
+    "spirit_base": "other",
+    "abv_band": "medium",
+    "glass": "coupe",
+    "method": "shake",
+    "tags": [
+      "classic",
+      "dessert",
+      "creamy"
+    ],
+    "ingredients": [
+      {
+        "name": "Crème de noyaux",
+        "type": "liqueur",
+        "amount": "0.75",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "White crème de cacao",
+        "type": "liqueur",
+        "amount": "0.75",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Cream",
+        "type": "other",
+        "amount": "1.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Nutmeg",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "pinch",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://www.liquor.com/recipes/pink-squirrel/",
+      "https://www.epicurious.com/recipes/food/views/pink-squirrel"
+    ],
+    "notes": "Crème de noyaux gives the drink its almond-marzipan flavor and pink hue; some vintage versions use vanilla ice cream in place of cream."
+  },
+  {
+    "slug": "sidecar",
+    "name": "Sidecar",
+    "description": "A crisp brandy sour of cognac, orange liqueur and fresh lemon juice, often served with a sugared rim.",
+    "spirit_base": "brandy",
+    "abv_band": "high",
+    "glass": "coupe",
+    "method": "shake",
+    "tags": [
+      "classic",
+      "sour"
+    ],
+    "ingredients": [
+      {
+        "name": "Cognac",
+        "type": "spirit",
+        "amount": "2",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Cointreau",
+        "type": "liqueur",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh lemon juice",
+        "type": "juice",
+        "amount": "0.75",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Sugar",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "rim",
+        "optional": true
+      },
+      {
+        "name": "Orange",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "twist",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://iba-world.com/iba-cocktail/sidecar/",
+      "https://en.wikipedia.org/wiki/Sidecar_(cocktail)"
+    ],
+    "notes": "Ratios range from the French equal-parts (1:1:1) to the Savoy 'English school' 2:1:1 and the IBA's 5:2:2 (50/20/20 ml); a cognac-forward roughly 2:1:1 build is most common today."
+  },
+  {
+    "slug": "between-the-sheets",
+    "name": "Between the Sheets",
+    "description": "A potent Prohibition-era riff on the Sidecar that splits the base between white rum and cognac.",
+    "spirit_base": "brandy",
+    "abv_band": "high",
+    "glass": "coupe",
+    "method": "shake",
+    "tags": [
+      "classic",
+      "sour"
+    ],
+    "ingredients": [
+      {
+        "name": "White rum",
+        "type": "spirit",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Cognac",
+        "type": "spirit",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Cointreau",
+        "type": "liqueur",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh lemon juice",
+        "type": "juice",
+        "amount": "0.75",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Lemon",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "twist",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://iba-world.com/iba-cocktail/between-the-sheets/",
+      "https://punchdrink.com/recipes/between-the-sheets/"
+    ],
+    "notes": "IBA uses equal parts white rum, cognac and triple sec with a smaller measure of lemon juice; Cointreau is the usual triple sec of choice."
+  },
+  {
+    "slug": "champagne-cocktail",
+    "name": "Champagne Cocktail",
+    "description": "One of the oldest cocktails: a bitters-soaked sugar cube laced with cognac and topped with chilled Champagne.",
+    "spirit_base": "other",
+    "abv_band": "medium",
+    "glass": "flute",
+    "method": "build",
+    "tags": [
+      "classic",
+      "sparkling"
+    ],
+    "ingredients": [
+      {
+        "name": "Sugar cube",
+        "type": "other",
+        "amount": "1",
+        "unit": "cube",
+        "optional": false
+      },
+      {
+        "name": "Angostura bitters",
+        "type": "bitters",
+        "amount": "2",
+        "unit": "dash",
+        "optional": false
+      },
+      {
+        "name": "Cognac",
+        "type": "spirit",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Champagne",
+        "type": "wine",
+        "amount": "4",
+        "unit": "top",
+        "optional": false
+      },
+      {
+        "name": "Lemon",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "twist",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://iba-world.com/iba-cocktail/champagne-cocktail/",
+      "https://www.diffordsguide.com/cocktails/recipe/393/champagne-cocktail"
+    ],
+    "notes": "Cognac amount varies from the IBA's 10 ml (about 0.33 oz) up to a full ounce; garnish is often a lemon twist, sometimes an orange slice and cherry."
+  },
+  {
+    "slug": "french-connection",
+    "name": "French Connection",
+    "description": "A spirit-forward after-dinner duo of cognac and almond-rich amaretto stirred over ice.",
+    "spirit_base": "brandy",
+    "abv_band": "high",
+    "glass": "rocks",
+    "method": "build",
+    "tags": [
+      "classic",
+      "after-dinner"
+    ],
+    "ingredients": [
+      {
+        "name": "Cognac",
+        "type": "spirit",
+        "amount": "1.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Amaretto",
+        "type": "liqueur",
+        "amount": "1.5",
+        "unit": "oz",
+        "optional": false
+      }
+    ],
+    "sources": [
+      "https://iba-world.com/iba-cocktail/french-connection/",
+      "https://en.wikipedia.org/wiki/French_Connection_(cocktail)"
+    ],
+    "notes": "IBA specifies equal parts cognac and amaretto built over ice; many bartenders prefer a drier 2:1 cognac-to-amaretto ratio."
+  },
+  {
+    "slug": "stinger",
+    "name": "Stinger",
+    "description": "A brisk after-dinner classic of cognac cut with cooling white crème de menthe.",
+    "spirit_base": "brandy",
+    "abv_band": "high",
+    "glass": "coupe",
+    "method": "stir",
+    "tags": [
+      "classic",
+      "after-dinner"
+    ],
+    "ingredients": [
+      {
+        "name": "Cognac",
+        "type": "spirit",
+        "amount": "1.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Crème de menthe",
+        "type": "liqueur",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Mint",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "leaf",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://iba-world.com/iba-cocktail/stinger/",
+      "https://en.wikipedia.org/wiki/Stinger_(cocktail)"
+    ],
+    "notes": "Uses white crème de menthe; the classic ratio is 3:1 cognac to crème de menthe (IBA is 50/20 ml). Traditionally stirred, though many modern recipes shake it over cracked ice."
+  },
+  {
+    "slug": "pisco-sour",
+    "name": "Pisco Sour",
+    "description": "The frothy South American sour of pisco, citrus and egg white finished with aromatic bitters.",
+    "spirit_base": "brandy",
+    "abv_band": "high",
+    "glass": "coupe",
+    "method": "shake",
+    "tags": [
+      "classic",
+      "sour"
+    ],
+    "ingredients": [
+      {
+        "name": "Pisco",
+        "type": "spirit",
+        "amount": "2",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Fresh lime juice",
+        "type": "juice",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Simple syrup",
+        "type": "syrup",
+        "amount": "0.75",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Egg white",
+        "type": "other",
+        "amount": "1",
+        "unit": "each",
+        "optional": false
+      },
+      {
+        "name": "Angostura bitters",
+        "type": "bitters",
+        "amount": "2",
+        "unit": "dash",
+        "optional": false
+      }
+    ],
+    "sources": [
+      "https://iba-world.com/iba-cocktail/pisco-sour/",
+      "https://www.seriouseats.com/pisco-sour"
+    ],
+    "notes": "Dry-shake then shake with ice for the foam; bitters are dashed on top as an aromatic garnish. The IBA recipe specifies lemon juice, but the authentic Peruvian build (and Serious Eats/Kitchn) uses lime."
+  },
+  {
+    "slug": "sherry-cobbler",
+    "name": "Sherry Cobbler",
+    "description": "A refreshing 19th-century American classic of sherry, sugar and muddled orange served over crushed ice.",
+    "spirit_base": "other",
+    "abv_band": "low",
+    "glass": "collins",
+    "method": "muddle",
+    "tags": [
+      "classic",
+      "wine"
+    ],
+    "ingredients": [
+      {
+        "name": "Amontillado sherry",
+        "type": "wine",
+        "amount": "3",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Simple syrup",
+        "type": "syrup",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Orange",
+        "type": "other",
+        "amount": "2",
+        "unit": "slices",
+        "optional": false
+      },
+      {
+        "name": "Mint",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "sprig",
+        "optional": true
+      },
+      {
+        "name": "Berries",
+        "type": "garnish",
+        "amount": "3",
+        "unit": "berries",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://punchdrink.com/recipes/sherry-cobbler/",
+      "https://cooking.nytimes.com/recipes/1023604-classic-sherry-cobbler"
+    ],
+    "notes": "Muddle the orange with the syrup, shake with the sherry, and strain over crushed ice; amontillado is the traditional choice but oloroso or fino also work."
+  },
+  {
+    "slug": "chocolate-martini",
+    "name": "Chocolate Martini",
+    "description": "A rich dessert martini shaking vodka and chocolate crème de cacao with cream for a silky, cocoa-forward pour.",
+    "spirit_base": "vodka",
+    "abv_band": "high",
+    "glass": "martini",
+    "method": "shake",
+    "tags": [
+      "modern",
+      "dessert",
+      "creamy"
+    ],
+    "ingredients": [
+      {
+        "name": "Vodka",
+        "type": "spirit",
+        "amount": "2",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Dark crème de cacao",
+        "type": "liqueur",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Cream",
+        "type": "other",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Chocolate",
+        "type": "garnish",
+        "amount": "1",
+        "unit": "pinch",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://www.simplyrecipes.com/chocolate-martini-5176372",
+      "https://bartendlongisland.com/cocktails/chocolate-martini/"
+    ],
+    "notes": "No single canonical recipe exists; the simplest widely accepted build is vodka, crème de cacao and cream, though many versions add a creamy chocolate liqueur (e.g. Godiva) and/or Irish cream."
+  },
+  {
+    "slug": "espresso-martini",
+    "name": "Espresso Martini",
+    "description": "A modern classic shaking vodka, coffee liqueur and fresh espresso to a frothy, crema-topped finish.",
+    "spirit_base": "vodka",
+    "abv_band": "high",
+    "glass": "coupe",
+    "method": "shake",
+    "tags": [
+      "modern",
+      "coffee",
+      "after-dinner"
+    ],
+    "ingredients": [
+      {
+        "name": "Vodka",
+        "type": "spirit",
+        "amount": "2",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Coffee liqueur",
+        "type": "liqueur",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Espresso",
+        "type": "other",
+        "amount": "1",
+        "unit": "oz",
+        "optional": false
+      },
+      {
+        "name": "Simple syrup",
+        "type": "syrup",
+        "amount": "0.5",
+        "unit": "oz",
+        "optional": true
+      },
+      {
+        "name": "Coffee beans",
+        "type": "garnish",
+        "amount": "3",
+        "unit": "beans",
+        "optional": true
+      }
+    ],
+    "sources": [
+      "https://iba-world.com/iba-cocktail/espresso-martini/",
+      "https://en.wikipedia.org/wiki/Espresso_martini"
+    ],
+    "notes": "Created by Dick Bradsell in 1980s London; use freshly pulled espresso for the foam. Sugar syrup is often reduced or omitted depending on the sweetness of the coffee liqueur (IBA uses about 10 ml)."
+  }
+]

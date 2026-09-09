@@ -19,7 +19,7 @@ test('zero-proof: an equal-parts spirit drink resolves all three parts', () => {
   assert.ok(canGoZeroProof(negroni));
   const adapted = adaptCocktail(negroni, ['zero-proof']);
   const swapped = adapted.parts.filter((p) => p.status === 'swapped').map((p) => p.ingredientSlug);
-  assert.deepEqual(swapped.sort(), ['campari', 'london-dry-gin', 'sweet-vermouth']);
+  assert.deepEqual(swapped.sort(), ['campari', 'gin', 'sweet-vermouth']);
 });
 
 test('COMBINABLE: zero-proof + egg-free together leave nothing violating either', () => {

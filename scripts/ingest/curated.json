@@ -1,0 +1,202 @@
+[
+  {
+    "name": "Old Fashioned",
+    "description": "A whiskey classic built on nothing more than good bourbon, a whisper of sugar, and aromatic bitters, finished with a twist of orange over ice.",
+    "spirit_base": "whiskey", "abv_band": "high", "glass": "rocks", "method": "muddle",
+    "tags": ["classic", "spirit-forward", "whiskey", "iba"],
+    "ingredients": [
+      {"name": "Bourbon", "type": "spirit", "amount": "2", "unit": "oz", "optional": false},
+      {"name": "Simple syrup", "type": "syrup", "amount": "0.25", "unit": "oz", "optional": false},
+      {"name": "Angostura bitters", "type": "bitters", "amount": "2", "unit": "dash", "optional": false},
+      {"name": "Orange", "type": "garnish", "amount": "1", "unit": "twist", "optional": true}
+    ],
+    "sources": ["https://iba-world.com/iba-cocktail/old-fashioned/", "https://www.liquor.com/recipes/bourbon-old-fashioned/"]
+  },
+  {
+    "name": "Manhattan",
+    "description": "A spirit-forward stirred cocktail that marries rye whiskey with sweet vermouth and a dash of bitters, served up with a cherry.",
+    "spirit_base": "whiskey", "abv_band": "high", "glass": "coupe", "method": "stir",
+    "tags": ["classic", "spirit-forward", "whiskey", "iba"],
+    "ingredients": [
+      {"name": "Rye whiskey", "type": "spirit", "amount": "2", "unit": "oz", "optional": false},
+      {"name": "Sweet vermouth", "type": "wine", "amount": "1", "unit": "oz", "optional": false},
+      {"name": "Angostura bitters", "type": "bitters", "amount": "2", "unit": "dash", "optional": false},
+      {"name": "Maraschino cherry", "type": "garnish", "amount": "1", "unit": "cherry", "optional": true}
+    ],
+    "sources": ["https://iba-world.com/iba-cocktail/manhattan/", "https://www.liquor.com/recipes/manhattan-2/"]
+  },
+  {
+    "name": "Whiskey Sour",
+    "description": "A bright, balanced shaken drink of whiskey, fresh lemon, and a touch of syrup, with an optional egg white for a silky foam.",
+    "spirit_base": "whiskey", "abv_band": "medium", "glass": "rocks", "method": "shake",
+    "tags": ["classic", "sour", "whiskey", "iba"],
+    "ingredients": [
+      {"name": "Bourbon", "type": "spirit", "amount": "2", "unit": "oz", "optional": false},
+      {"name": "Fresh lemon juice", "type": "juice", "amount": "0.75", "unit": "oz", "optional": false},
+      {"name": "Simple syrup", "type": "syrup", "amount": "0.75", "unit": "oz", "optional": false},
+      {"name": "Egg white", "type": "other", "amount": "1", "unit": "each", "optional": true},
+      {"name": "Maraschino cherry", "type": "garnish", "amount": "1", "unit": "cherry", "optional": true}
+    ],
+    "sources": ["https://iba-world.com/iba-cocktail/whiskey-sour/", "https://www.seriouseats.com/cocktails-whiskey-sour"]
+  },
+  {
+    "name": "Margarita",
+    "description": "Mexico's most famous sour, shaking blanco tequila with orange liqueur and fresh lime juice for a tart, salt-rimmed refresher.",
+    "spirit_base": "tequila", "abv_band": "medium", "glass": "coupe", "method": "shake",
+    "tags": ["classic", "sour", "tequila", "iba"],
+    "ingredients": [
+      {"name": "Tequila (blanco)", "type": "spirit", "amount": "2", "unit": "oz", "optional": false},
+      {"name": "Orange liqueur", "type": "liqueur", "amount": "1", "unit": "oz", "optional": false},
+      {"name": "Fresh lime juice", "type": "juice", "amount": "1", "unit": "oz", "optional": false},
+      {"name": "Salt", "type": "garnish", "amount": "1", "unit": "rim", "optional": true},
+      {"name": "Lime", "type": "garnish", "amount": "1", "unit": "wedge", "optional": true}
+    ],
+    "sources": ["https://iba-world.com/iba-cocktail/margarita/", "https://www.diffordsguide.com/cocktails/recipe/7884/the-original-margarita"]
+  },
+  {
+    "name": "Daiquiri",
+    "description": "A crisp, three-ingredient Cuban sour of white rum, fresh lime, and sugar, shaken cold and served straight up.",
+    "spirit_base": "rum", "abv_band": "medium", "glass": "coupe", "method": "shake",
+    "tags": ["classic", "sour", "rum", "iba"],
+    "ingredients": [
+      {"name": "White rum", "type": "spirit", "amount": "2", "unit": "oz", "optional": false},
+      {"name": "Fresh lime juice", "type": "juice", "amount": "0.75", "unit": "oz", "optional": false},
+      {"name": "Simple syrup", "type": "syrup", "amount": "0.75", "unit": "oz", "optional": false},
+      {"name": "Lime", "type": "garnish", "amount": "1", "unit": "wheel", "optional": true}
+    ],
+    "sources": ["https://iba-world.com/iba-cocktail/daiquiri/", "https://www.liquor.com/recipes/daiquiri/"]
+  },
+  {
+    "name": "Mojito",
+    "description": "A refreshing Cuban highball of white rum, lime, and sugar lengthened with soda water and lifted by gently muddled fresh mint.",
+    "spirit_base": "rum", "abv_band": "medium", "glass": "collins", "method": "muddle",
+    "tags": ["classic", "refreshing", "iba", "summer"],
+    "ingredients": [
+      {"name": "White rum", "type": "spirit", "amount": "2", "unit": "oz", "optional": false},
+      {"name": "Fresh lime juice", "type": "juice", "amount": "0.75", "unit": "oz", "optional": false},
+      {"name": "Simple syrup", "type": "syrup", "amount": "0.5", "unit": "oz", "optional": false},
+      {"name": "Mint", "type": "other", "amount": "6", "unit": "leaves", "optional": false},
+      {"name": "Soda water", "type": "mixer", "amount": "1", "unit": "top", "optional": false}
+    ],
+    "sources": ["https://iba-world.com/iba-cocktail/mojito/", "https://www.liquor.com/recipes/mojito/"]
+  },
+  {
+    "name": "Negroni",
+    "description": "An equal-parts Italian aperitivo of gin, Campari, and sweet vermouth stirred over ice into a bittersweet, orange-scented sip.",
+    "spirit_base": "gin", "abv_band": "high", "glass": "rocks", "method": "stir",
+    "tags": ["classic", "bitter", "aperitivo", "iba", "stirred"],
+    "ingredients": [
+      {"name": "London dry gin", "type": "spirit", "amount": "1", "unit": "oz", "optional": false},
+      {"name": "Campari", "type": "liqueur", "amount": "1", "unit": "oz", "optional": false},
+      {"name": "Sweet vermouth", "type": "wine", "amount": "1", "unit": "oz", "optional": false},
+      {"name": "Orange", "type": "garnish", "amount": "1", "unit": "slice", "optional": true}
+    ],
+    "sources": ["https://iba-world.com/iba-cocktail/negroni/", "https://www.liquor.com/recipes/negroni/"]
+  },
+  {
+    "name": "Dry Martini",
+    "description": "A crisp, spirit-forward classic of gin stirred with a small measure of dry vermouth and strained ice-cold with a lemon twist or olive.",
+    "spirit_base": "gin", "abv_band": "high", "glass": "martini", "method": "stir",
+    "tags": ["classic", "spirit-forward", "iba", "stirred"],
+    "ingredients": [
+      {"name": "London dry gin", "type": "spirit", "amount": "2.5", "unit": "oz", "optional": false},
+      {"name": "Dry vermouth", "type": "wine", "amount": "0.5", "unit": "oz", "optional": false},
+      {"name": "Orange bitters", "type": "bitters", "amount": "1", "unit": "dash", "optional": true},
+      {"name": "Lemon", "type": "garnish", "amount": "1", "unit": "twist", "optional": true}
+    ],
+    "sources": ["https://iba-world.com/iba-cocktail/dry-martini/", "https://www.liquor.com/recipes/dry-martini/"]
+  },
+  {
+    "name": "Gimlet",
+    "description": "A bracing, botanical gin sour balancing the spirit against fresh lime juice and an equal measure of simple syrup.",
+    "spirit_base": "gin", "abv_band": "medium", "glass": "coupe", "method": "shake",
+    "tags": ["classic", "sour", "citrus", "refreshing"],
+    "ingredients": [
+      {"name": "London dry gin", "type": "spirit", "amount": "2", "unit": "oz", "optional": false},
+      {"name": "Fresh lime juice", "type": "juice", "amount": "0.75", "unit": "oz", "optional": false},
+      {"name": "Simple syrup", "type": "syrup", "amount": "0.75", "unit": "oz", "optional": false},
+      {"name": "Lime", "type": "garnish", "amount": "1", "unit": "wheel", "optional": true}
+    ],
+    "sources": ["https://www.liquor.com/recipes/gimlet/", "https://cooking.nytimes.com/recipes/1024628-gimlet"]
+  },
+  {
+    "name": "Gin and Tonic",
+    "description": "A crisp, effervescent highball of gin lengthened with chilled tonic water over ice and brightened by a squeeze of lime.",
+    "spirit_base": "gin", "abv_band": "medium", "glass": "highball", "method": "build",
+    "tags": ["classic", "refreshing", "highball"],
+    "ingredients": [
+      {"name": "London dry gin", "type": "spirit", "amount": "2", "unit": "oz", "optional": false},
+      {"name": "Tonic water", "type": "mixer", "amount": "4", "unit": "oz", "optional": false},
+      {"name": "Lime", "type": "garnish", "amount": "1", "unit": "wedge", "optional": true}
+    ],
+    "sources": ["https://www.diffordsguide.com/cocktails/recipe/835/gin-and-tonic", "https://vinepair.com/cocktail-recipe/gin-tonic/"]
+  },
+  {
+    "name": "Moscow Mule",
+    "description": "A bright, fizzy highball of vodka lengthened with spicy ginger beer and a squeeze of fresh lime, traditionally served ice-cold in a copper mug.",
+    "spirit_base": "vodka", "abv_band": "low", "glass": "copper-mug", "method": "build",
+    "tags": ["classic", "refreshing", "iba", "highball"],
+    "ingredients": [
+      {"name": "Vodka", "type": "spirit", "amount": "1.5", "unit": "oz", "optional": false},
+      {"name": "Fresh lime juice", "type": "juice", "amount": "0.5", "unit": "oz", "optional": false},
+      {"name": "Ginger beer", "type": "mixer", "amount": "4", "unit": "oz", "optional": false},
+      {"name": "Lime", "type": "garnish", "amount": "1", "unit": "slice", "optional": true}
+    ],
+    "sources": ["https://iba-world.com/iba-cocktail/moscow-mule/", "https://en.wikipedia.org/wiki/Moscow_mule"]
+  },
+  {
+    "name": "Cosmopolitan",
+    "description": "A tart, blush-pink martini-style cocktail of vodka, orange liqueur, cranberry and fresh lime, shaken cold and served straight up.",
+    "spirit_base": "vodka", "abv_band": "medium", "glass": "martini", "method": "shake",
+    "tags": ["classic", "iba", "sour"],
+    "ingredients": [
+      {"name": "Vodka", "type": "spirit", "amount": "1.5", "unit": "oz", "optional": false},
+      {"name": "Orange liqueur", "type": "liqueur", "amount": "0.5", "unit": "oz", "optional": false},
+      {"name": "Cranberry juice", "type": "juice", "amount": "1", "unit": "oz", "optional": false},
+      {"name": "Fresh lime juice", "type": "juice", "amount": "0.5", "unit": "oz", "optional": false},
+      {"name": "Lime", "type": "garnish", "amount": "1", "unit": "slice", "optional": true}
+    ],
+    "sources": ["https://iba-world.com/iba-cocktail/cosmopolitan/", "https://en.wikipedia.org/wiki/Cosmopolitan_(cocktail)"]
+  },
+  {
+    "name": "Espresso Martini",
+    "description": "A rich, cold coffee cocktail of vodka, coffee liqueur and fresh espresso shaken hard to raise a signature foamy crema on top.",
+    "spirit_base": "vodka", "abv_band": "high", "glass": "coupe", "method": "shake",
+    "tags": ["classic", "iba", "coffee", "after-dinner"],
+    "ingredients": [
+      {"name": "Vodka", "type": "spirit", "amount": "1.75", "unit": "oz", "optional": false},
+      {"name": "Coffee liqueur", "type": "liqueur", "amount": "1", "unit": "oz", "optional": false},
+      {"name": "Fresh espresso", "type": "other", "amount": "1", "unit": "oz", "optional": false},
+      {"name": "Simple syrup", "type": "syrup", "amount": "0.25", "unit": "oz", "optional": false},
+      {"name": "Coffee beans", "type": "garnish", "amount": "3", "unit": "beans", "optional": true}
+    ],
+    "sources": ["https://iba-world.com/iba-cocktail/espresso-martini/", "https://en.wikipedia.org/wiki/Espresso_martini"]
+  },
+  {
+    "name": "Aperol Spritz",
+    "description": "A light, bittersweet Italian aperitivo built over ice from prosecco, Aperol and a splash of soda, finished with an orange slice.",
+    "spirit_base": "aperitivo", "abv_band": "low", "glass": "wine", "method": "build",
+    "tags": ["classic", "iba", "aperitivo", "refreshing", "sparkling"],
+    "ingredients": [
+      {"name": "Prosecco", "type": "wine", "amount": "3", "unit": "oz", "optional": false},
+      {"name": "Aperol", "type": "liqueur", "amount": "2", "unit": "oz", "optional": false},
+      {"name": "Soda water", "type": "mixer", "amount": "1", "unit": "top", "optional": false},
+      {"name": "Orange", "type": "garnish", "amount": "1", "unit": "slice", "optional": true}
+    ],
+    "sources": ["https://iba-world.com/iba-cocktail/spritz/", "https://www.aperol.com/en-us/aperol-spritz-cocktail/"]
+  },
+  {
+    "name": "Virgin Mojito",
+    "description": "A zero-proof cooler of muddled fresh mint and lime sweetened with simple syrup and lengthened with soda water over crushed ice.",
+    "spirit_base": "none", "abv_band": "zero", "glass": "highball", "method": "muddle",
+    "tags": ["mocktail", "zero-proof", "refreshing", "non-alcoholic"],
+    "ingredients": [
+      {"name": "Mint", "type": "other", "amount": "10", "unit": "leaves", "optional": false},
+      {"name": "Fresh lime juice", "type": "juice", "amount": "1", "unit": "oz", "optional": false},
+      {"name": "Simple syrup", "type": "syrup", "amount": "0.75", "unit": "oz", "optional": false},
+      {"name": "Soda water", "type": "mixer", "amount": "1", "unit": "top", "optional": false},
+      {"name": "Lime", "type": "garnish", "amount": "1", "unit": "wedge", "optional": true}
+    ],
+    "sources": ["https://www.drinklab.org/virgin-mojito-classic/", "https://www.thirstybear.com/virgin-mojito-recipe/"]
+  }
+]

@@ -5,19 +5,20 @@
  */
 
 export const AUDIT = {
-  "generatedAt": "2026-09-09T04:54:43.159Z",
-  "totalCocktails": 15,
-  "totalIngredients": 31,
+  "totalCocktails": 198,
+  "totalIngredients": 161,
   "coverageByBase": {
-    "whiskey": 3,
-    "gin": 4,
-    "vodka": 3,
-    "rum": 2,
-    "tequila": 1,
-    "aperitivo": 1,
+    "other": 24,
+    "rum": 29,
+    "brandy": 14,
+    "gin": 39,
+    "aperitivo": 3,
+    "vodka": 32,
+    "tequila": 23,
+    "whiskey": 33,
     "none": 1
   },
-  "zeroProofReachable": 15,
+  "zeroProofReachable": 118,
   "errorCount": 0,
   "warningCount": 0,
   "issues": []

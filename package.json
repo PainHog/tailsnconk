@@ -12,6 +12,7 @@
     "node": ">=22"
   },
   "scripts": {
+    "ingest": "node scripts/ingest/ingest.mjs",
     "gen:meta": "npm run gen:meta -w @tailsnconk/core",
     "test:core": "npm run test -w @tailsnconk/core",
     "typecheck": "npm run typecheck -w @tailsnconk/core && npm run typecheck -w tailsnconk-mobile",
@@ -23,6 +24,7 @@
     "coverage": "node scripts/coverage.mjs"
   },
   "devDependencies": {
+    "js-yaml": "^5.4.1",
     "tsx": "^4.19.2",
     "typescript": "~5.6.0"
   }

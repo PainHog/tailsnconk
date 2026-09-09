@@ -10,6 +10,18 @@ import type { AbvBand, Cocktail, Method, SpiritBase } from './types';
 
 export const MIN_COCKTAILS = 4;
 
+/**
+ * Tag tokens that the structured facets (spirit / abv / method) already cover —
+ * excluded from tag hubs so two hubs never share a title, and provenance markers
+ * ("iba") don't become browse categories.
+ */
+const RESERVED_TAGS = new Set<string>([
+  'whiskey', 'gin', 'vodka', 'rum', 'tequila', 'brandy', 'aperitivo', 'other', 'none',
+  'stir', 'shake', 'build', 'muddle', 'blend', 'stirred', 'shaken', 'built', 'muddled', 'blended',
+  'high', 'medium', 'low', 'zero', 'low-abv', 'zero-proof', 'spirit-forward', 'mocktail', 'non-alcoholic',
+  'iba',
+]);
+
 export type CollectionKind = 'spirit' | 'tag' | 'abv' | 'method';
 
 export interface Collection {
@@ -79,7 +91,7 @@ export function buildCollections(cocktails: readonly Cocktail[]): Collection[] {
     ...group<SpiritBase>(cocktails, 'spirit', (c) => c.spiritBase, (k) => SPIRIT_TITLES[k], 'spirit-'),
     ...group<AbvBand>(cocktails, 'abv', (c) => c.abvBand, (k) => ABV_TITLES[k], 'abv-'),
     ...group<Method>(cocktails, 'method', (c) => c.method, (k) => METHOD_TITLES[k], 'method-'),
-    ...group<string>(cocktails, 'tag', (c) => c.tags, (k) => `${titleCase(k)} Cocktails`, 'tag-'),
+    ...group<string>(cocktails, 'tag', (c) => c.tags.filter((t) => !RESERVED_TAGS.has(t)), (k) => `${humanize(k)} Cocktails`, 'tag-'),
   ];
 }
 
@@ -99,4 +111,13 @@ export function getCollection(cocktails: readonly Cocktail[], slug: string): Col
 
 function titleCase(s: string): string {
   return s.charAt(0).toUpperCase() + s.slice(1);
+}
+
+/** "modern-classic" → "Modern Classic" for hub titles. */
+function humanize(s: string): string {
+  return s
+    .split('-')
+    .filter(Boolean)
+    .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+    .join(' ');
 }

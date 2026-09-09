@@ -4,13 +4,12 @@ import { Slot } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { AppHeader } from '@/components/AppHeader';
-import { useTheme } from '@/constants/theme';
 
 export default function RootLayout() {
-  const t = useTheme();
   return (
     <SafeAreaProvider>
-      <View style={{ flex: 1, backgroundColor: t.bg }}>
+      {/* Transparent so the all-over-print backdrop (app/+html.tsx) shows through. */}
+      <View style={{ flex: 1, backgroundColor: 'transparent' }}>
         <AppHeader />
         <Slot />
       </View>
