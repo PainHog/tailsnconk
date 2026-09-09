@@ -52,8 +52,8 @@ function dataUri(stroke: string, opacity: number): string {
   return `url("data:image/svg+xml,${encodeURIComponent(tile(stroke, opacity))}")`;
 }
 
-// Faint chartreuse line-art on the deep plum-ink ground (committed dark theme).
-const PRINT = dataUri('#CDEB5B', 0.05);
+// Faint champagne-gold line-art on the deep plum-ink ground (committed dark theme).
+const PRINT = dataUri('#E8C15A', 0.05);
 
 /** CSS injected into <head>: a fixed, full-viewport print layer behind #root. */
 export const BACKDROP_CSS = `

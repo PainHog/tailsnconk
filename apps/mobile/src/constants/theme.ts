@@ -9,9 +9,10 @@
  */
 
 export const palette = {
-  chartreuse: '#CDEB5B',
-  chartreuseDim: '#A9C63F',
+  gold: '#E8C15A',
+  goldDim: '#C9A23F',
   coral: '#FF7A6B',
+  teal: '#7FC9B8',
   plum: '#151019',
 };
 
@@ -22,11 +23,13 @@ const theme = {
   border: '#392F49',
   text: '#F5EFEA', // warm off-white
   textMuted: '#ABA0B6',
-  accent: '#CDEB5B', // chartreuse
-  accentText: '#17121C', // ink on chartreuse
-  // Secondary highlight (used sparingly, e.g. the "one ingredient away" nudge).
-  amber: '#FF7A6B', // coral (kept the token name so existing refs restyle cleanly)
-  lime: '#CDEB5B',
+  accent: '#E8C15A', // champagne gold — logo, links, buttons, active chips
+  accentText: '#17121C', // ink on gold
+  // Secondary highlights (used sparingly). `amber` = coral for stars / "one away"
+  // nudge; `lime` = muted teal for the zero-proof swap indicator (token names
+  // kept so existing references restyle cleanly).
+  amber: '#FF7A6B',
+  lime: '#7FC9B8',
   cranberry: '#FF6B6B',
 };
 
