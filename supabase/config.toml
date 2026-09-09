@@ -1,0 +1,35 @@
+# ============================================================================
+# tailsnconk — Supabase config
+# ----------------------------------------------------------------------------
+# Per-function JWT verification. The email-link and cron functions are opened
+# from an inbox or an external scheduler (no Supabase session), so they set
+# verify_jwt = false and guard themselves in code (token / CRON_SECRET / admin
+# RPC). The user-facing functions require a valid JWT.
+#
+# Secrets are provided at deploy time via `supabase secrets set` and read from
+# the environment inside each function (see supabase/functions/_shared). They
+# are never committed here.
+# ============================================================================
+
+project_id = "tailsnconk"
+
+# --- Newsletter double opt-in (opened from an email inbox / public signup) ---
+[functions.newsletter-subscribe]
+verify_jwt = false
+
+[functions.newsletter-confirm]
+verify_jwt = false
+
+[functions.newsletter-unsubscribe]
+verify_jwt = false
+
+# --- Scheduled broadcast (guarded by the CRON_SECRET header instead of a JWT) -
+[functions.send-featured]
+verify_jwt = false
+
+# --- Authenticated app functions -------------------------------------------
+[functions.wall-photos]
+verify_jwt = true
+
+[functions.trigger-deploy]
+verify_jwt = true

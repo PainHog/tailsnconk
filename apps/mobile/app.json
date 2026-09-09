@@ -1,0 +1,26 @@
+{
+  "expo": {
+    "name": "Tails 'n Conk",
+    "slug": "tailsnconk",
+    "version": "0.1.0",
+    "scheme": "tailsnconk",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "name": "Tails 'n Conk",
+      "shortName": "Tails 'n Conk",
+      "themeColor": "#12100E",
+      "backgroundColor": "#12100E"
+    },
+    "plugins": ["expo-router"],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "_comment": "Custom icon/splash/favicon PNGs are a launch task — add them under assets/ and reference here (icon, splash, web.favicon) before shipping."
+    }
+  }
+}

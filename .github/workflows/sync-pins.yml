@@ -1,0 +1,71 @@
+# Sync pins — MANUAL only (workflow_dispatch).
+# Composes any new Pinterest pins and uploads them to Cloudflare R2, then
+# publishes the bulk-upload feed CSV(s) as a build artifact.
+#
+# Free-tier friendly: make-pins/upload-pins enforce hard per-run caps, and both
+# steps are safe no-ops if their optional deps (sharp / @aws-sdk/client-s3) or
+# credentials are absent. Configure the secrets below in the repo settings.
+name: Sync pins
+
+on:
+  workflow_dispatch:
+    inputs:
+      pin_per_day:
+        description: 'Max NEW pins to compose this run (overrides PIN_PER_DAY)'
+        required: false
+        default: '5'
+
+concurrency:
+  group: sync-pins
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    env:
+      # --- Pin tuning ---
+      PIN_PER_DAY: ${{ github.event.inputs.pin_per_day }}
+      PIN_START_DATE: ${{ vars.PIN_START_DATE }}
+      PIN_FILE_PREFIX: ${{ vars.PIN_FILE_PREFIX }}
+      PIN_SKIP: ${{ vars.PIN_SKIP }}
+      PIN_PUBLIC_BASE: ${{ secrets.PIN_PUBLIC_BASE }}
+      EXPO_PUBLIC_SITE_URL: ${{ vars.EXPO_PUBLIC_SITE_URL }}
+      # --- Cloudflare R2 (S3 API) ---
+      R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+      R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+      R2_ENDPOINT: ${{ secrets.R2_ENDPOINT }}
+      R2_BUCKET: ${{ secrets.R2_BUCKET }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install (clean, from lockfile)
+        run: npm ci
+
+      # Optional rendering/upload deps. They are NOT in package.json by default
+      # (keeps the main install lean); install them just for this job. If the
+      # install fails the scripts still no-op safely.
+      - name: Install pin tooling (sharp + S3 SDK)
+        run: npm i --no-save sharp @aws-sdk/client-s3
+
+      - name: Compose pins + rebuild feed
+        run: node scripts/make-pins.mjs
+
+      - name: Upload pins to R2
+        run: node scripts/upload-pins.mjs
+
+      - name: Publish feed CSV artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: pins-feed
+          path: apps/mobile/public/pins-feed*.csv
+          if-no-files-found: warn

@@ -1,0 +1,59 @@
+# CI — runs on every push and pull request.
+# Verifies the dataset/meta are in sync, the code typechecks and tests, and
+# that SEO + secret invariants hold. No deploy here (Cloudflare Pages builds
+# from its own git integration / deploy hook).
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+# Cancel superseded runs on the same ref to save minutes.
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install (clean, from lockfile)
+        run: npm ci
+
+      # Regenerate the derived dataset metadata and fail if it drifts from what
+      # is committed — i.e. someone changed the catalog/ingredients but did not
+      # re-run `npm run gen:meta`.
+      - name: Generate meta and check it is committed
+        run: |
+          npm run gen:meta
+          if ! git diff --exit-code; then
+            echo "::error::Generated dataset meta is out of date. Run 'npm run gen:meta' and commit the result."
+            exit 1
+          fi
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: Test (core)
+        run: npm run test:core
+
+      # Data-level SEO audit (no dist/ in CI — this uses @tailsnconk/core).
+      - name: SEO audit
+        run: npm run seo:audit
+
+      # Fail if any server-only secret leaks into client source/output.
+      - name: Secret scan
+        run: npm run check:secrets

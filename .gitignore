@@ -1,0 +1,49 @@
+# === Secrets (NEVER COMMIT) ===
+.env
+.env.*
+!.env.example
+*.local
+supabase/.env
+supabase/.env.*
+
+# === Dependencies ===
+node_modules/
+.pnp
+.pnp.js
+
+# === Build output / caches ===
+dist/
+build/
+web-build/
+apps/*/dist/
+.expo/
+.expo-shared/
+apps/mobile/dist/
+apps/mobile/.expo/
+*.tsbuildinfo
+
+# === Generated media / large assets (kept out of git) ===
+apps/mobile/public/pins/
+scripts/.pins-cache/
+*.pin.png
+
+# === OS / editor ===
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# === Logs ===
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# === Supabase local ===
+supabase/.branches/
+supabase/.temp/
+
+# === Test / coverage ===
+coverage/

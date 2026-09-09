@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "baseUrl": ".",
+    "paths": {
+      "@tailsnconk/core": ["packages/core/src/index.ts"],
+      "@tailsnconk/core/full": ["packages/core/src/full.ts"]
+    }
+  },
+  "include": ["packages/*/src", "apps/*/src"]
+}

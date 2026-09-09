@@ -1,0 +1,21 @@
+# ============================================================================
+# Cloudflare Pages — _redirects
+# Format:  <from>  <to>  <status>
+#   - first match wins; put specific rules before broad ones
+#   - 301 = permanent, 302 = temporary, 200 = rewrite (proxy, no URL change)
+# These are PLACEHOLDERS — edit to match real launch decisions.
+# ============================================================================
+
+# --- Canonicalize legacy / alternate paths to their real routes ------------
+# Trailing-slash and common aliases -> canonical singular routes.
+/cocktails/*   /catalog            301
+/drink/:slug   /cocktail/:slug     301
+/hub/:slug     /collection/:slug   301
+
+# --- Vanity / marketing shortlinks -----------------------------------------
+/discord       https://example.com/REPLACE-ME   302
+/newsletter    /account                          302
+
+# NOTE: do NOT add a catch-all /* -> /index.html rewrite here. This is a
+# static multi-page export (one HTML file per route); a catch-all would mask
+# real 404s. Unknown paths are served by dist/404.html (see finalize-export.mjs).

@@ -1,0 +1,52 @@
+# ============================================================================
+# Cloudflare Pages — _headers
+# Files in apps/mobile/public/ are copied verbatim into the static export, so
+# this ships as-is to Cloudflare Pages.
+#
+# BEFORE LAUNCH — edit the two placeholders in the Content-Security-Policy:
+#   1. SUPABASE:  replace  https://YOUR-PROJECT.supabase.co  (and the wss: twin)
+#      with your project's origin, in connect-src. Find it in EXPO_PUBLIC_SUPABASE_URL.
+#   2. ADS (optional): if you enable an ad provider (EXPO_PUBLIC_AD_PROVIDER),
+#      add its hosts to the marked directives. For Google AdSense that is:
+#        script-src : https://pagead2.googlesyndication.com
+#        frame-src  : https://googleads.g.doubleclick.net https://*.google.com
+#        img-src    : already allows https: (covers ad creatives)
+#        connect-src: https://pagead2.googlesyndication.com
+# ============================================================================
+
+# ---- All routes: security + a locked-down CSP -----------------------------
+/*
+  # --- Content Security Policy ---
+  # 'unsafe-inline' on script/style is required by the Expo web runtime (it
+  # injects an inline bootstrap + inline styles). Everything else is allow-listed.
+  Content-Security-Policy: default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'self'; form-action 'self'; img-src 'self' data: blob: https:; font-src 'self' https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self' 'unsafe-inline'; connect-src 'self' https://YOUR-PROJECT.supabase.co wss://YOUR-PROJECT.supabase.co; frame-src 'self'; manifest-src 'self'; worker-src 'self' blob:; upgrade-insecure-requests
+  # --- Security headers ---
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: SAMEORIGIN
+  Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=(), usb=(), interest-cohort=()
+  Cross-Origin-Opener-Policy: same-origin
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+
+# ---- Immutable, content-hashed build assets: cache hard --------------------
+/_expo/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/pins/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# ---- Static images / fonts shipped from public/: cache a while -------------
+/images/*
+  Cache-Control: public, max-age=86400
+
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# ---- Crawl/config files: short cache so updates propagate fast -------------
+/sitemap.xml
+  Cache-Control: public, max-age=3600
+/robots.txt
+  Cache-Control: public, max-age=3600

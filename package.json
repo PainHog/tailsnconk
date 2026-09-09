@@ -1,0 +1,29 @@
+{
+  "name": "tailsnconk",
+  "private": true,
+  "version": "0.1.0",
+  "description": "What's in your bar — check off your bottles, see every cocktail you can make right now.",
+  "license": "UNLICENSED",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "gen:meta": "npm run gen:meta -w @tailsnconk/core",
+    "test:core": "npm run test -w @tailsnconk/core",
+    "typecheck": "npm run typecheck -w @tailsnconk/core && npm run typecheck -w tailsnconk-mobile",
+    "dev": "npm run web -w tailsnconk-mobile",
+    "web": "npm run web -w tailsnconk-mobile",
+    "build": "npm run export:web -w tailsnconk-mobile",
+    "seo:audit": "node scripts/seo-audit.mjs",
+    "check:secrets": "node scripts/check-secrets.mjs",
+    "coverage": "node scripts/coverage.mjs"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.2",
+    "typescript": "~5.6.0"
+  }
+}
