@@ -52,27 +52,19 @@ function dataUri(stroke: string, opacity: number): string {
   return `url("data:image/svg+xml,${encodeURIComponent(tile(stroke, opacity))}")`;
 }
 
-const LIGHT = dataUri('#8a5a1f', 0.1);
-const DARK = dataUri('#e8a93c', 0.09);
+// Faint chartreuse line-art on the deep plum-ink ground (committed dark theme).
+const PRINT = dataUri('#CDEB5B', 0.05);
 
-/**
- * CSS injected into <head>: a fixed, full-viewport print layer behind #root.
- *
- * Keyed on the `data-theme` attribute that <ThemeSync> writes from the app's
- * own useColorScheme — so the backdrop and the RN component theme are driven by
- * ONE signal and can never disagree. Default (no attribute yet, i.e. the SSR
- * render) is light, matching the app's default render.
- */
+/** CSS injected into <head>: a fixed, full-viewport print layer behind #root. */
 export const BACKDROP_CSS = `
 #tnc-backdrop {
   position: fixed;
   inset: 0;
   z-index: -1;
   pointer-events: none;
-  background-color: #FBF7F0;
-  background-image: ${LIGHT};
+  background-color: #151019;
+  background-image: ${PRINT};
   background-repeat: repeat;
   background-size: 200px 200px;
 }
-:root[data-theme="dark"] #tnc-backdrop { background-color: #12100E; background-image: ${DARK}; }
 `;

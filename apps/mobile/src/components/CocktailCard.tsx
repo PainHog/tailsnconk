@@ -21,8 +21,8 @@ export function CocktailCard({ cocktail, missing }: { cocktail: Cocktail; missin
           opacity: pressed ? 0.9 : 1,
         })}
       >
-        <Text style={{ color: t.text, fontSize: font.size.lg, fontWeight: '800' }}>{cocktail.name}</Text>
-        <Text style={{ color: t.textMuted, fontSize: font.size.sm, marginTop: 2 }}>
+        <Text style={{ color: t.text, fontFamily: font.family.display, fontSize: font.size.lg, fontWeight: '600', letterSpacing: -0.2 }}>{cocktail.name}</Text>
+        <Text style={{ color: t.textMuted, fontFamily: font.family.body, fontSize: font.size.sm, marginTop: 3 }}>
           {SPIRIT_LABELS[cocktail.spiritBase]} · {ABV_LABELS[cocktail.abvBand]} · {required} ingredients
         </Text>
         <Text numberOfLines={2} style={{ color: t.text, fontSize: font.size.sm, marginTop: spacing.sm, lineHeight: 20 }}>

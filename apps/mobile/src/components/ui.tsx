@@ -1,12 +1,13 @@
 /**
- * Small presentational primitives shared across screens. Theme-aware.
+ * Small presentational primitives shared across screens. Uses the committed
+ * theme + the Fraunces (display) / Inter (body) type pairing.
  */
 import React from 'react';
 import { Pressable, StyleSheet, Text, View, type ViewStyle, type TextStyle } from 'react-native';
 import { radius, spacing, font, useTheme } from '@/constants/theme';
 
 export function Container({ children, style }: { children: React.ReactNode; style?: ViewStyle }) {
-  return <View style={[{ width: '100%', maxWidth: 960, marginHorizontal: 'auto', padding: spacing.lg }, style]}>{children}</View>;
+  return <View style={[{ width: '100%', maxWidth: 980, marginHorizontal: 'auto', padding: spacing.lg }, style]}>{children}</View>;
 }
 
 export function Card({ children, style }: { children: React.ReactNode; style?: ViewStyle }) {
@@ -25,17 +26,21 @@ export function Card({ children, style }: { children: React.ReactNode; style?: V
 
 export function SectionTitle({ children, style }: { children: React.ReactNode; style?: TextStyle }) {
   const t = useTheme();
-  return <Text style={[{ color: t.text, fontSize: font.size.lg, fontWeight: '800', marginBottom: spacing.sm }, style]}>{children}</Text>;
+  return (
+    <Text style={[{ color: t.text, fontFamily: font.family.display, fontSize: font.size.lg, fontWeight: '600', letterSpacing: -0.3, marginBottom: spacing.sm }, style]}>
+      {children}
+    </Text>
+  );
 }
 
 export function Muted({ children, style }: { children: React.ReactNode; style?: TextStyle }) {
   const t = useTheme();
-  return <Text style={[{ color: t.textMuted, fontSize: font.size.sm }, style]}>{children}</Text>;
+  return <Text style={[{ color: t.textMuted, fontFamily: font.family.body, fontSize: font.size.sm }, style]}>{children}</Text>;
 }
 
 export function Body({ children, style }: { children: React.ReactNode; style?: TextStyle }) {
   const t = useTheme();
-  return <Text style={[{ color: t.text, fontSize: font.size.md, lineHeight: 22 }, style]}>{children}</Text>;
+  return <Text style={[{ color: t.text, fontFamily: font.family.body, fontSize: font.size.md, lineHeight: 23 }, style]}>{children}</Text>;
 }
 
 export function Button({
@@ -60,8 +65,8 @@ export function Button({
       style={({ pressed }) => [
         {
           backgroundColor: isPrimary ? t.accent : 'transparent',
-          borderColor: t.accent,
-          borderWidth: isPrimary ? 0 : StyleSheet.hairlineWidth,
+          borderColor: isPrimary ? t.accent : t.border,
+          borderWidth: 1,
           opacity: disabled ? 0.5 : pressed ? 0.85 : 1,
           paddingVertical: spacing.md,
           paddingHorizontal: spacing.xl,
@@ -71,7 +76,7 @@ export function Button({
         style,
       ]}
     >
-      <Text style={{ color: isPrimary ? t.accentText : t.accent, fontWeight: '800', fontSize: font.size.md }}>{label}</Text>
+      <Text style={{ color: isPrimary ? t.accentText : t.text, fontFamily: font.family.body, fontWeight: '700', fontSize: font.size.md }}>{label}</Text>
     </Pressable>
   );
 }
@@ -93,7 +98,7 @@ export function Chip({
         backgroundColor: active ? t.accent : t.surfaceAlt,
         borderColor: active ? t.accent : t.border,
         borderWidth: StyleSheet.hairlineWidth,
-        paddingVertical: spacing.xs + 2,
+        paddingVertical: spacing.xs + 3,
         paddingHorizontal: spacing.md,
         borderRadius: radius.pill,
         opacity: pressed ? 0.85 : 1,
@@ -101,7 +106,7 @@ export function Chip({
         marginBottom: spacing.sm,
       })}
     >
-      <Text style={{ color: active ? t.accentText : t.text, fontWeight: '600', fontSize: font.size.sm }}>{label}</Text>
+      <Text style={{ color: active ? t.accentText : t.text, fontFamily: font.family.body, fontWeight: '600', fontSize: font.size.sm }}>{label}</Text>
     </Pressable>
   );
 }

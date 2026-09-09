@@ -12,8 +12,8 @@
       "output": "static",
       "name": "Tails 'n Conk",
       "shortName": "Tails 'n Conk",
-      "themeColor": "#FBF7F0",
-      "backgroundColor": "#FBF7F0"
+      "themeColor": "#151019",
+      "backgroundColor": "#151019"
     },
     "plugins": ["expo-router"],
     "experiments": {

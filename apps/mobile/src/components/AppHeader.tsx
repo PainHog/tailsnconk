@@ -17,7 +17,7 @@ export function AppHeader() {
   return (
     <View style={{ borderBottomColor: t.border, borderBottomWidth: 1, backgroundColor: t.surface }}>
       <View style={{ width: '100%', maxWidth: 960, marginHorizontal: 'auto', paddingHorizontal: spacing.lg, paddingVertical: spacing.md }}>
-        <Link href="/" style={{ color: t.accent, fontSize: font.size.lg, fontWeight: '800', marginBottom: spacing.sm }}>
+        <Link href="/" style={{ color: t.accent, fontFamily: font.family.display, fontSize: font.size.xl, fontWeight: '900', letterSpacing: -0.5, marginBottom: spacing.sm }}>
           {SITE_NAME}
         </Link>
         <ScrollView horizontal showsHorizontalScrollIndicator={false}>
