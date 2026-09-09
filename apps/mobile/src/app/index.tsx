@@ -55,7 +55,7 @@ export default function Home() {
           <SectionTitle style={{ marginBottom: 0 }}>Your shelf</SectionTitle>
           {hasBar ? <Button variant="ghost" label="Clear" onPress={clear} /> : null}
         </View>
-        {ready ? <BarChecklist has={has} toggle={toggle} /> : <Muted>Loading…</Muted>}
+        {ready ? <BarChecklist has={has} toggle={toggle} owned={owned} /> : <Muted>Loading…</Muted>}
       </Card>
 
       {hasBar ? (
