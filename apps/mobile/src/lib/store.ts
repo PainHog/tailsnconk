@@ -34,6 +34,7 @@ export async function removeKey(key: string): Promise<void> {
 /** Namespaced key builder to avoid collisions across features. */
 export const KEY = {
   ownedBar: 'tnc:bar:owned',
+  shopping: 'tnc:bar:shopping',
   filters: 'tnc:filters',
   spinHistory: 'tnc:spin:history',
   localUser: 'tnc:local:user',

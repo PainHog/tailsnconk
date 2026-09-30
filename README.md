@@ -16,15 +16,23 @@ this product’s own.
 
 ---
 
-## The two tools
+## What it does
 
-- **Primary — My Bar (`/`):** check off owned ingredients; the discovery engine
-  returns the full list of cocktails whose required ingredients you have
-  (`eligibleItems`). Facets: base spirit, strength (ABV band), zero-proof. Also
-  shows "one ingredient away" suggestions.
-- **Secondary — Spin (`/spin`):** a single random pick from what you can make
-  (`trySpin`), with a session no-repeat rule so the big categories don’t
-  dominate.
+A persistent "what's in my bar" app — bar, discovery, and shopping all saved
+on-device (works with no account; syncs when Supabase is configured).
+
+- **My Bar (`/`):** a dashboard. Stock your shelf via a compact category
+  accordion (auto-collapses once you add from a category; count badges;
+  removable tokens), then see the live list of cocktails you can make
+  (`eligibleItems`) plus a stat strip and "one ingredient away" suggestions.
+  Facets: base spirit, strength (ABV band), zero-proof.
+- **Spin (`/spin`):** a single random pick from what you can make (`trySpin`),
+  with a session no-repeat rule so big categories don’t dominate.
+- **Shopping (`/shopping`):** the smartest bottles to buy next, ranked by how
+  many new cocktails each unlocks with what’s on your shelf (`topUnlocks`); build
+  a list, see how many drinks it would unlock, and check items straight into your
+  bar. Empty-shelf mode falls back to overall ingredient frequency.
+- **Catalog / Collections:** browse all cocktails and crawlable spirit/style hubs.
 
 ### Why a flat catalog with facets (not a category tree)
 

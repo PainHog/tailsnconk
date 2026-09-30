@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from 'react';
-import { View } from 'react-native';
+import { Text, View } from 'react-native';
 import { Link } from 'expo-router';
 import {
   COCKTAILS,
@@ -34,7 +34,8 @@ export default function Home() {
   const resultFilters = useMemo<SpinFilters>(() => ({ ...filters, owned }), [filters, owned]);
 
   const makeable = useMemo(() => (hasBar ? eligibleItems(COCKTAILS, resultFilters) : []), [hasBar, resultFilters]);
-  const oneAway = useMemo(() => (hasBar ? almostMakeable(COCKTAILS, resultFilters).slice(0, 6) : []), [hasBar, resultFilters]);
+  const oneAwayAll = useMemo(() => (hasBar ? almostMakeable(COCKTAILS, resultFilters) : []), [hasBar, resultFilters]);
+  const oneAway = oneAwayAll.slice(0, 6);
   const availableBases = useMemo(() => (hasBar ? eligibleSpiritBases(COCKTAILS, { owned }) : undefined), [hasBar, owned]);
   const availableBands = useMemo(
     () => (hasBar ? (eligibleAbvBands(COCKTAILS, { owned }) as AbvBand[]) : undefined),
@@ -49,6 +50,28 @@ export default function Home() {
       <Body style={{ color: t.textMuted, marginBottom: spacing.lg }}>
         Check off the bottles and mixers you own — see every cocktail you can make right now.
       </Body>
+
+      {hasBar ? (
+        <Card style={{ marginBottom: spacing.lg }}>
+          <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
+            <View>
+              <Text style={{ color: t.accent, fontFamily: font.family.display, fontSize: font.size.xl, fontWeight: '900' }}>{makeable.length}</Text>
+              <Muted>you can make</Muted>
+            </View>
+            <View>
+              <Text style={{ color: t.text, fontFamily: font.family.display, fontSize: font.size.xl, fontWeight: '900' }}>{oneAwayAll.length}</Text>
+              <Muted>one away</Muted>
+            </View>
+            <View>
+              <Text style={{ color: t.text, fontFamily: font.family.display, fontSize: font.size.xl, fontWeight: '900' }}>{owned.length}</Text>
+              <Muted>on your shelf</Muted>
+            </View>
+            <Link href="/shopping" asChild>
+              <Button variant="ghost" label="Shopping →" />
+            </Link>
+          </View>
+        </Card>
+      ) : null}
 
       <Card style={{ marginBottom: spacing.lg }}>
         <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: spacing.md }}>

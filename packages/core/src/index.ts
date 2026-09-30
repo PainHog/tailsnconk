@@ -8,6 +8,7 @@ export * from './types';
 export * from './ingredients';
 export * from './spin';
 export * from './collections';
+export * from './shopping';
 export * from './passport';
 export * from './featured';
 export * from './facets';

@@ -8,6 +8,7 @@ const NAV: Array<{ href: string; label: string }> = [
   { href: '/', label: 'My Bar' },
   { href: '/spin', label: 'Spin' },
   { href: '/catalog', label: 'Catalog' },
+  { href: '/shopping', label: 'Shopping' },
   { href: '/collections', label: 'Collections' },
   { href: '/account', label: 'Account' },
 ];

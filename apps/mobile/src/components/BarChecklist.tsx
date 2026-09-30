@@ -59,11 +59,15 @@ export function BarChecklist({
       return next;
     });
 
-  const AddChip = ({ ing }: { ing: Ingredient }) => {
+  const AddChip = ({ ing, onAdd }: { ing: Ingredient; onAdd?: () => void }) => {
     const on = has(ing.slug);
     return (
       <Pressable
-        onPress={() => toggle(ing.slug)}
+        onPress={() => {
+          const wasOn = has(ing.slug);
+          toggle(ing.slug);
+          if (!wasOn) onAdd?.();
+        }}
         style={{
           flexDirection: 'row',
           alignItems: 'center',
@@ -165,7 +169,17 @@ export function BarChecklist({
                 {isOpen ? (
                   <View style={{ flexDirection: 'row', flexWrap: 'wrap', paddingBottom: spacing.md }}>
                     {items.map((ing) => (
-                      <AddChip key={ing.slug} ing={ing} />
+                      <AddChip
+                        key={ing.slug}
+                        ing={ing}
+                        onAdd={() =>
+                          setOpen((prev) => {
+                            const next = new Set(prev);
+                            next.delete(ty);
+                            return next;
+                          })
+                        }
+                      />
                     ))}
                   </View>
                 ) : null}

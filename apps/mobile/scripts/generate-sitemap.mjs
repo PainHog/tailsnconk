@@ -36,7 +36,7 @@ const STATIC_ROUTES = [
 ];
 
 /** Routes that must never appear in the sitemap (admin/personal/noindex). */
-const NOINDEX_ROUTES = ['/moderate', '/account'];
+const NOINDEX_ROUTES = ['/moderate', '/account', '/shopping'];
 
 function loc(path) {
   const clean = path === '/' ? '' : path.replace(/\/$/, '');
@@ -97,6 +97,7 @@ async function main() {
     'Allow: /',
     'Disallow: /moderate',
     'Disallow: /account',
+    'Disallow: /shopping',
     'Disallow: /_sitemap',
     '',
     `Sitemap: ${SITE_URL}/sitemap.xml`,
