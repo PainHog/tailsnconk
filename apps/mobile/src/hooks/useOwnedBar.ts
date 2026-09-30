@@ -36,10 +36,20 @@ export function useOwnedBar() {
     [],
   );
 
+  const addMany = useCallback((slugs: string[]) => {
+    setOwned((prev) => {
+      const s = new Set(prev);
+      for (const x of slugs) s.add(x);
+      const next = [...s];
+      void setJSON(KEY.ownedBar, next);
+      return next;
+    });
+  }, []);
+
   const ownedSet = useMemo(() => new Set(owned), [owned]);
   const has = useCallback((slug: string) => ownedSet.has(slug), [ownedSet]);
   const clear = useCallback(() => persist([]), [persist]);
   const setAll = useCallback((slugs: string[]) => persist(slugs), [persist]);
 
-  return { owned, ownedSet, ready, toggle, has, clear, setAll };
+  return { owned, ownedSet, ready, toggle, has, clear, setAll, addMany };
 }

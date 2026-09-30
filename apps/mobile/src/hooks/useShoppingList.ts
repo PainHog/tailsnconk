@@ -41,9 +41,20 @@ export function useShoppingList() {
     });
   }, []);
 
+  /** Add several slugs at once (idempotent); returns nothing. */
+  const addMany = useCallback((slugs: string[]) => {
+    setList((prev) => {
+      const s = new Set(prev);
+      for (const x of slugs) s.add(x);
+      const next = [...s];
+      void setJSON(KEY.shopping, next);
+      return next;
+    });
+  }, []);
+
   const listSet = useMemo(() => new Set(list), [list]);
   const has = useCallback((slug: string) => listSet.has(slug), [listSet]);
   const clear = useCallback(() => persist([]), [persist]);
 
-  return { list, listSet, ready, toggle, remove, has, clear };
+  return { list, listSet, ready, toggle, remove, addMany, has, clear };
 }

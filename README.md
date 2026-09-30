@@ -23,9 +23,12 @@ on-device (works with no account; syncs when Supabase is configured).
 
 - **My Bar (`/`):** a dashboard. Stock your shelf via a compact category
   accordion (auto-collapses once you add from a category; count badges;
-  removable tokens), then see the live list of cocktails you can make
-  (`eligibleItems`) plus a stat strip and "one ingredient away" suggestions.
-  Facets: base spirit, strength (ABV band), zero-proof.
+  removable tokens) — or one-tap a **starter bar**. Then see the live list of
+  cocktails you can make (`eligibleItems`), a **"make it with a swap"** list
+  (drinks you can make with an accepted spirit substitution, clearly labelled —
+  `eligibleWithSubstitutions`), a stat strip, and "one ingredient away"
+  suggestions with add-to-shopping-list. Facets: base spirit, strength (ABV
+  band), zero-proof.
 - **Spin (`/spin`):** a single random pick from what you can make (`trySpin`),
   with a session no-repeat rule so big categories don’t dominate.
 - **Shopping (`/shopping`):** the smartest bottles to buy next, ranked by how
@@ -54,6 +57,7 @@ packages/core/      Framework-free engine + data (no React). Unit-tested.
   src/cocktails/      Catalog helpers (data in data/cocktails.gen.ts)
   src/data/*.gen.ts   GENERATED catalog + ingredients + audit (npm run ingest)
   src/spin.ts         DISCOVERY engine — eligibleItems (primary) + trySpin (secondary)
+  src/substitution.ts SPIRIT SUBSTITUTION — "makeable with a swap" (bourbon⇄rye…)
   src/diet.ts         VARIANT engine — zero-proof / allergen rewriting (secondary)
   src/collections.ts  Crawlable SEO hubs (min-size gate)
   src/passport.ts     Retention / badges

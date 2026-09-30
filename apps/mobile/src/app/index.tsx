@@ -5,6 +5,7 @@ import {
   COCKTAILS,
   eligibleItems,
   almostMakeable,
+  eligibleWithSubstitutions,
   eligibleSpiritBases,
   eligibleAbvBands,
   organizationJsonLd,
@@ -22,19 +23,35 @@ import { AdSlot } from '@/components/AdSlot';
 import { EmailCapture } from '@/components/EmailCapture';
 import { Body, Button, Card, Divider, Muted, SectionTitle } from '@/components/ui';
 import { useOwnedBar } from '@/hooks/useOwnedBar';
+import { useShoppingList } from '@/hooks/useShoppingList';
 import { ENV } from '@/lib/env';
 import { spacing, useTheme, font } from '@/constants/theme';
 
+/** A sensible first shelf — the bottles that unlock the most classics. */
+const STARTER_BAR = [
+  'vodka', 'gin', 'white-rum', 'bourbon', 'tequila-blanco',
+  'sweet-vermouth', 'dry-vermouth', 'orange-liqueur', 'angostura-bitters',
+  'lime-juice', 'lemon-juice', 'simple-syrup', 'soda-water',
+];
+
 export default function Home() {
   const t = useTheme();
-  const { owned, ready, has, toggle, clear } = useOwnedBar();
+  const { owned, ready, has, toggle, clear, addMany } = useOwnedBar();
+  const shop = useShoppingList();
   const [filters, setFilters] = useState<SpinFilters>({});
 
   const hasBar = owned.length > 0;
   const resultFilters = useMemo<SpinFilters>(() => ({ ...filters, owned }), [filters, owned]);
 
   const makeable = useMemo(() => (hasBar ? eligibleItems(COCKTAILS, resultFilters) : []), [hasBar, resultFilters]);
-  const oneAwayAll = useMemo(() => (hasBar ? almostMakeable(COCKTAILS, resultFilters) : []), [hasBar, resultFilters]);
+  const withSwap = useMemo(() => (hasBar ? eligibleWithSubstitutions(COCKTAILS, resultFilters) : []), [hasBar, resultFilters]);
+  const swapSlugs = useMemo(() => new Set(withSwap.map((m) => m.cocktail.slug)), [withSwap]);
+  // "One away" = truly missing one buyable ingredient — exclude drinks already
+  // makeable via a swap (their "missing" spirit is one you can substitute).
+  const oneAwayAll = useMemo(
+    () => (hasBar ? almostMakeable(COCKTAILS, resultFilters).filter((a) => !swapSlugs.has(a.cocktail.slug)) : []),
+    [hasBar, resultFilters, swapSlugs],
+  );
   const oneAway = oneAwayAll.slice(0, 6);
   const availableBases = useMemo(() => (hasBar ? eligibleSpiritBases(COCKTAILS, { owned }) : undefined), [hasBar, owned]);
   const availableBands = useMemo(
@@ -57,6 +74,10 @@ export default function Home() {
             <View>
               <Text style={{ color: t.accent, fontFamily: font.family.display, fontSize: font.size.xl, fontWeight: '900' }}>{makeable.length}</Text>
               <Muted>you can make</Muted>
+            </View>
+            <View>
+              <Text style={{ color: t.lime, fontFamily: font.family.display, fontSize: font.size.xl, fontWeight: '900' }}>{withSwap.length}</Text>
+              <Muted>with a swap</Muted>
             </View>
             <View>
               <Text style={{ color: t.text, fontFamily: font.family.display, fontSize: font.size.xl, fontWeight: '900' }}>{oneAwayAll.length}</Text>
@@ -104,20 +125,44 @@ export default function Home() {
 
           <AdSlot placement="in-feed" />
 
+          {withSwap.length > 0 ? (
+            <>
+              <Divider />
+              <SectionTitle>Make it with a swap</SectionTitle>
+              <Muted style={{ marginBottom: spacing.md }}>
+                You have a stand-in for a called-for spirit — bartenders do this all the time.
+              </Muted>
+              {withSwap.map((m) => (
+                <CocktailCard key={m.cocktail.slug} cocktail={m.cocktail} substitutions={m.substitutions} />
+              ))}
+            </>
+          ) : null}
+
           {oneAway.length > 0 ? (
             <>
               <Divider />
               <SectionTitle>One ingredient away</SectionTitle>
               <Muted style={{ marginBottom: spacing.md }}>Grab one more bottle and these open up.</Muted>
               {oneAway.map((a) => (
-                <CocktailCard key={a.cocktail.slug} cocktail={a.cocktail} missing={[a.missing]} />
+                <CocktailCard
+                  key={a.cocktail.slug}
+                  cocktail={a.cocktail}
+                  missing={[a.missing]}
+                  action={
+                    shop.has(a.missing)
+                      ? { label: '✓ On your list', onPress: () => shop.remove(a.missing) }
+                      : { label: '+ Add to shopping list', onPress: () => shop.addMany([a.missing]) }
+                  }
+                />
               ))}
             </>
           ) : null}
         </>
       ) : (
         <Card>
-          <Body>Start by checking off what you have above. Even three or four bottles is usually enough to make something.</Body>
+          <Body style={{ marginBottom: spacing.md }}>Start by checking off what you have above. Even three or four bottles is usually enough to make something.</Body>
+          <Button label="Add a starter bar" onPress={() => addMany(STARTER_BAR)} />
+          <Muted style={{ marginTop: spacing.sm }}>Adds the common bottles that unlock the most classics — edit anytime.</Muted>
         </Card>
       )}
 

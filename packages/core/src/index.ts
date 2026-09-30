@@ -7,6 +7,7 @@
 export * from './types';
 export * from './ingredients';
 export * from './spin';
+export * from './substitution';
 export * from './collections';
 export * from './shopping';
 export * from './passport';
