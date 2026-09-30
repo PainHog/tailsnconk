@@ -112,6 +112,8 @@ const CANON = [
   { slug: 'melon-liqueur', name: 'Melon liqueur', type: 'liqueur', alcohol: true, aka: ['melon liqueur', 'midori'] },
   { slug: 'falernum', name: 'Falernum', type: 'liqueur', alcohol: true, aka: ['falernum'] },
   { slug: 'passion-fruit-liqueur', name: 'Passion fruit liqueur', type: 'liqueur', alcohol: true, aka: ['passion fruit liqueur', 'passoa'] },
+  { slug: 'amer-picon', name: 'Amer Picon', type: 'liqueur', alcohol: true, aka: ['amer picon', 'picon', 'amer picon or ramazzotti'] },
+  { slug: 'irish-cream', name: 'Irish cream', type: 'liqueur', alcohol: true, contains: ['dairy'], aka: ['irish cream', 'baileys', 'bailey s irish cream', 'irish cream liqueur'] },
 
   // --- Fortified / wine / sparkling ---
   { slug: 'sweet-vermouth', name: 'Sweet vermouth', type: 'wine', alcohol: true, aka: ['sweet vermouth', 'sweet red vermouth', 'red vermouth', 'rosso vermouth'] },
@@ -169,7 +171,7 @@ const CANON = [
   { slug: 'buttermilk', name: 'Buttermilk', type: 'other', contains: ['dairy'], aka: ['buttermilk'] },
   { slug: 'coconut-cream', name: 'Coconut cream', type: 'other', aka: ['coconut cream', 'cream of coconut'] },
   { slug: 'peach-puree', name: 'Peach purée', type: 'other', aka: ['peach puree', 'peach pure', 'white peach puree', 'peach nectar'] },
-  { slug: 'jalapeno', name: 'Jalapeño', type: 'other', aka: ['jalapeno', 'jalapeno slices', 'sliced jalapeno'] },
+  { slug: 'jalapeno', name: 'Jalapeño', type: 'other', aka: ['jalapeno', 'jalapeno slices', 'sliced jalapeno', 'jalapeno slice'] },
   { slug: 'egg-white', name: 'Egg white', type: 'other', contains: ['egg'], aka: ['egg white'] },
   { slug: 'egg-yolk', name: 'Egg yolk', type: 'other', contains: ['egg'], aka: ['egg yolk'] },
   { slug: 'egg', name: 'Whole egg', type: 'other', contains: ['egg'], aka: ['egg', 'whole egg'] },
@@ -185,17 +187,20 @@ const CANON = [
   { slug: 'orange-flower-water', name: 'Orange flower water', type: 'other', aka: ['orange flower water'] },
 
   // --- Garnishes / produce ---
-  { slug: 'lime', name: 'Lime', type: 'garnish', aka: ['lime', 'lime wedge', 'lime wheel', 'lime slice', 'lime peel', 'lime cut into small wedges'] },
+  { slug: 'lime', name: 'Lime', type: 'garnish', aka: ['lime', 'lime wedge', 'lime wheel', 'lime slice', 'lime peel', 'lime cut into small wedges', 'spent lime shell', 'spent lime', 'lime shell'] },
+  { slug: 'grapefruit', name: 'Grapefruit', type: 'garnish', aka: ['grapefruit', 'grapefruit wedge', 'grapefruit slice', 'grapefruit peel', 'grapefruit twist', 'pink grapefruit'] },
+  { slug: 'olive', name: 'Olive', type: 'garnish', aka: ['olive', 'olives', 'green olive', 'cocktail olive'] },
+  { slug: 'edible-flower', name: 'Edible flower', type: 'garnish', aka: ['orchid', 'edible flower', 'edible flowers', 'flower'] },
   { slug: 'lemon', name: 'Lemon', type: 'garnish', aka: ['lemon', 'lemon wedge', 'lemon wheel', 'lemon slice', 'lemon peel', 'lemon twist', 'lemon zest'] },
   { slug: 'orange', name: 'Orange', type: 'garnish', aka: ['orange', 'orange wedge', 'orange wheel', 'orange slice', 'orange peel', 'orange twist', 'orange zest'] },
-  { slug: 'maraschino-cherry', name: 'Maraschino cherry', type: 'garnish', aka: ['maraschino cherry', 'cocktail cherry', 'cherry'] },
+  { slug: 'maraschino-cherry', name: 'Maraschino cherry', type: 'garnish', aka: ['maraschino cherry', 'cocktail cherry', 'cherry', 'brandied cherry', 'brandied cherries'] },
   { slug: 'pineapple', name: 'Pineapple', type: 'garnish', aka: ['pineapple', 'pineapple wedge', 'pineapple slice'] },
   { slug: 'coffee-beans', name: 'Coffee beans', type: 'garnish', aka: ['coffee beans', 'coffee bean'] },
   { slug: 'nutmeg', name: 'Nutmeg', type: 'garnish', aka: ['nutmeg', 'grated nutmeg'] },
   { slug: 'cucumber', name: 'Cucumber', type: 'garnish', aka: ['cucumber'] },
-  { slug: 'chili', name: 'Chili pepper', type: 'garnish', aka: ['chili pepper', 'red chili pepper', 'slices red chili pepper', 'chilli'] },
+  { slug: 'chili', name: 'Chili pepper', type: 'garnish', aka: ['chili pepper', 'red chili pepper', 'slices red chili pepper', 'thin slices red chili pepper', 'thin slice red chili pepper', 'chilli'] },
   { slug: 'ginger', name: 'Fresh ginger', type: 'other', aka: ['ginger', 'sliced fresh ginger', 'size sliced fresh ginger'] },
-  { slug: 'basil', name: 'Basil', type: 'other', aka: ['basil', 'basil leaves'] },
+  { slug: 'basil', name: 'Basil', type: 'other', aka: ['basil', 'basil leaves', 'basil sprig', 'basil sprigs'] },
 ];
 
 // Build lookup from aka -> canon entry.
@@ -309,42 +314,45 @@ function volumeOz(amount, unit) {
   return 0; // dashes, drops, leaves, pieces, cubes, etc. — negligible volume
 }
 
-/** Rough alcoholic strength factor so a finished drink's band reflects proof,
- *  not just spirit volume (wine/vermouth/liqueur are weaker than spirits). */
-function strengthFactor(ing) {
+/** Approximate alcohol-by-volume fraction each ingredient contributes (≈ its own
+ *  proof). Used to estimate the FINISHED drink's strength, so a champagne- or
+ *  spirit-forward build isn't auto-"high" just because all its liquid is
+ *  alcoholic (the old ratio metric's flaw — e.g. Kir Royale). */
+function abvFraction(ing) {
+  if (!ing.contains.includes('alcohol')) return 0;
   const s = ing.ingredientSlug;
-  if (s === 'overproof-rum' || s === 'absinthe') return 1.1;
-  if (ing.base) return 1; // a base spirit family
-  if (ing.type === 'liqueur') return 0.55;
+  if (s === 'overproof-rum' || s === 'absinthe') return 0.6;
+  if (ing.base) return 0.4; // a base spirit family (~80 proof)
+  if (ing.type === 'liqueur') return 0.24; // liqueurs / amari average
   if (ing.type === 'wine') {
-    if (['sweet-vermouth', 'dry-vermouth', 'port', 'sherry', 'lillet-blanc'].includes(s)) return 0.35;
-    if (s === 'guinness') return 0.15;
-    return 0.22; // champagne, prosecco, wine
+    if (['sweet-vermouth', 'dry-vermouth', 'port', 'sherry', 'amontillado-sherry', 'lillet-blanc'].includes(s)) return 0.17;
+    if (s === 'guinness') return 0.05;
+    return 0.12; // champagne, prosecco, still wine
   }
-  return 0.5;
+  return 0.3; // unknown alcoholic
 }
 
-/** ABV band from the normalized ingredient list, strength-weighted. */
+/**
+ * ABV band from the normalized ingredient list. Estimates the finished drink's
+ * strength as pure-alcohol oz ÷ total liquid oz (garnishes/bitters are
+ * negligible volume and excluded). Bands: high ≥25%, medium ≥12%, else low.
+ */
 export function inferAbvBand(ingredients) {
-  let alc = 0;
-  let non = 0;
-  let anyAlcohol = false;
-  for (const ing of ingredients) {
-    if (ing.optional) continue;
-    const vol = volumeOz(ing.amount, ing.unit);
-    if (ing.contains.includes('alcohol')) {
-      anyAlcohol = true;
-      alc += vol * strengthFactor(ing);
-    } else if (ing.type !== 'garnish' && ing.type !== 'bitters') {
-      non += vol;
-    }
-  }
+  const anyAlcohol = ingredients.some((i) => !i.optional && i.contains.includes('alcohol'));
   if (!anyAlcohol) return 'zero';
-  const total = alc + non;
-  if (total <= 0) return 'high';
-  const ratio = alc / total;
-  if (ratio >= 0.6) return 'high';
-  if (ratio >= 0.35) return 'medium';
+  let pureAlc = 0;
+  let liquid = 0;
+  for (const ing of ingredients) {
+    if (ing.optional || ing.type === 'garnish' || ing.type === 'bitters') continue;
+    const vol = volumeOz(ing.amount, ing.unit);
+    if (vol <= 0) continue;
+    liquid += vol;
+    pureAlc += vol * abvFraction(ing);
+  }
+  if (liquid <= 0) return 'high'; // spirit-only, all sub-oz measures
+  const est = pureAlc / liquid;
+  if (est >= 0.25) return 'high';
+  if (est >= 0.12) return 'medium';
   return 'low';
 }
 
@@ -365,8 +373,10 @@ export function inferSpiritBase(ingredients) {
   }
   if (best) return best;
   // No base spirit: aperitivo if built on campari/aperol/amaro/vermouth, else other.
-  const slugs = new Set(ingredients.map((i) => i.slug));
-  if (['campari', 'aperol', 'cynar', 'amaro-nonino', 'amaro-montenegro', 'fernet-branca'].some((s) => slugs.has(s))) return 'aperitivo';
+  // NOTE: ingest ingredient rows key on `ingredientSlug`; keep `slug` as a fallback
+  // so this also works if called with raw normalized descriptors.
+  const slugs = new Set(ingredients.map((i) => i.ingredientSlug ?? i.slug));
+  if (['campari', 'aperol', 'cynar', 'amaro-nonino', 'amaro-montenegro', 'amer-picon', 'fernet-branca'].some((s) => slugs.has(s))) return 'aperitivo';
   return 'other';
 }
 

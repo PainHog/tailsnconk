@@ -11,6 +11,8 @@ export function CocktailCard({ cocktail, missing }: { cocktail: Cocktail; missin
   return (
     <Link href={`/cocktail/${cocktail.slug}`} asChild>
       <Pressable
+        accessibilityRole="link"
+        accessibilityLabel={`${cocktail.name} — ${SPIRIT_LABELS[cocktail.spiritBase]}, ${required} ingredients`}
         style={({ pressed }) => ({
           backgroundColor: t.surface,
           borderColor: t.border,

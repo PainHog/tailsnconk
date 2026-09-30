@@ -48,6 +48,7 @@ export function Reviews({ cocktailId }: { cocktailId: string }) {
           onChangeText={setBody}
           placeholder="How did it turn out? (optional)"
           placeholderTextColor={t.textMuted}
+          accessibilityLabel="Your review (optional)"
           multiline
           style={{
             backgroundColor: t.surfaceAlt,

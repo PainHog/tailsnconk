@@ -38,6 +38,7 @@ export function EmailCapture({ source = 'site' }: { source?: string }) {
           placeholderTextColor={t.textMuted}
           autoCapitalize="none"
           keyboardType="email-address"
+          accessibilityLabel="Email address"
           style={{
             flexGrow: 1,
             minWidth: 200,

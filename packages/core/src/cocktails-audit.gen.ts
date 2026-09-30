@@ -5,20 +5,20 @@
  */
 
 export const AUDIT = {
-  "totalCocktails": 198,
-  "totalIngredients": 161,
+  "totalCocktails": 192,
+  "totalIngredients": 154,
   "coverageByBase": {
-    "other": 24,
+    "aperitivo": 7,
     "rum": 29,
-    "brandy": 14,
-    "gin": 39,
-    "aperitivo": 3,
-    "vodka": 32,
+    "gin": 37,
+    "other": 18,
+    "vodka": 31,
+    "brandy": 13,
     "tequila": 23,
     "whiskey": 33,
     "none": 1
   },
-  "zeroProofReachable": 118,
+  "zeroProofReachable": 113,
   "errorCount": 0,
   "warningCount": 0,
   "issues": []

@@ -6,7 +6,7 @@
  */
 
 import type { Cocktail } from './types';
-import { requiredSlugs } from './spin';
+import { requiredSlugs, NON_SHOPPABLE } from './spin';
 
 export interface Unlock {
   ingredientSlug: string;
@@ -27,6 +27,7 @@ export function ingredientUnlocks(cocktails: readonly Cocktail[], owned: readonl
     const missing = requiredSlugs(c).filter((s) => !O.has(s));
     if (missing.length === 1) {
       const x = missing[0]!;
+      if (NON_SHOPPABLE.has(x)) continue; // can't buy a house-prep — don't suggest it
       if (!map.has(x)) map.set(x, []);
       map.get(x)!.push(c.slug);
     }

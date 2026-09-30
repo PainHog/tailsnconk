@@ -23,6 +23,19 @@ export type Rng = () => number;
 /** Distinct Level-1 (base spirit) lockout window, matching the blueprint (=2). */
 export const NO_REPEAT_WINDOW = 2;
 
+/**
+ * Compound "house-prep" ingredients you make yourself rather than buy off a
+ * shelf. They are kept OUT of shopping suggestions and the one-ingredient-away
+ * nudge (buying them isn't a thing), but still gate availability normally.
+ * Tunable — add a slug here to stop suggesting it as a purchase.
+ */
+export const NON_SHOPPABLE: ReadonlySet<string> = new Set([
+  'don-s-mix',
+  'red-wine-syrup',
+  'honey-ginger-syrup',
+  'chamomile-cordial',
+]);
+
 /** Non-optional ingredient slugs — the set availability is tested against. */
 export function requiredSlugs(c: Cocktail): string[] {
   return c.ingredients.filter((i) => !i.optional).map((i) => i.ingredientSlug);
@@ -155,7 +168,10 @@ export function almostMakeable(cocktails: readonly Cocktail[], filters: SpinFilt
   for (const c of cocktails) {
     if (!cocktailMatches(c, facetOnly)) continue;
     const missing = requiredSlugs(c).filter((slug) => !owned.has(slug));
-    if (missing.length === 1) out.push({ cocktail: c, missing: missing[0]! });
+    // Only nudge when the single missing item is something you can actually buy.
+    if (missing.length === 1 && !NON_SHOPPABLE.has(missing[0]!)) {
+      out.push({ cocktail: c, missing: missing[0]! });
+    }
   }
   return out.sort((a, b) => a.cocktail.name.localeCompare(b.cocktail.name));
 }

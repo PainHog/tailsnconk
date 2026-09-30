@@ -62,7 +62,11 @@ export function PhotoWall({ cocktailId }: { cocktailId: string }) {
         <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: spacing.sm, marginBottom: spacing.md }}>
           {photos.map((p) => (
             <View key={p.id} style={{ width: 140 }}>
-              <Image source={{ uri: p.url }} style={{ width: 140, height: 140, borderRadius: radius.md }} />
+              <Image
+                source={{ uri: p.url }}
+                accessibilityLabel={p.caption ? `Photo: ${p.caption}` : `Photo by ${p.userName}`}
+                style={{ width: 140, height: 140, borderRadius: radius.md }}
+              />
               <Muted style={{ marginTop: 4 }} >{p.userName}</Muted>
             </View>
           ))}
@@ -78,6 +82,7 @@ export function PhotoWall({ cocktailId }: { cocktailId: string }) {
               ref: fileRef,
               type: 'file',
               accept: 'image/*',
+              'aria-label': 'Choose a photo to upload',
               style: { color: t.text, marginBottom: spacing.md },
               onChange: (e: React.ChangeEvent<HTMLInputElement>) => {
                 const f = e.target.files?.[0];
@@ -90,6 +95,7 @@ export function PhotoWall({ cocktailId }: { cocktailId: string }) {
               onChangeText={setCaption}
               placeholder="Caption (optional)"
               placeholderTextColor={t.textMuted}
+              accessibilityLabel="Photo caption (optional)"
               style={{ backgroundColor: t.surfaceAlt, borderColor: t.border, borderWidth: 1, borderRadius: radius.md, color: t.text, padding: spacing.md, marginBottom: spacing.md }}
             />
             <Button label="Submit for review" onPress={submit} />

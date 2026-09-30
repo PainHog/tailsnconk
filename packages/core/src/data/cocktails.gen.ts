@@ -10,13 +10,14 @@ export const COCKTAILS: Cocktail[] = [
   {
     "slug": "adriatique",
     "name": "Adriatique",
-    "description": "A shake cocktail made with amaro montenegro, fresh orange juice, aperol.",
-    "spiritBase": "other",
+    "description": "A shake aperitivo cocktail made with amaro montenegro, fresh orange juice, aperol.",
+    "spiritBase": "aperitivo",
     "abvBand": "medium",
     "glass": "coupe",
     "method": "shake",
     "tags": [
       "classic",
+      "aperitivo",
       "shaken"
     ],
     "ingredients": [
@@ -48,7 +49,7 @@ export const COCKTAILS: Cocktail[] = [
     "name": "Airmail",
     "description": "A sparkling rum sour brightened with honey and lime and topped with champagne.",
     "spiritBase": "rum",
-    "abvBand": "high",
+    "abvBand": "medium",
     "glass": "flute",
     "method": "shake",
     "tags": [
@@ -95,19 +96,20 @@ export const COCKTAILS: Cocktail[] = [
   {
     "slug": "alexander",
     "name": "Alexander",
-    "description": "A shake brandy cocktail made with cognac, crème de cacao, cream.",
-    "spiritBase": "brandy",
-    "abvBand": "high",
+    "description": "The original 1910s Alexander: equal parts gin, crème de cacao, and cream shaken into a silky, chocolatey nightcap — the gin ancestor of the Brandy Alexander.",
+    "spiritBase": "gin",
+    "abvBand": "medium",
     "glass": "coupe",
     "method": "shake",
     "tags": [
       "classic",
-      "brandy",
-      "shaken"
+      "creamy",
+      "gin",
+      "dessert"
     ],
     "ingredients": [
       {
-        "ingredientSlug": "cognac",
+        "ingredientSlug": "gin",
         "amount": "1",
         "unit": "oz",
         "optional": false
@@ -123,9 +125,17 @@ export const COCKTAILS: Cocktail[] = [
         "amount": "1",
         "unit": "oz",
         "optional": false
+      },
+      {
+        "ingredientSlug": "nutmeg",
+        "amount": "1",
+        "unit": "pinch",
+        "optional": true
       }
     ],
     "sources": [
+      "https://en.wikipedia.org/wiki/Alexander_(cocktail)",
+      "https://www.diffordsguide.com/cocktails/recipe/1108/alexander-gin-based",
       "https://github.com/rasmusab/iba-cocktails"
     ]
   },
@@ -188,13 +198,14 @@ export const COCKTAILS: Cocktail[] = [
   {
     "slug": "americano",
     "name": "Americano",
-    "description": "A stir cocktail made with campari, sweet vermouth, soda water.",
-    "spiritBase": "other",
-    "abvBand": "high",
+    "description": "A stir aperitivo cocktail made with campari, sweet vermouth, soda water.",
+    "spiritBase": "aperitivo",
+    "abvBand": "medium",
     "glass": "highball",
     "method": "stir",
     "tags": [
       "classic",
+      "aperitivo",
       "stirred"
     ],
     "ingredients": [
@@ -303,7 +314,8 @@ export const COCKTAILS: Cocktail[] = [
     ],
     "sources": [
       "https://iba-world.com/iba-cocktail/spritz/",
-      "https://www.aperol.com/en-us/aperol-spritz-cocktail/"
+      "https://www.aperol.com/en-us/aperol-spritz-cocktail/",
+      "https://github.com/rasmusab/iba-cocktails"
     ]
   },
   {
@@ -398,43 +410,7 @@ export const COCKTAILS: Cocktail[] = [
     "sources": [
       "https://www.liquor.com/army-navy-cocktail-recipe-5225039",
       "https://punchdrink.com/recipes/army-navy/",
-      "https://vinepair.com/cocktail-recipe/army-and-navy/"
-    ]
-  },
-  {
-    "slug": "army-and-navy",
-    "name": "Army and Navy",
-    "description": "A shake gin cocktail made with gin, fresh lemon juice, orgeat.",
-    "spiritBase": "gin",
-    "abvBand": "medium",
-    "glass": "coupe",
-    "method": "shake",
-    "tags": [
-      "classic",
-      "gin",
-      "shaken"
-    ],
-    "ingredients": [
-      {
-        "ingredientSlug": "gin",
-        "amount": "2",
-        "unit": "oz",
-        "optional": false
-      },
-      {
-        "ingredientSlug": "lemon-juice",
-        "amount": "0.75",
-        "unit": "oz",
-        "optional": false
-      },
-      {
-        "ingredientSlug": "orgeat",
-        "amount": "0.75",
-        "unit": "oz",
-        "optional": false
-      }
-    ],
-    "sources": [
+      "https://vinepair.com/cocktail-recipe/army-and-navy/",
       "https://github.com/stevana/cocktails"
     ]
   },
@@ -518,7 +494,7 @@ export const COCKTAILS: Cocktail[] = [
     "name": "Bacardi",
     "description": "A shake rum cocktail made with white rum, fresh lemon juice, grenadine.",
     "spiritBase": "rum",
-    "abvBand": "high",
+    "abvBand": "medium",
     "glass": "coupe",
     "method": "shake",
     "tags": [
@@ -678,7 +654,7 @@ export const COCKTAILS: Cocktail[] = [
     "name": "Batanga",
     "description": "La Capilla's legendary salted highball of blanco tequila, lime and cola stirred with a knife.",
     "spiritBase": "tequila",
-    "abvBand": "low",
+    "abvBand": "medium",
     "glass": "highball",
     "method": "build",
     "tags": [
@@ -1001,13 +977,14 @@ export const COCKTAILS: Cocktail[] = [
   {
     "slug": "bitter-mimosa",
     "name": "Bitter Mimosa",
-    "description": "A stir cocktail made with champagne, cynar, grapefruit juice.",
-    "spiritBase": "other",
+    "description": "A stir aperitivo cocktail made with champagne, cynar, grapefruit juice.",
+    "spiritBase": "aperitivo",
     "abvBand": "low",
     "glass": "flute",
     "method": "stir",
     "tags": [
       "classic",
+      "aperitivo",
       "low-abv",
       "stirred"
     ],
@@ -1071,11 +1048,12 @@ export const COCKTAILS: Cocktail[] = [
     "name": "Black Velvet",
     "description": "A stir cocktail made with champagne, stout beer.",
     "spiritBase": "other",
-    "abvBand": "high",
+    "abvBand": "low",
     "glass": "flute",
     "method": "stir",
     "tags": [
       "classic",
+      "low-abv",
       "stirred"
     ],
     "ingredients": [
@@ -1138,7 +1116,7 @@ export const COCKTAILS: Cocktail[] = [
     "name": "Blood and Sand",
     "description": "A rare equal-parts scotch cocktail shaking blended whisky with Cherry Heering, sweet vermouth, and fresh orange juice.",
     "spiritBase": "whiskey",
-    "abvBand": "high",
+    "abvBand": "medium",
     "glass": "coupe",
     "method": "shake",
     "tags": [
@@ -1188,7 +1166,7 @@ export const COCKTAILS: Cocktail[] = [
     "name": "Bloody Mary",
     "description": "A savory, spiced brunch classic of vodka and tomato juice seasoned with lemon, Worcestershire and hot sauce.",
     "spiritBase": "vodka",
-    "abvBand": "low",
+    "abvBand": "medium",
     "glass": "highball",
     "method": "build",
     "tags": [
@@ -1317,7 +1295,7 @@ export const COCKTAILS: Cocktail[] = [
         "optional": true
       },
       {
-        "ingredientSlug": "orchid",
+        "ingredientSlug": "edible-flower",
         "amount": "1",
         "unit": "flower",
         "optional": true
@@ -1334,7 +1312,7 @@ export const COCKTAILS: Cocktail[] = [
     "name": "Blue Lagoon",
     "description": "A vivid electric-blue highball of vodka and blue curaçao lengthened with lemonade.",
     "spiritBase": "vodka",
-    "abvBand": "low",
+    "abvBand": "medium",
     "glass": "highball",
     "method": "build",
     "tags": [
@@ -1510,7 +1488,7 @@ export const COCKTAILS: Cocktail[] = [
     "name": "Bramble",
     "description": "A modern British classic pouring a gin sour over crushed ice, then drizzling blackberry liqueur through it for a bleeding, berry-rich finish.",
     "spiritBase": "gin",
-    "abvBand": "high",
+    "abvBand": "medium",
     "glass": "rocks",
     "method": "shake",
     "tags": [
@@ -1568,7 +1546,7 @@ export const COCKTAILS: Cocktail[] = [
     "name": "Brandy Alexander",
     "description": "A silky after-dinner classic of cognac, chocolate crème de cacao and cream, dusted with nutmeg.",
     "spiritBase": "brandy",
-    "abvBand": "high",
+    "abvBand": "medium",
     "glass": "coupe",
     "method": "shake",
     "tags": [
@@ -1946,7 +1924,7 @@ export const COCKTAILS: Cocktail[] = [
         "optional": false
       },
       {
-        "ingredientSlug": "grapefruit-wedge",
+        "ingredientSlug": "grapefruit",
         "amount": "1",
         "unit": "wedge",
         "optional": true
@@ -2050,7 +2028,7 @@ export const COCKTAILS: Cocktail[] = [
     "name": "Champagne Cocktail",
     "description": "One of the oldest cocktails: a bitters-soaked sugar cube laced with cognac and topped with chilled Champagne.",
     "spiritBase": "brandy",
-    "abvBand": "high",
+    "abvBand": "medium",
     "glass": "flute",
     "method": "build",
     "tags": [
@@ -2101,7 +2079,7 @@ export const COCKTAILS: Cocktail[] = [
     "name": "Charro Negro",
     "description": "Mexico's festive tequila-and-cola highball brightened with a squeeze of fresh lime.",
     "spiritBase": "tequila",
-    "abvBand": "low",
+    "abvBand": "medium",
     "glass": "highball",
     "method": "build",
     "tags": [
@@ -2239,7 +2217,7 @@ export const COCKTAILS: Cocktail[] = [
     "name": "Chrysanthemum",
     "description": "A stir cocktail made with dry vermouth, bénédictine, absinthe.",
     "spiritBase": "other",
-    "abvBand": "high",
+    "abvBand": "medium",
     "glass": "rocks",
     "method": "stir",
     "tags": [
@@ -2275,7 +2253,7 @@ export const COCKTAILS: Cocktail[] = [
     "name": "Clover Club",
     "description": "A pre-Prohibition Philadelphia classic shaken to a silky, blush-pink froth from raspberry, lemon, and egg white over gin.",
     "spiritBase": "gin",
-    "abvBand": "high",
+    "abvBand": "medium",
     "glass": "coupe",
     "method": "shake",
     "tags": [
@@ -2330,60 +2308,11 @@ export const COCKTAILS: Cocktail[] = [
     ]
   },
   {
-    "slug": "corpse-reviver-2",
-    "name": "Corpse Reviver #2",
-    "description": "A shake gin cocktail made with gin, orange liqueur, lillet blanc.",
-    "spiritBase": "gin",
-    "abvBand": "high",
-    "glass": "coupe",
-    "method": "shake",
-    "tags": [
-      "classic",
-      "gin",
-      "shaken"
-    ],
-    "ingredients": [
-      {
-        "ingredientSlug": "gin",
-        "amount": "1",
-        "unit": "oz",
-        "optional": false
-      },
-      {
-        "ingredientSlug": "orange-liqueur",
-        "amount": "1",
-        "unit": "oz",
-        "optional": false
-      },
-      {
-        "ingredientSlug": "lillet-blanc",
-        "amount": "1",
-        "unit": "oz",
-        "optional": false
-      },
-      {
-        "ingredientSlug": "lemon-juice",
-        "amount": "1",
-        "unit": "oz",
-        "optional": false
-      },
-      {
-        "ingredientSlug": "absinthe",
-        "amount": "1",
-        "unit": "dash",
-        "optional": false
-      }
-    ],
-    "sources": [
-      "https://github.com/rasmusab/iba-cocktails"
-    ]
-  },
-  {
     "slug": "corpse-reviver-no-2",
     "name": "Corpse Reviver No. 2",
     "description": "A bright, equal-parts eye-opener of gin, orange liqueur, aromatized wine, and lemon served in an absinthe-perfumed glass.",
     "spiritBase": "gin",
-    "abvBand": "high",
+    "abvBand": "medium",
     "glass": "coupe",
     "method": "shake",
     "tags": [
@@ -2433,7 +2362,8 @@ export const COCKTAILS: Cocktail[] = [
     "sources": [
       "https://iba-world.com/iba-cocktail/corpse-reviver-2/",
       "https://www.liquor.com/recipes/corpse-reviver-no-2/",
-      "https://vinepair.com/cocktail-recipe/corpse-reviver-2/"
+      "https://vinepair.com/cocktail-recipe/corpse-reviver-2/",
+      "https://github.com/rasmusab/iba-cocktails"
     ]
   },
   {
@@ -2493,7 +2423,7 @@ export const COCKTAILS: Cocktail[] = [
     "name": "Cuba Libre",
     "description": "The classic rum-and-cola highball lifted by a squeeze of fresh lime.",
     "spiritBase": "rum",
-    "abvBand": "low",
+    "abvBand": "medium",
     "glass": "highball",
     "method": "build",
     "tags": [
@@ -2658,7 +2588,7 @@ export const COCKTAILS: Cocktail[] = [
     "name": "Dark 'n Stormy",
     "description": "A two-ingredient Bermuda highball where dark rum is floated over spicy ginger beer for a stormy layered look.",
     "spiritBase": "rum",
-    "abvBand": "low",
+    "abvBand": "medium",
     "glass": "highball",
     "method": "build",
     "tags": [
@@ -2702,7 +2632,7 @@ export const COCKTAILS: Cocktail[] = [
     "name": "Death in the Afternoon",
     "description": "Hemingway's potent two-ingredient creation in which absinthe louches to an opalescent cloud under iced Champagne.",
     "spiritBase": "other",
-    "abvBand": "high",
+    "abvBand": "medium",
     "glass": "coupe",
     "method": "build",
     "tags": [
@@ -2804,7 +2734,7 @@ export const COCKTAILS: Cocktail[] = [
         "optional": false
       },
       {
-        "ingredientSlug": "grapefruit-twist",
+        "ingredientSlug": "grapefruit",
         "amount": "1",
         "unit": "twist",
         "optional": true
@@ -2966,7 +2896,7 @@ export const COCKTAILS: Cocktail[] = [
     "name": "Espresso Martini",
     "description": "A rich, cold coffee cocktail of vodka, coffee liqueur and fresh espresso shaken hard to raise a signature foamy crema on top.",
     "spiritBase": "vodka",
-    "abvBand": "high",
+    "abvBand": "medium",
     "glass": "coupe",
     "method": "shake",
     "tags": [
@@ -3016,13 +2946,14 @@ export const COCKTAILS: Cocktail[] = [
   {
     "slug": "fernandito",
     "name": "Fernandito",
-    "description": "A stir cocktail made with fernet-branca, cola.",
-    "spiritBase": "other",
+    "description": "A stir aperitivo cocktail made with fernet-branca, cola.",
+    "spiritBase": "aperitivo",
     "abvBand": "low",
     "glass": "highball",
     "method": "stir",
     "tags": [
       "classic",
+      "aperitivo",
       "low-abv",
       "stirred"
     ],
@@ -3117,7 +3048,7 @@ export const COCKTAILS: Cocktail[] = [
     "name": "French 75",
     "description": "A celebratory sparkling sour that tops a shaken gin, lemon, and sugar base with Champagne for a bright, potent fizz.",
     "spiritBase": "gin",
-    "abvBand": "high",
+    "abvBand": "medium",
     "glass": "flute",
     "method": "shake",
     "tags": [
@@ -3324,7 +3255,7 @@ export const COCKTAILS: Cocktail[] = [
     "name": "Gin and Tonic",
     "description": "A crisp, effervescent highball of gin lengthened with chilled tonic water over ice and brightened by a squeeze of lime.",
     "spiritBase": "gin",
-    "abvBand": "low",
+    "abvBand": "medium",
     "glass": "highball",
     "method": "build",
     "tags": [
@@ -3397,7 +3328,7 @@ export const COCKTAILS: Cocktail[] = [
         "optional": false
       },
       {
-        "ingredientSlug": "basil-sprig",
+        "ingredientSlug": "basil",
         "amount": "1",
         "unit": "sprig",
         "optional": true
@@ -3467,7 +3398,7 @@ export const COCKTAILS: Cocktail[] = [
     "name": "Gin Rickey",
     "description": "A bone-dry, sugar-free highball of gin and fresh lime lengthened with soda, prized as an austere warm-weather quencher.",
     "spiritBase": "gin",
-    "abvBand": "low",
+    "abvBand": "medium",
     "glass": "highball",
     "method": "build",
     "tags": [
@@ -3918,7 +3849,7 @@ export const COCKTAILS: Cocktail[] = [
     "name": "Harvey Wallbanger",
     "description": "A 1970s icon: a Screwdriver of vodka and orange juice crowned with a float of herbal-vanilla Galliano.",
     "spiritBase": "vodka",
-    "abvBand": "low",
+    "abvBand": "medium",
     "glass": "highball",
     "method": "build",
     "tags": [
@@ -3964,7 +3895,7 @@ export const COCKTAILS: Cocktail[] = [
     "name": "Hemingway Daiquiri",
     "description": "A dry, sugarless Daiquiri variation from Havana's El Floridita, laced with grapefruit and maraschino.",
     "spiritBase": "rum",
-    "abvBand": "high",
+    "abvBand": "medium",
     "glass": "coupe",
     "method": "shake",
     "tags": [
@@ -4014,7 +3945,7 @@ export const COCKTAILS: Cocktail[] = [
     "name": "Hemingway Special",
     "description": "A shake rum cocktail made with white rum, grapefruit juice, maraschino liqueur.",
     "spiritBase": "rum",
-    "abvBand": "high",
+    "abvBand": "medium",
     "glass": "coupe",
     "method": "shake",
     "tags": [
@@ -4262,7 +4193,7 @@ export const COCKTAILS: Cocktail[] = [
     "name": "Illegal",
     "description": "A shake agave cocktail made with mezcal, overproof rum, falernum.",
     "spiritBase": "tequila",
-    "abvBand": "medium",
+    "abvBand": "high",
     "glass": "coupe",
     "method": "shake",
     "tags": [
@@ -4400,13 +4331,12 @@ export const COCKTAILS: Cocktail[] = [
     "name": "John Collins",
     "description": "A stir gin cocktail made with gin, fresh lemon juice, simple syrup.",
     "spiritBase": "gin",
-    "abvBand": "low",
+    "abvBand": "medium",
     "glass": "highball",
     "method": "stir",
     "tags": [
       "classic",
       "gin",
-      "low-abv",
       "stirred"
     ],
     "ingredients": [
@@ -4557,11 +4487,12 @@ export const COCKTAILS: Cocktail[] = [
     "name": "Kalte Ente",
     "description": "A stir cocktail made with dry white wine, champagne, soda water.",
     "spiritBase": "other",
-    "abvBand": "high",
+    "abvBand": "low",
     "glass": "highball",
     "method": "stir",
     "tags": [
       "classic",
+      "low-abv",
       "stirred"
     ],
     "ingredients": [
@@ -4593,7 +4524,7 @@ export const COCKTAILS: Cocktail[] = [
     "name": "Kamikaze",
     "description": "A crisp, tart shooter-turned-cocktail of equal parts vodka, triple sec and fresh lime juice.",
     "spiritBase": "vodka",
-    "abvBand": "high",
+    "abvBand": "medium",
     "glass": "martini",
     "method": "shake",
     "tags": [
@@ -4637,7 +4568,7 @@ export const COCKTAILS: Cocktail[] = [
     "name": "Kentucky Mule",
     "description": "A bourbon take on the Moscow Mule, built over ice with fresh lime and topped with spicy ginger beer.",
     "spiritBase": "whiskey",
-    "abvBand": "low",
+    "abvBand": "medium",
     "glass": "highball",
     "method": "build",
     "tags": [
@@ -4681,7 +4612,7 @@ export const COCKTAILS: Cocktail[] = [
     "name": "Kir",
     "description": "A simple Burgundian aperitif of dry white wine tinted and sweetened with a measure of blackcurrant liqueur.",
     "spiritBase": "other",
-    "abvBand": "high",
+    "abvBand": "medium",
     "glass": "wine",
     "method": "build",
     "tags": [
@@ -4710,41 +4641,11 @@ export const COCKTAILS: Cocktail[] = [
     ]
   },
   {
-    "slug": "kir-royal",
-    "name": "Kir royal",
-    "description": "A stir cocktail made with champagne, crème de cassis.",
-    "spiritBase": "other",
-    "abvBand": "high",
-    "glass": "flute",
-    "method": "stir",
-    "tags": [
-      "classic",
-      "stirred"
-    ],
-    "ingredients": [
-      {
-        "ingredientSlug": "champagne",
-        "amount": "3",
-        "unit": "oz",
-        "optional": false
-      },
-      {
-        "ingredientSlug": "creme-de-cassis",
-        "amount": "0.25",
-        "unit": "oz",
-        "optional": false
-      }
-    ],
-    "sources": [
-      "https://github.com/stevana/cocktails"
-    ]
-  },
-  {
     "slug": "kir-royale",
     "name": "Kir Royale",
     "description": "The celebratory upgrade to the Kir, layering crème de cassis under a top of chilled brut Champagne.",
     "spiritBase": "other",
-    "abvBand": "high",
+    "abvBand": "medium",
     "glass": "flute",
     "method": "build",
     "tags": [
@@ -4774,7 +4675,8 @@ export const COCKTAILS: Cocktail[] = [
     ],
     "sources": [
       "https://www.diffordsguide.com/cocktails/recipe/1109/kir-royale",
-      "https://www.foodandwine.com/kir-royale-cocktail-recipe-11873510"
+      "https://www.foodandwine.com/kir-royale-cocktail-recipe-11873510",
+      "https://github.com/stevana/cocktails"
     ]
   },
   {
@@ -4782,7 +4684,7 @@ export const COCKTAILS: Cocktail[] = [
     "name": "Last Word",
     "description": "A Prohibition-era equal-parts stunner that balances botanical gin, herbal Green Chartreuse, nutty Maraschino, and bright lime into a vivid, complex whole.",
     "spiritBase": "gin",
-    "abvBand": "high",
+    "abvBand": "medium",
     "glass": "coupe",
     "method": "shake",
     "tags": [
@@ -4836,7 +4738,7 @@ export const COCKTAILS: Cocktail[] = [
     "name": "Lemon Drop",
     "description": "A tart, sweet-and-sour vodka martini served up in a sugar-rimmed glass.",
     "spiritBase": "vodka",
-    "abvBand": "high",
+    "abvBand": "medium",
     "glass": "martini",
     "method": "shake",
     "tags": [
@@ -4925,74 +4827,6 @@ export const COCKTAILS: Cocktail[] = [
     ]
   },
   {
-    "slug": "long-island-ice-tea",
-    "name": "Long Island Ice Tea",
-    "description": "A stir vodka cocktail made with vodka, tequila (blanco), white rum.",
-    "spiritBase": "vodka",
-    "abvBand": "low",
-    "glass": "highball",
-    "method": "stir",
-    "tags": [
-      "classic",
-      "vodka",
-      "low-abv",
-      "stirred"
-    ],
-    "ingredients": [
-      {
-        "ingredientSlug": "vodka",
-        "amount": "0.5",
-        "unit": "oz",
-        "optional": false
-      },
-      {
-        "ingredientSlug": "tequila-blanco",
-        "amount": "0.5",
-        "unit": "oz",
-        "optional": false
-      },
-      {
-        "ingredientSlug": "white-rum",
-        "amount": "0.5",
-        "unit": "oz",
-        "optional": false
-      },
-      {
-        "ingredientSlug": "gin",
-        "amount": "0.5",
-        "unit": "oz",
-        "optional": false
-      },
-      {
-        "ingredientSlug": "orange-liqueur",
-        "amount": "0.5",
-        "unit": "oz",
-        "optional": false
-      },
-      {
-        "ingredientSlug": "lemon-juice",
-        "amount": "1",
-        "unit": "oz",
-        "optional": false
-      },
-      {
-        "ingredientSlug": "simple-syrup",
-        "amount": "0.75",
-        "unit": "oz",
-        "optional": false
-      },
-      {
-        "ingredientSlug": "cola",
-        "amount": "1",
-        "unit": "top",
-        "optional": false
-      }
-    ],
-    "sources": [
-      "https://github.com/rasmusab/iba-cocktails"
-    ]
-  },
-  {
     "slug": "long-island-iced-tea",
     "name": "Long Island Iced Tea",
     "description": "A deceptively strong highball layering five white spirits with lemon and a cola top that mimics the look of iced tea.",
@@ -5063,7 +4897,8 @@ export const COCKTAILS: Cocktail[] = [
     ],
     "sources": [
       "https://iba-world.com/iba-cocktail/long-island-iced-tea/",
-      "https://mybar.app/app/cocktail/long_island"
+      "https://mybar.app/app/cocktail/long_island",
+      "https://github.com/rasmusab/iba-cocktails"
     ]
   },
   {
@@ -5127,7 +4962,7 @@ export const COCKTAILS: Cocktail[] = [
     "name": "Mai Tai",
     "description": "Trader Vic's benchmark tiki drink, balancing aged rum against orange curaçao, almondy orgeat, and fresh lime for a deceptively simple rum showcase.",
     "spiritBase": "rum",
-    "abvBand": "high",
+    "abvBand": "medium",
     "glass": "rocks",
     "method": "shake",
     "tags": [
@@ -5172,7 +5007,7 @@ export const COCKTAILS: Cocktail[] = [
         "optional": true
       },
       {
-        "ingredientSlug": "spent-lime-shell",
+        "ingredientSlug": "lime",
         "amount": "1",
         "unit": "shell",
         "optional": true
@@ -5475,7 +5310,7 @@ export const COCKTAILS: Cocktail[] = [
     "name": "Mezcal Margarita",
     "description": "A smoky take on the Margarita built on mezcal with lime, orange liqueur and a touch of agave.",
     "spiritBase": "tequila",
-    "abvBand": "high",
+    "abvBand": "medium",
     "glass": "rocks",
     "method": "shake",
     "tags": [
@@ -5932,7 +5767,7 @@ export const COCKTAILS: Cocktail[] = [
     "name": "Naked and Famous",
     "description": "An equal-parts modern classic marrying smoky mezcal with Yellow Chartreuse, Aperol and lime.",
     "spiritBase": "tequila",
-    "abvBand": "high",
+    "abvBand": "medium",
     "glass": "coupe",
     "method": "shake",
     "tags": [
@@ -5973,8 +5808,8 @@ export const COCKTAILS: Cocktail[] = [
     ]
   },
   {
-    "slug": "napa-vally-sour",
-    "name": "Napa Vally Sour",
+    "slug": "napa-valley-sour",
+    "name": "Napa Valley Sour",
     "description": "A shake whiskey cocktail made with rye whiskey, fresh lemon juice, red wine syrup.",
     "spiritBase": "whiskey",
     "abvBand": "medium",
@@ -6130,7 +5965,7 @@ export const COCKTAILS: Cocktail[] = [
     "name": "Negroni Sbagliato",
     "description": "The bubbly 'mistaken' Negroni that swaps gin for sparkling wine, built in equal parts over ice.",
     "spiritBase": "aperitivo",
-    "abvBand": "high",
+    "abvBand": "medium",
     "glass": "rocks",
     "method": "build",
     "tags": [
@@ -6469,7 +6304,7 @@ export const COCKTAILS: Cocktail[] = [
     "name": "Paloma",
     "description": "Mexico's beloved highball of blanco tequila and lime lengthened with sparkling grapefruit soda over ice.",
     "spiritBase": "tequila",
-    "abvBand": "low",
+    "abvBand": "medium",
     "glass": "highball",
     "method": "build",
     "tags": [
@@ -6520,7 +6355,7 @@ export const COCKTAILS: Cocktail[] = [
     "name": "Paper Plane",
     "description": "An equal-parts modern classic balancing bourbon, Aperol, Amaro Nonino, and fresh lemon into a bittersweet, frothy sour.",
     "spiritBase": "whiskey",
-    "abvBand": "high",
+    "abvBand": "medium",
     "glass": "coupe",
     "method": "shake",
     "tags": [
@@ -6603,7 +6438,7 @@ export const COCKTAILS: Cocktail[] = [
     "name": "Penicillin",
     "description": "A modern scotch sour of blended whisky, honey-ginger syrup, and lemon finished with a smoky float of Islay single malt.",
     "spiritBase": "whiskey",
-    "abvBand": "high",
+    "abvBand": "medium",
     "glass": "rocks",
     "method": "shake",
     "tags": [
@@ -6943,7 +6778,7 @@ export const COCKTAILS: Cocktail[] = [
     "name": "Porto Flip",
     "description": "A shake brandy cocktail made with brandy, port, egg yolk.",
     "spiritBase": "brandy",
-    "abvBand": "high",
+    "abvBand": "medium",
     "glass": "coupe",
     "method": "shake",
     "tags": [
@@ -6974,80 +6809,6 @@ export const COCKTAILS: Cocktail[] = [
     "sources": [
       "https://github.com/rasmusab/iba-cocktails",
       "https://github.com/stevana/cocktails"
-    ]
-  },
-  {
-    "slug": "ramos-fizz",
-    "name": "Ramos Fizz",
-    "description": "A shake gin cocktail made with gin, fresh lime juice, fresh lemon juice.",
-    "spiritBase": "gin",
-    "abvBand": "low",
-    "glass": "highball",
-    "method": "shake",
-    "tags": [
-      "classic",
-      "gin",
-      "low-abv",
-      "shaken"
-    ],
-    "ingredients": [
-      {
-        "ingredientSlug": "gin",
-        "amount": "1.5",
-        "unit": "oz",
-        "optional": false
-      },
-      {
-        "ingredientSlug": "lime-juice",
-        "amount": "0.5",
-        "unit": "oz",
-        "optional": false
-      },
-      {
-        "ingredientSlug": "lemon-juice",
-        "amount": "0.5",
-        "unit": "oz",
-        "optional": false
-      },
-      {
-        "ingredientSlug": "simple-syrup",
-        "amount": "1",
-        "unit": "oz",
-        "optional": false
-      },
-      {
-        "ingredientSlug": "cream",
-        "amount": "2",
-        "unit": "oz",
-        "optional": false
-      },
-      {
-        "ingredientSlug": "egg-white",
-        "amount": "1",
-        "unit": "oz",
-        "optional": false
-      },
-      {
-        "ingredientSlug": "orange-flower-water",
-        "amount": "3",
-        "unit": "dash",
-        "optional": false
-      },
-      {
-        "ingredientSlug": "vanilla-extract",
-        "amount": "2",
-        "unit": "drops",
-        "optional": false
-      },
-      {
-        "ingredientSlug": "soda-water",
-        "amount": "1",
-        "unit": "top",
-        "optional": false
-      }
-    ],
-    "sources": [
-      "https://github.com/rasmusab/iba-cocktails"
     ]
   },
   {
@@ -7116,7 +6877,8 @@ export const COCKTAILS: Cocktail[] = [
     ],
     "sources": [
       "https://iba-world.com/iba-cocktail/ramos-fizz/",
-      "https://www.liquor.com/recipes/ramos-gin-fizz/"
+      "https://www.liquor.com/recipes/ramos-gin-fizz/",
+      "https://github.com/rasmusab/iba-cocktails"
     ]
   },
   {
@@ -7201,7 +6963,7 @@ export const COCKTAILS: Cocktail[] = [
         "optional": false
       },
       {
-        "ingredientSlug": "brandied-cherry",
+        "ingredientSlug": "maraschino-cherry",
         "amount": "1",
         "unit": "cherry",
         "optional": true
@@ -7396,7 +7158,7 @@ export const COCKTAILS: Cocktail[] = [
     "name": "Russian Spring Punch",
     "description": "A shake vodka cocktail made with vodka, fresh lemon juice, crème de cassis.",
     "spiritBase": "vodka",
-    "abvBand": "high",
+    "abvBand": "medium",
     "glass": "flute",
     "method": "shake",
     "tags": [
@@ -7638,7 +7400,7 @@ export const COCKTAILS: Cocktail[] = [
     "name": "Screwdriver",
     "description": "The quintessential two-ingredient brunch highball of vodka and orange juice over ice.",
     "spiritBase": "vodka",
-    "abvBand": "low",
+    "abvBand": "medium",
     "glass": "highball",
     "method": "build",
     "tags": [
@@ -7909,7 +7671,7 @@ export const COCKTAILS: Cocktail[] = [
     "name": "Siesta",
     "description": "Katie Stipe's bittersweet blush cocktail of blanco tequila, Campari, grapefruit, lime and simple syrup.",
     "spiritBase": "tequila",
-    "abvBand": "high",
+    "abvBand": "medium",
     "glass": "coupe",
     "method": "shake",
     "tags": [
@@ -7949,7 +7711,7 @@ export const COCKTAILS: Cocktail[] = [
         "optional": false
       },
       {
-        "ingredientSlug": "grapefruit-twist",
+        "ingredientSlug": "grapefruit",
         "amount": "1",
         "unit": "twist",
         "optional": true
@@ -8133,7 +7895,7 @@ export const COCKTAILS: Cocktail[] = [
         "optional": false
       },
       {
-        "ingredientSlug": "thin-slices-red-chili-pepper",
+        "ingredientSlug": "chili",
         "amount": "2",
         "unit": "piece",
         "optional": true
@@ -8148,7 +7910,7 @@ export const COCKTAILS: Cocktail[] = [
     "name": "Spicy Margarita",
     "description": "The classic Margarita with fresh jalapeño muddled in for a bright chili kick.",
     "spiritBase": "tequila",
-    "abvBand": "high",
+    "abvBand": "medium",
     "glass": "rocks",
     "method": "shake",
     "tags": [
@@ -8194,7 +7956,7 @@ export const COCKTAILS: Cocktail[] = [
         "optional": true
       },
       {
-        "ingredientSlug": "jalapeno-slice",
+        "ingredientSlug": "jalapeno",
         "amount": "1",
         "unit": "slice",
         "optional": true
@@ -8203,42 +7965,6 @@ export const COCKTAILS: Cocktail[] = [
     "sources": [
       "https://www.liquor.com/recipes/spicy-margarita/",
       "https://www.tasteofhome.com/recipes/spicy-margarita/"
-    ]
-  },
-  {
-    "slug": "spritz",
-    "name": "Spritz",
-    "description": "A stir cocktail made with prosecco, aperol, soda water.",
-    "spiritBase": "other",
-    "abvBand": "high",
-    "glass": "highball",
-    "method": "stir",
-    "tags": [
-      "classic",
-      "stirred"
-    ],
-    "ingredients": [
-      {
-        "ingredientSlug": "prosecco",
-        "amount": "3",
-        "unit": "oz",
-        "optional": false
-      },
-      {
-        "ingredientSlug": "aperol",
-        "amount": "2",
-        "unit": "oz",
-        "optional": false
-      },
-      {
-        "ingredientSlug": "soda-water",
-        "amount": "1",
-        "unit": "splash",
-        "optional": false
-      }
-    ],
-    "sources": [
-      "https://github.com/rasmusab/iba-cocktails"
     ]
   },
   {
@@ -8284,13 +8010,12 @@ export const COCKTAILS: Cocktail[] = [
     "name": "Suffering Bastard",
     "description": "A shake brandy cocktail made with brandy, gin, fresh lime juice.",
     "spiritBase": "brandy",
-    "abvBand": "low",
+    "abvBand": "medium",
     "glass": "highball",
     "method": "shake",
     "tags": [
       "classic",
       "brandy",
-      "low-abv",
       "shaken"
     ],
     "ingredients": [
@@ -8384,7 +8109,7 @@ export const COCKTAILS: Cocktail[] = [
     "name": "Tequila Sunrise",
     "description": "A layered highball where grenadine sinks through tequila and orange juice to mimic a sunrise.",
     "spiritBase": "tequila",
-    "abvBand": "low",
+    "abvBand": "medium",
     "glass": "highball",
     "method": "build",
     "tags": [
@@ -8574,13 +8299,12 @@ export const COCKTAILS: Cocktail[] = [
     "name": "Tommy Kohlrabins",
     "description": "A blend gin cocktail made with old tom gin, fresh lemon juice, simple syrup.",
     "spiritBase": "gin",
-    "abvBand": "low",
+    "abvBand": "medium",
     "glass": "highball",
     "method": "blend",
     "tags": [
       "classic",
-      "gin",
-      "low-abv"
+      "gin"
     ],
     "ingredients": [
       {
@@ -8811,7 +8535,7 @@ export const COCKTAILS: Cocktail[] = [
     "name": "Twentieth Century",
     "description": "A shake gin cocktail made with gin, lillet blanc, crème de cacao.",
     "spiritBase": "gin",
-    "abvBand": "high",
+    "abvBand": "medium",
     "glass": "coupe",
     "method": "shake",
     "tags": [

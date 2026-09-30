@@ -9,7 +9,7 @@ structure, RLS patterns, and build chain, adapted to the cocktail niche. It
 shares **no data or infrastructure** with any other project; everything here is
 this product’s own.
 
-> Status: **198 validated cocktails** and 161 canonical ingredients, assembled
+> Status: **192 validated cocktails** and 154 canonical ingredients, assembled
 > by the ingestion pipeline (below). Every ingredient is normalized to a canonical
 > slug and every recipe passes an audit. Grow the catalog by adding sources and
 > re-running `npm run ingest && npm run gen:meta`.
@@ -151,16 +151,23 @@ reuse another project’s keys. Copy `.env.example` → `.env` and fill in blank
 1. **Supabase (new project).**
    - Create a new project; note its URL + anon (publishable) key + service-role key.
    - Apply the schema once: paste `supabase/policies.sql` into the SQL editor
-     (or `supabase db push` the `supabase/migrations/`).
+     (or `supabase db push` the `supabase/migrations/`). It includes the
+     `public_reviews` / `cocktail_rating_aggregates` read views and the
+     subscriber-token trigger.
    - Deploy the Edge Functions in `supabase/functions/`; set each function’s
      secrets and `verify_jwt` per `supabase/config.toml`.
    - Confirm the private `made-photos` storage bucket exists and is **not public**.
    - Grant your own account admin: `update profiles set is_admin = true where …`.
    - Set client env: `EXPO_PUBLIC_SUPABASE_URL`, `EXPO_PUBLIC_SUPABASE_ANON_KEY`.
 2. **Site URL:** set `EXPO_PUBLIC_SITE_URL` (used by canonicals, sitemap, JSON-LD).
-3. **Ads (optional):** set `EXPO_PUBLIC_AD_PROVIDER=adsense` and
-   `EXPO_PUBLIC_AD_CLIENT_ID=ca-pub-…`. `<AdSlot/>` renders only on web +
-   production; add the provider host to the CSP in `apps/mobile/public/_headers`.
+   The build substitutes your real Supabase origin into the CSP automatically
+   (from `EXPO_PUBLIC_SUPABASE_URL`) and fails if it can't, so there's no manual
+   `_headers` edit.
+3. **Ads (optional):** set `EXPO_PUBLIC_AD_PROVIDER=adsense`,
+   `EXPO_PUBLIC_AD_CLIENT_ID=ca-pub-…`, and a **numeric slot id per placement**
+   (`EXPO_PUBLIC_AD_SLOT_IN_FEED`, `EXPO_PUBLIC_AD_SLOT_MID_CONTENT`) — a unit
+   never fills without one. `<AdSlot/>` renders only on web + production; the
+   build adds the AdSense hosts to the CSP automatically when the provider is set.
 4. **Newsletter (optional):** Resend account + verified domain; set
    `RESEND_API_KEY`, `NEWSLETTER_FROM`, `NEWSLETTER_POSTAL_ADDRESS`, `CRON_SECRET`.
 5. **Hosting:** Cloudflare Pages pointed at `apps/mobile/dist` (build:
@@ -170,8 +177,9 @@ reuse another project’s keys. Copy `.env.example` → `.env` and fill in blank
    `packages/core/src/seo.ts`, the legal pages, theme colors, and add real
    `icon`/`splash`/`favicon` assets referenced from `apps/mobile/app.json`. The
    all-over-print backdrop is `apps/mobile/src/constants/backdrop.ts`. The site
-   is locked to a light theme for launch (dark tokens remain in `theme.ts`;
-   re-enable once static-export color-scheme detection is wired to a toggle).
+   ships a single committed **dark** theme (`theme.ts`), set via `data-theme="dark"`
+   in `+html.tsx` so there's no flash; light/dark switching in a static export
+   would desync, so it's intentionally one theme for launch.
 
 The site is designed to run fully in **local mode** until step 1 is done, so you
 can develop and demo the tools with zero infrastructure.

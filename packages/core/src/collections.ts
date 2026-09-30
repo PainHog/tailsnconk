@@ -109,10 +109,6 @@ export function getCollection(cocktails: readonly Cocktail[], slug: string): Col
   return buildCollections(cocktails).find((c) => c.slug === slug);
 }
 
-function titleCase(s: string): string {
-  return s.charAt(0).toUpperCase() + s.slice(1);
-}
-
 /** "modern-classic" → "Modern Classic" for hub titles. */
 function humanize(s: string): string {
   return s

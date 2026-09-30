@@ -3,15 +3,15 @@
 # Files in apps/mobile/public/ are copied verbatim into the static export, so
 # this ships as-is to Cloudflare Pages.
 #
-# BEFORE LAUNCH — edit the two placeholders in the Content-Security-Policy:
-#   1. SUPABASE:  replace  https://YOUR-PROJECT.supabase.co  (and the wss: twin)
-#      with your project's origin, in connect-src. Find it in EXPO_PUBLIC_SUPABASE_URL.
-#   2. ADS (optional): if you enable an ad provider (EXPO_PUBLIC_AD_PROVIDER),
-#      add its hosts to the marked directives. For Google AdSense that is:
-#        script-src : https://pagead2.googlesyndication.com
-#        frame-src  : https://googleads.g.doubleclick.net https://*.google.com
-#        img-src    : already allows https: (covers ad creatives)
-#        connect-src: https://pagead2.googlesyndication.com
+# AUTOMATIC AT BUILD — scripts/finalize-export.mjs rewrites the copy in dist/:
+#   1. SUPABASE:  https://YOUR-PROJECT.supabase.co (and the wss: twin) are
+#      replaced with the origin from EXPO_PUBLIC_SUPABASE_URL. The build FAILS if
+#      that env is set but the placeholder can't be substituted. With no Supabase
+#      env (local/PR builds) the placeholder is left as-is.
+#   2. ADS:  when EXPO_PUBLIC_AD_PROVIDER=adsense, the AdSense hosts are added to
+#      script-src / connect-src / frame-src automatically.
+# You only need to hand-edit this file if you deploy dist/ without running the
+# export's finalize step.
 # ============================================================================
 
 # ---- All routes: security + a locked-down CSP -----------------------------

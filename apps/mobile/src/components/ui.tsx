@@ -62,6 +62,9 @@ export function Button({
     <Pressable
       onPress={onPress}
       disabled={disabled}
+      accessibilityRole="button"
+      accessibilityLabel={label}
+      accessibilityState={{ disabled: Boolean(disabled) }}
       style={({ pressed }) => [
         {
           backgroundColor: isPrimary ? t.accent : 'transparent',
@@ -94,6 +97,9 @@ export function Chip({
   return (
     <Pressable
       onPress={onPress}
+      accessibilityRole="button"
+      accessibilityLabel={label}
+      accessibilityState={{ selected: Boolean(active) }}
       style={({ pressed }) => ({
         backgroundColor: active ? t.accent : t.surfaceAlt,
         borderColor: active ? t.accent : t.border,

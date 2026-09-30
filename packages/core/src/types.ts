@@ -120,7 +120,8 @@ export interface Constraint {
  */
 export interface SpinFilters {
   /** Ingredient slugs the user owns. A cocktail matches only if every
-   *  non-optional ingredient is in this set. Omit/empty = availability ignored. */
+   *  non-optional ingredient is in this set. `undefined` (omitted) = browse mode,
+   *  availability ignored; an EMPTY array = owns nothing, so nothing matches. */
   owned?: string[];
   /** Pin to a base spirit family (bypasses eligibility, like a pinned category). */
   spiritBase?: SpiritBase;

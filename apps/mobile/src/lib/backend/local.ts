@@ -25,7 +25,7 @@ export class LocalBackend implements Backend {
     return u ? { id: u.id, email: u.email } : null;
   }
 
-  async signIn(email: string): Promise<AuthUser> {
+  async signIn(email: string, _password: string): Promise<AuthUser> {
     const existing = await getJSON<LocalUser | null>(KEY.localUser, null);
     const user: LocalUser = existing ?? { id: uid(), email, name: email.split('@')[0] ?? 'Guest' };
     user.email = email;

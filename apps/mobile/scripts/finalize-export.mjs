@@ -8,6 +8,10 @@
  *      404 is written.
  *   2. Strip source maps (*.map) and their sourceMappingURL comments from the
  *      shipped bundle so client JS/CSS don't ship maps.
+ *   3. Finalize dist/_headers CSP: substitute the real Supabase origin from
+ *      EXPO_PUBLIC_SUPABASE_URL into connect-src (replacing the YOUR-PROJECT
+ *      placeholder), and add AdSense hosts when EXPO_PUBLIC_AD_PROVIDER=adsense.
+ *      Fails loudly if the placeholder would ship while Supabase is configured.
  *
  * Safe no-op when dist/ is missing. NEVER breaks the export.
  */
@@ -95,6 +99,60 @@ function stripSourceMaps() {
   console.log(`finalize-export: removed ${removed} source map(s), cleaned ${cleaned} sourceMappingURL comment(s).`);
 }
 
+const SUPABASE_PLACEHOLDER = /https:\/\/YOUR-PROJECT\.supabase\.co/g;
+const WSS_PLACEHOLDER = /wss:\/\/YOUR-PROJECT\.supabase\.co/g;
+
+function finalizeHeaders() {
+  const file = join(DIST, '_headers');
+  if (!existsSync(file)) {
+    console.log('finalize-export: no dist/_headers — skipping CSP finalize.');
+    return;
+  }
+  const supabaseUrl = (process.env.EXPO_PUBLIC_SUPABASE_URL || '').replace(/\/$/, '');
+  const adsense = (process.env.EXPO_PUBLIC_AD_PROVIDER || '') === 'adsense';
+
+  // Edit ONLY the Content-Security-Policy header line — never the surrounding
+  // comment block (which mentions the directive names) or other headers.
+  const lines = readFileSync(file, 'utf8').split('\n');
+  let placeholderInCsp = false;
+  for (let i = 0; i < lines.length; i++) {
+    if (!/^\s*Content-Security-Policy:/i.test(lines[i])) continue;
+    let csp = lines[i];
+
+    if (supabaseUrl) {
+      const host = supabaseUrl.replace(/^https?:\/\//, '');
+      csp = csp.replace(SUPABASE_PLACEHOLDER, `https://${host}`).replace(WSS_PLACEHOLDER, `wss://${host}`);
+    }
+
+    if (adsense) {
+      const add = {
+        'script-src': 'https://pagead2.googlesyndication.com https://partner.googleadservices.com',
+        'connect-src': 'https://pagead2.googlesyndication.com',
+        'frame-src': 'https://googleads.g.doubleclick.net https://*.google.com',
+      };
+      for (const [dir, hosts] of Object.entries(add)) {
+        // `[^;\n]` stays within this single directive; insert before its ';'.
+        const re = new RegExp(`(\\b${dir}\\s+[^;\\n]*?)(;)`);
+        csp = csp.replace(re, (m, body, semi) => (body.includes('pagead2') || body.includes('doubleclick') ? m : `${body} ${hosts}${semi}`));
+      }
+    }
+
+    if (csp.includes('YOUR-PROJECT.supabase.co')) placeholderInCsp = true;
+    lines[i] = csp;
+  }
+  const text = lines.join('\n');
+  writeFileSync(file, text);
+
+  // Guard: never ship the placeholder in a CSP directive on a Supabase build
+  // (the surrounding comment may still mention it — that's fine, it's not sent).
+  if (supabaseUrl && placeholderInCsp) {
+    console.error('finalize-export: CSP still contains the Supabase placeholder — check EXPO_PUBLIC_SUPABASE_URL.');
+    process.exitCode = 1;
+    return;
+  }
+  console.log(`finalize-export: CSP finalized${supabaseUrl ? ' (Supabase origin substituted)' : ' (no Supabase env; placeholder left for manual edit)'}.`);
+}
+
 function main() {
   if (!existsSync(DIST) || !statSync(DIST).isDirectory()) {
     console.log('finalize-export: no dist/ — nothing to finalize.');
@@ -102,6 +160,7 @@ function main() {
   }
   ensure404();
   stripSourceMaps();
+  finalizeHeaders();
 }
 
 try {
@@ -109,4 +168,6 @@ try {
 } catch (err) {
   console.error(`finalize-export: ${err.message} (continuing).`);
 }
-process.exit(0);
+// Exit non-zero only if a guard (e.g. an un-substituted CSP placeholder on a
+// Supabase-configured build) set process.exitCode; otherwise never break export.
+process.exit(process.exitCode || 0);

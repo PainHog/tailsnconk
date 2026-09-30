@@ -37,6 +37,21 @@ if (!existsSync(DIST)) {
 let injected = 0;
 let skipped = 0;
 
+/**
+ * Escape a JSON string so it is safe to embed inside a <script> element. Without
+ * this, any recipe name/description containing "</script>", "<!--", or a lone
+ * "<" would break out of the script element and corrupt the page. JSON.stringify
+ * does NOT do this. See https://mathiasbynens.be/notes/etago
+ */
+function safeJsonLd(obj) {
+  return JSON.stringify(obj)
+    .replace(/</g, '\\u003c')
+    .replace(/>/g, '\\u003e')
+    .replace(/&/g, '\\u0026')
+    .replace(new RegExp("\\u2028","g"), "\\u2028")
+    .replace(new RegExp("\\u2029","g"), "\\u2029")
+}
+
 /** Splice one or more JSON-LD blocks into a page's <head>. */
 function inject(relPath, blocks) {
   const file = join(DIST, relPath);
@@ -47,7 +62,7 @@ function inject(relPath, blocks) {
     return;
   }
   const tags = blocks
-    .map((b) => `<script type="application/ld+json">${JSON.stringify(b)}</script>`)
+    .map((b) => `<script type="application/ld+json">${safeJsonLd(b)}</script>`)
     .join('');
   if (html.includes('</head>')) {
     html = html.replace('</head>', `${tags}</head>`);

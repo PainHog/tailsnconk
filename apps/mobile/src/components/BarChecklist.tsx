@@ -68,6 +68,9 @@ export function BarChecklist({
           toggle(ing.slug);
           if (!wasOn) onAdd?.();
         }}
+        accessibilityRole="checkbox"
+        accessibilityState={{ checked: on }}
+        accessibilityLabel={`${ing.name}${on ? ', in your bar' : ''}`}
         style={{
           flexDirection: 'row',
           alignItems: 'center',
@@ -94,6 +97,7 @@ export function BarChecklist({
         onChangeText={setQuery}
         placeholder="Search your ingredients…"
         placeholderTextColor={t.textMuted}
+        accessibilityLabel="Search ingredients"
         style={{
           backgroundColor: t.surfaceAlt,
           borderColor: t.border,
@@ -118,6 +122,8 @@ export function BarChecklist({
               <Pressable
                 key={ing.slug}
                 onPress={() => toggle(ing.slug)}
+                accessibilityRole="button"
+                accessibilityLabel={`Remove ${ing.name} from your bar`}
                 style={{
                   flexDirection: 'row',
                   alignItems: 'center',
@@ -154,6 +160,9 @@ export function BarChecklist({
               <View key={ty} style={{ borderBottomColor: t.border, borderBottomWidth: 1 }}>
                 <Pressable
                   onPress={() => toggleSection(ty)}
+                  accessibilityRole="button"
+                  accessibilityState={{ expanded: isOpen }}
+                  accessibilityLabel={`${TYPE_LABEL[ty]}${count > 0 ? `, ${count} in your bar` : ''}`}
                   style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingVertical: spacing.md }}
                 >
                   <View style={{ flexDirection: 'row', alignItems: 'center' }}>

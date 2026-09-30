@@ -6,6 +6,7 @@
 
 import { createClient, type SupabaseClient } from '@supabase/supabase-js';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { periodKey } from '@tailsnconk/core';
 
 import { PUBLIC_CONFIG } from './public-config';
 import type { AuthUser, Backend, CommunityPhoto, Profile, Review, SubscribeResult } from './types';
@@ -115,15 +116,19 @@ export class SupabaseBackend implements Backend {
   }
 
   async listReviews(cocktailId: string): Promise<Review[]> {
-    const { data } = await this.client
-      .from('reviews')
-      .select('id, user_id, cocktail_id, rating, body, created_at, public_profiles(name)')
+    // public_reviews is a definer view (see migration 3) that joins reviews with
+    // the author's public name and is anon-readable for ALL rows — the reviews
+    // table itself only exposes the caller's own rows, so we must not query it.
+    const { data, error } = await this.client
+      .from('public_reviews')
+      .select('id, user_id, cocktail_id, rating, body, created_at, name')
       .eq('cocktail_id', cocktailId)
       .order('created_at', { ascending: false });
+    if (error) return [];
     return (data ?? []).map((r) => ({
       id: r.id as string,
       userId: r.user_id as string,
-      userName: (r as { public_profiles?: { name?: string } }).public_profiles?.name ?? 'Guest',
+      userName: (r.name as string) ?? 'Guest',
       cocktailId: r.cocktail_id as string,
       rating: r.rating as number,
       body: (r.body as string) ?? '',
@@ -148,9 +153,19 @@ export class SupabaseBackend implements Backend {
   }
 
   async listApprovedPhotos(cocktailId: string): Promise<CommunityPhoto[]> {
-    const { data, error } = await this.client.functions.invoke('wall-photos', { body: { cocktailId } });
+    // wall-photos returns snake_case keys; map them to the CommunityPhoto shape.
+    const { data, error } = await this.client.functions.invoke('wall-photos', {
+      body: { cocktail_id: cocktailId },
+    });
     if (error || !data) return [];
-    return (data.photos as CommunityPhoto[]) ?? [];
+    const rows = (data.photos ?? []) as Array<Record<string, unknown>>;
+    return rows.map((p) => ({
+      id: (p.id as string) ?? '',
+      cocktailId: (p.cocktail_id as string) ?? (p.cocktailId as string) ?? cocktailId,
+      userName: (p.user_name as string) ?? (p.userName as string) ?? 'Guest',
+      url: (p.url as string) ?? '',
+      caption: (p.caption as string) ?? '',
+    }));
   }
 
   async submitPhoto(cocktailId: string, dataUrl: string, caption: string): Promise<SubscribeResult> {
@@ -159,9 +174,11 @@ export class SupabaseBackend implements Backend {
     const path = `${userId}/${cocktailId}-${Date.now()}.jpg`;
     const up = await this.client.storage.from('made-photos').upload(path, blob, { contentType: 'image/jpeg' });
     if (up.error) return { ok: false, message: 'Upload failed.' };
+    // user_id and week_key are NOT NULL; the enforce_made_photo_insert trigger
+    // also requires user_id === auth.uid() and forces status='pending'.
     const ins = await this.client
       .from('made_photos')
-      .insert({ cocktail_id: cocktailId, storage_path: path, caption });
+      .insert({ user_id: userId, week_key: periodKey(), cocktail_id: cocktailId, storage_path: path, caption });
     if (ins.error) return { ok: false, message: 'Could not submit photo.' };
     return { ok: true, message: 'Submitted for review — thanks!' };
   }

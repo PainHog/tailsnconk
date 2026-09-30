@@ -10,6 +10,10 @@ export const ENV = {
   siteUrl: process.env.EXPO_PUBLIC_SITE_URL ?? 'https://tailsnconk.com',
   adProvider: process.env.EXPO_PUBLIC_AD_PROVIDER ?? '',
   adClientId: process.env.EXPO_PUBLIC_AD_CLIENT_ID ?? '',
+  // Per-placement AdSense display-unit slot ids (numeric strings from the
+  // AdSense dashboard). Required for a unit to fill — an "auto" slot never does.
+  adSlotInFeed: process.env.EXPO_PUBLIC_AD_SLOT_IN_FEED ?? '',
+  adSlotMidContent: process.env.EXPO_PUBLIC_AD_SLOT_MID_CONTENT ?? '',
 } as const;
 
 /** True in a production build (Expo sets NODE_ENV=production for exports). */

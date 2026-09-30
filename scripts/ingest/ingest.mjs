@@ -95,6 +95,32 @@ function synthDescription(name, method, base, ings) {
   return `${lead} cocktail made with ${req.join(', ')}.`;
 }
 
+// ---- Name / slug canonicalization (de-dupe the same drink across sources) ----
+
+/** Upstream name typos / spelling fixes, applied before slugging. */
+const NAME_FIX = {
+  'Napa Vally Sour': 'Napa Valley Sour',
+};
+
+/** Collapse alternate slugs of the SAME cocktail onto one canonical slug so
+ *  merge() unions them instead of emitting near-identical duplicate pages. */
+const SLUG_ALIASES = {
+  'army-and-navy': 'army-navy',
+  'corpse-reviver-2': 'corpse-reviver-no-2',
+  'long-island-ice-tea': 'long-island-iced-tea',
+  'kir-royal': 'kir-royale',
+  'ramos-fizz': 'ramos-gin-fizz',
+  'spritz': 'aperol-spritz',
+};
+
+function canonicalName(name) {
+  return NAME_FIX[String(name).trim()] ?? String(name).trim();
+}
+function canonicalSlug(name) {
+  const s = slugify(name);
+  return SLUG_ALIASES[s] ?? s;
+}
+
 // ---- Per-source normalization into a common shape ----
 
 const registry = new Map(); // slug -> {name,type,contains}
@@ -128,8 +154,9 @@ function buildNorm({ name, source, rawIngredients, methodHint, glassHint, tagsHi
   const tags = tagsHint && tagsHint.length
     ? [...new Set(tagsHint.map(kebab).filter(Boolean))]
     : inferTags(method, base, abv);
+  const fixedName = canonicalName(name);
   return {
-    slug: slugify(name), name: name.trim(), source, spiritBase: base, abvBand: abv, glass, method, tags,
+    slug: canonicalSlug(fixedName), name: fixedName, source, spiritBase: base, abvBand: abv, glass, method, tags,
     description: description || null,
     ingredients: ingredients.map(({ ingredientSlug, amount, unit, optional }) => ({ ingredientSlug, amount, unit, optional })),
     requiredSet: new Set(ingredients.filter((i) => !i.optional).map((i) => i.ingredientSlug)),

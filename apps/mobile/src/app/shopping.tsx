@@ -46,6 +46,8 @@ export default function Shopping() {
   const SmallBtn = ({ label, onPress, filled }: { label: string; onPress: () => void; filled?: boolean }) => (
     <Pressable
       onPress={onPress}
+      accessibilityRole="button"
+      accessibilityLabel={label}
       style={{
         backgroundColor: filled ? t.accent : 'transparent',
         borderColor: t.accent,

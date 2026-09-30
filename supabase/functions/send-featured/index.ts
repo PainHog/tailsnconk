@@ -25,6 +25,24 @@ import { escapeHtml, periodKey, siteBase, unsubscribeUrl } from "../_shared/link
 // Resend batch cap is 100; keep headroom.
 const BATCH_SIZE = 90;
 
+/**
+ * Constant-time secret comparison. Hashes both sides with SHA-256 first so the
+ * comparison is over fixed-length digests (no length leak) and takes the same
+ * time regardless of where the first differing byte is.
+ */
+async function secretsMatch(a: string, b: string): Promise<boolean> {
+  const enc = new TextEncoder();
+  const [ha, hb] = await Promise.all([
+    crypto.subtle.digest("SHA-256", enc.encode(a)),
+    crypto.subtle.digest("SHA-256", enc.encode(b)),
+  ]);
+  const da = new Uint8Array(ha);
+  const db = new Uint8Array(hb);
+  let diff = 0;
+  for (let i = 0; i < da.length; i++) diff |= da[i] ^ db[i];
+  return diff === 0;
+}
+
 interface FeaturedInput {
   week_key?: string;
   cocktail?: { slug?: string; name?: string; blurb?: string; url?: string };
@@ -36,14 +54,14 @@ Deno.serve(async (req) => {
 
   if (req.method !== "POST") return forbidden("POST required");
 
-  // --- Auth gate: constant-ish comparison against CRON_SECRET, fail closed ---
+  // --- Auth gate: constant-time comparison against CRON_SECRET, fail closed ---
   const expected = Deno.env.get("CRON_SECRET");
   if (!expected) {
     console.error("send-featured: CRON_SECRET is unset — refusing to run");
     return forbidden("broadcast disabled");
   }
   const provided = req.headers.get("x-cron-secret") ?? "";
-  if (provided !== expected) return forbidden("bad cron secret");
+  if (!(await secretsMatch(provided, expected))) return forbidden("bad cron secret");
 
   let body: FeaturedInput = {};
   try {

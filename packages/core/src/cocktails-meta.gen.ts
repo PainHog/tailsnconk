@@ -9,7 +9,7 @@ import type { CocktailMeta } from './types';
 export const COCKTAIL_META: CocktailMeta[] = [
   {
     "slug": "adriatique",
-    "spiritBase": "other",
+    "spiritBase": "aperitivo",
     "abvBand": "medium",
     "required": [
       "amaro-montenegro",
@@ -24,7 +24,7 @@ export const COCKTAIL_META: CocktailMeta[] = [
   {
     "slug": "airmail",
     "spiritBase": "rum",
-    "abvBand": "high",
+    "abvBand": "medium",
     "required": [
       "aged-rum",
       "lime-juice",
@@ -41,14 +41,16 @@ export const COCKTAIL_META: CocktailMeta[] = [
   },
   {
     "slug": "alexander",
-    "spiritBase": "brandy",
-    "abvBand": "high",
+    "spiritBase": "gin",
+    "abvBand": "medium",
     "required": [
-      "cognac",
+      "gin",
       "creme-de-cacao",
       "cream"
     ],
-    "optional": [],
+    "optional": [
+      "nutmeg"
+    ],
     "supportedConstraints": [
       "egg-free"
     ]
@@ -74,8 +76,8 @@ export const COCKTAIL_META: CocktailMeta[] = [
   },
   {
     "slug": "americano",
-    "spiritBase": "other",
-    "abvBand": "high",
+    "spiritBase": "aperitivo",
+    "abvBand": "medium",
     "required": [
       "campari",
       "sweet-vermouth",
@@ -153,21 +155,6 @@ export const COCKTAIL_META: CocktailMeta[] = [
     ]
   },
   {
-    "slug": "army-and-navy",
-    "spiritBase": "gin",
-    "abvBand": "medium",
-    "required": [
-      "gin",
-      "lemon-juice",
-      "orgeat"
-    ],
-    "optional": [],
-    "supportedConstraints": [
-      "zero-proof",
-      "egg-free"
-    ]
-  },
-  {
     "slug": "aviation",
     "spiritBase": "gin",
     "abvBand": "high",
@@ -198,7 +185,7 @@ export const COCKTAIL_META: CocktailMeta[] = [
   {
     "slug": "bacardi",
     "spiritBase": "rum",
-    "abvBand": "high",
+    "abvBand": "medium",
     "required": [
       "white-rum",
       "lemon-juice",
@@ -250,7 +237,7 @@ export const COCKTAIL_META: CocktailMeta[] = [
   {
     "slug": "batanga",
     "spiritBase": "tequila",
-    "abvBand": "low",
+    "abvBand": "medium",
     "required": [
       "tequila-blanco",
       "lime-juice",
@@ -365,7 +352,7 @@ export const COCKTAIL_META: CocktailMeta[] = [
   },
   {
     "slug": "bitter-mimosa",
-    "spiritBase": "other",
+    "spiritBase": "aperitivo",
     "abvBand": "low",
     "required": [
       "champagne",
@@ -394,7 +381,7 @@ export const COCKTAIL_META: CocktailMeta[] = [
   {
     "slug": "black-velvet",
     "spiritBase": "other",
-    "abvBand": "high",
+    "abvBand": "low",
     "required": [
       "champagne",
       "guinness"
@@ -422,7 +409,7 @@ export const COCKTAIL_META: CocktailMeta[] = [
   {
     "slug": "blood-and-sand",
     "spiritBase": "whiskey",
-    "abvBand": "high",
+    "abvBand": "medium",
     "required": [
       "scotch",
       "cherry-liqueur",
@@ -439,7 +426,7 @@ export const COCKTAIL_META: CocktailMeta[] = [
   {
     "slug": "bloody-mary",
     "spiritBase": "vodka",
-    "abvBand": "low",
+    "abvBand": "medium",
     "required": [
       "vodka",
       "tomato-juice",
@@ -472,7 +459,7 @@ export const COCKTAIL_META: CocktailMeta[] = [
     ],
     "optional": [
       "pineapple",
-      "orchid"
+      "edible-flower"
     ],
     "supportedConstraints": [
       "zero-proof",
@@ -482,7 +469,7 @@ export const COCKTAIL_META: CocktailMeta[] = [
   {
     "slug": "blue-lagoon",
     "spiritBase": "vodka",
-    "abvBand": "low",
+    "abvBand": "medium",
     "required": [
       "vodka",
       "orange-curacao",
@@ -547,7 +534,7 @@ export const COCKTAIL_META: CocktailMeta[] = [
   {
     "slug": "bramble",
     "spiritBase": "gin",
-    "abvBand": "high",
+    "abvBand": "medium",
     "required": [
       "gin",
       "lemon-juice",
@@ -565,7 +552,7 @@ export const COCKTAIL_META: CocktailMeta[] = [
   {
     "slug": "brandy-alexander",
     "spiritBase": "brandy",
-    "abvBand": "high",
+    "abvBand": "medium",
     "required": [
       "cognac",
       "creme-de-cacao",
@@ -692,7 +679,7 @@ export const COCKTAIL_META: CocktailMeta[] = [
     ],
     "optional": [
       "salt",
-      "grapefruit-wedge"
+      "grapefruit"
     ],
     "supportedConstraints": [
       "zero-proof",
@@ -734,7 +721,7 @@ export const COCKTAIL_META: CocktailMeta[] = [
   {
     "slug": "champagne-cocktail",
     "spiritBase": "brandy",
-    "abvBand": "high",
+    "abvBand": "medium",
     "required": [
       "sugar-cube",
       "angostura-bitters",
@@ -752,7 +739,7 @@ export const COCKTAIL_META: CocktailMeta[] = [
   {
     "slug": "charro-negro",
     "spiritBase": "tequila",
-    "abvBand": "low",
+    "abvBand": "medium",
     "required": [
       "tequila-blanco",
       "lime-juice",
@@ -803,7 +790,7 @@ export const COCKTAIL_META: CocktailMeta[] = [
   {
     "slug": "chrysanthemum",
     "spiritBase": "other",
-    "abvBand": "high",
+    "abvBand": "medium",
     "required": [
       "dry-vermouth",
       "benedictine",
@@ -817,7 +804,7 @@ export const COCKTAIL_META: CocktailMeta[] = [
   {
     "slug": "clover-club",
     "spiritBase": "gin",
-    "abvBand": "high",
+    "abvBand": "medium",
     "required": [
       "gin",
       "lemon-juice",
@@ -834,25 +821,9 @@ export const COCKTAIL_META: CocktailMeta[] = [
     ]
   },
   {
-    "slug": "corpse-reviver-2",
-    "spiritBase": "gin",
-    "abvBand": "high",
-    "required": [
-      "gin",
-      "orange-liqueur",
-      "lillet-blanc",
-      "lemon-juice",
-      "absinthe"
-    ],
-    "optional": [],
-    "supportedConstraints": [
-      "egg-free"
-    ]
-  },
-  {
     "slug": "corpse-reviver-no-2",
     "spiritBase": "gin",
-    "abvBand": "high",
+    "abvBand": "medium",
     "required": [
       "gin",
       "orange-liqueur",
@@ -888,7 +859,7 @@ export const COCKTAIL_META: CocktailMeta[] = [
   {
     "slug": "cuba-libre",
     "spiritBase": "rum",
-    "abvBand": "low",
+    "abvBand": "medium",
     "required": [
       "white-rum",
       "cola",
@@ -950,7 +921,7 @@ export const COCKTAIL_META: CocktailMeta[] = [
   {
     "slug": "dark-n-stormy",
     "spiritBase": "rum",
-    "abvBand": "low",
+    "abvBand": "medium",
     "required": [
       "dark-rum",
       "ginger-beer"
@@ -967,7 +938,7 @@ export const COCKTAIL_META: CocktailMeta[] = [
   {
     "slug": "death-in-the-afternoon",
     "spiritBase": "other",
-    "abvBand": "high",
+    "abvBand": "medium",
     "required": [
       "absinthe",
       "champagne"
@@ -1002,7 +973,7 @@ export const COCKTAIL_META: CocktailMeta[] = [
       "lime-juice"
     ],
     "optional": [
-      "grapefruit-twist"
+      "grapefruit"
     ],
     "supportedConstraints": [
       "egg-free"
@@ -1062,7 +1033,7 @@ export const COCKTAIL_META: CocktailMeta[] = [
   {
     "slug": "espresso-martini",
     "spiritBase": "vodka",
-    "abvBand": "high",
+    "abvBand": "medium",
     "required": [
       "vodka",
       "coffee-liqueur",
@@ -1079,7 +1050,7 @@ export const COCKTAIL_META: CocktailMeta[] = [
   },
   {
     "slug": "fernandito",
-    "spiritBase": "other",
+    "spiritBase": "aperitivo",
     "abvBand": "low",
     "required": [
       "fernet-branca",
@@ -1113,7 +1084,7 @@ export const COCKTAIL_META: CocktailMeta[] = [
   {
     "slug": "french-75",
     "spiritBase": "gin",
-    "abvBand": "high",
+    "abvBand": "medium",
     "required": [
       "gin",
       "lemon-juice",
@@ -1192,7 +1163,7 @@ export const COCKTAIL_META: CocktailMeta[] = [
   {
     "slug": "gin-and-tonic",
     "spiritBase": "gin",
-    "abvBand": "low",
+    "abvBand": "medium",
     "required": [
       "gin",
       "tonic-water"
@@ -1216,7 +1187,7 @@ export const COCKTAIL_META: CocktailMeta[] = [
       "basil"
     ],
     "optional": [
-      "basil-sprig"
+      "basil"
     ],
     "supportedConstraints": [
       "zero-proof",
@@ -1244,7 +1215,7 @@ export const COCKTAIL_META: CocktailMeta[] = [
   {
     "slug": "gin-rickey",
     "spiritBase": "gin",
-    "abvBand": "low",
+    "abvBand": "medium",
     "required": [
       "gin",
       "lime-juice",
@@ -1414,7 +1385,7 @@ export const COCKTAIL_META: CocktailMeta[] = [
   {
     "slug": "harvey-wallbanger",
     "spiritBase": "vodka",
-    "abvBand": "low",
+    "abvBand": "medium",
     "required": [
       "vodka",
       "orange-juice",
@@ -1430,7 +1401,7 @@ export const COCKTAIL_META: CocktailMeta[] = [
   {
     "slug": "hemingway-daiquiri",
     "spiritBase": "rum",
-    "abvBand": "high",
+    "abvBand": "medium",
     "required": [
       "white-rum",
       "lime-juice",
@@ -1447,7 +1418,7 @@ export const COCKTAIL_META: CocktailMeta[] = [
   {
     "slug": "hemingway-special",
     "spiritBase": "rum",
-    "abvBand": "high",
+    "abvBand": "medium",
     "required": [
       "white-rum",
       "grapefruit-juice",
@@ -1535,7 +1506,7 @@ export const COCKTAIL_META: CocktailMeta[] = [
   {
     "slug": "illegal",
     "spiritBase": "tequila",
-    "abvBand": "medium",
+    "abvBand": "high",
     "required": [
       "mezcal",
       "overproof-rum",
@@ -1582,7 +1553,7 @@ export const COCKTAIL_META: CocktailMeta[] = [
   {
     "slug": "john-collins",
     "spiritBase": "gin",
-    "abvBand": "low",
+    "abvBand": "medium",
     "required": [
       "gin",
       "lemon-juice",
@@ -1636,7 +1607,7 @@ export const COCKTAIL_META: CocktailMeta[] = [
   {
     "slug": "kalte-ente",
     "spiritBase": "other",
-    "abvBand": "high",
+    "abvBand": "low",
     "required": [
       "dry-white-wine",
       "champagne",
@@ -1650,7 +1621,7 @@ export const COCKTAIL_META: CocktailMeta[] = [
   {
     "slug": "kamikaze",
     "spiritBase": "vodka",
-    "abvBand": "high",
+    "abvBand": "medium",
     "required": [
       "vodka",
       "orange-liqueur",
@@ -1667,7 +1638,7 @@ export const COCKTAIL_META: CocktailMeta[] = [
   {
     "slug": "kentucky-mule",
     "spiritBase": "whiskey",
-    "abvBand": "low",
+    "abvBand": "medium",
     "required": [
       "bourbon",
       "lime-juice",
@@ -1684,7 +1655,7 @@ export const COCKTAIL_META: CocktailMeta[] = [
   {
     "slug": "kir",
     "spiritBase": "other",
-    "abvBand": "high",
+    "abvBand": "medium",
     "required": [
       "creme-de-cassis",
       "dry-white-wine"
@@ -1695,22 +1666,9 @@ export const COCKTAIL_META: CocktailMeta[] = [
     ]
   },
   {
-    "slug": "kir-royal",
-    "spiritBase": "other",
-    "abvBand": "high",
-    "required": [
-      "champagne",
-      "creme-de-cassis"
-    ],
-    "optional": [],
-    "supportedConstraints": [
-      "egg-free"
-    ]
-  },
-  {
     "slug": "kir-royale",
     "spiritBase": "other",
-    "abvBand": "high",
+    "abvBand": "medium",
     "required": [
       "creme-de-cassis",
       "champagne"
@@ -1725,7 +1683,7 @@ export const COCKTAIL_META: CocktailMeta[] = [
   {
     "slug": "last-word",
     "spiritBase": "gin",
-    "abvBand": "high",
+    "abvBand": "medium",
     "required": [
       "gin",
       "green-chartreuse",
@@ -1742,7 +1700,7 @@ export const COCKTAIL_META: CocktailMeta[] = [
   {
     "slug": "lemon-drop",
     "spiritBase": "vodka",
-    "abvBand": "high",
+    "abvBand": "medium",
     "required": [
       "vodka",
       "orange-liqueur",
@@ -1766,26 +1724,6 @@ export const COCKTAIL_META: CocktailMeta[] = [
       "vodka-citron",
       "orange-liqueur",
       "lemon-juice"
-    ],
-    "optional": [],
-    "supportedConstraints": [
-      "zero-proof",
-      "egg-free"
-    ]
-  },
-  {
-    "slug": "long-island-ice-tea",
-    "spiritBase": "vodka",
-    "abvBand": "low",
-    "required": [
-      "vodka",
-      "tequila-blanco",
-      "white-rum",
-      "gin",
-      "orange-liqueur",
-      "lemon-juice",
-      "simple-syrup",
-      "cola"
     ],
     "optional": [],
     "supportedConstraints": [
@@ -1836,7 +1774,7 @@ export const COCKTAIL_META: CocktailMeta[] = [
   {
     "slug": "mai-tai",
     "spiritBase": "rum",
-    "abvBand": "high",
+    "abvBand": "medium",
     "required": [
       "aged-rum",
       "lime-juice",
@@ -1846,7 +1784,7 @@ export const COCKTAIL_META: CocktailMeta[] = [
     ],
     "optional": [
       "mint",
-      "spent-lime-shell"
+      "lime"
     ],
     "supportedConstraints": [
       "zero-proof",
@@ -1957,7 +1895,7 @@ export const COCKTAIL_META: CocktailMeta[] = [
   {
     "slug": "mezcal-margarita",
     "spiritBase": "tequila",
-    "abvBand": "high",
+    "abvBand": "medium",
     "required": [
       "mezcal",
       "orange-liqueur",
@@ -2116,14 +2054,13 @@ export const COCKTAIL_META: CocktailMeta[] = [
       "chocolate-shavings"
     ],
     "supportedConstraints": [
-      "zero-proof",
       "egg-free"
     ]
   },
   {
     "slug": "naked-and-famous",
     "spiritBase": "tequila",
-    "abvBand": "high",
+    "abvBand": "medium",
     "required": [
       "mezcal",
       "yellow-chartreuse",
@@ -2136,7 +2073,7 @@ export const COCKTAIL_META: CocktailMeta[] = [
     ]
   },
   {
-    "slug": "napa-vally-sour",
+    "slug": "napa-valley-sour",
     "spiritBase": "whiskey",
     "abvBand": "medium",
     "required": [
@@ -2190,7 +2127,7 @@ export const COCKTAIL_META: CocktailMeta[] = [
   {
     "slug": "negroni-sbagliato",
     "spiritBase": "aperitivo",
-    "abvBand": "high",
+    "abvBand": "medium",
     "required": [
       "campari",
       "sweet-vermouth",
@@ -2311,7 +2248,7 @@ export const COCKTAIL_META: CocktailMeta[] = [
   {
     "slug": "paloma",
     "spiritBase": "tequila",
-    "abvBand": "low",
+    "abvBand": "medium",
     "required": [
       "tequila-blanco",
       "lime-juice",
@@ -2329,7 +2266,7 @@ export const COCKTAIL_META: CocktailMeta[] = [
   {
     "slug": "paper-plane",
     "spiritBase": "whiskey",
-    "abvBand": "high",
+    "abvBand": "medium",
     "required": [
       "bourbon",
       "aperol",
@@ -2358,7 +2295,7 @@ export const COCKTAIL_META: CocktailMeta[] = [
   {
     "slug": "penicillin",
     "spiritBase": "whiskey",
-    "abvBand": "high",
+    "abvBand": "medium",
     "required": [
       "scotch",
       "lemon-juice",
@@ -2469,7 +2406,7 @@ export const COCKTAIL_META: CocktailMeta[] = [
   {
     "slug": "porto-flip",
     "spiritBase": "brandy",
-    "abvBand": "high",
+    "abvBand": "medium",
     "required": [
       "brandy",
       "port",
@@ -2477,27 +2414,6 @@ export const COCKTAIL_META: CocktailMeta[] = [
     ],
     "optional": [],
     "supportedConstraints": [
-      "egg-free"
-    ]
-  },
-  {
-    "slug": "ramos-fizz",
-    "spiritBase": "gin",
-    "abvBand": "low",
-    "required": [
-      "gin",
-      "lime-juice",
-      "lemon-juice",
-      "simple-syrup",
-      "cream",
-      "egg-white",
-      "orange-flower-water",
-      "vanilla-extract",
-      "soda-water"
-    ],
-    "optional": [],
-    "supportedConstraints": [
-      "zero-proof",
       "egg-free"
     ]
   },
@@ -2549,7 +2465,7 @@ export const COCKTAIL_META: CocktailMeta[] = [
       "absinthe"
     ],
     "optional": [
-      "brandied-cherry"
+      "maraschino-cherry"
     ],
     "supportedConstraints": [
       "egg-free"
@@ -2616,7 +2532,7 @@ export const COCKTAIL_META: CocktailMeta[] = [
   {
     "slug": "russian-spring-punch",
     "spiritBase": "vodka",
-    "abvBand": "high",
+    "abvBand": "medium",
     "required": [
       "vodka",
       "lemon-juice",
@@ -2700,7 +2616,7 @@ export const COCKTAIL_META: CocktailMeta[] = [
   {
     "slug": "screwdriver",
     "spiritBase": "vodka",
-    "abvBand": "low",
+    "abvBand": "medium",
     "required": [
       "vodka",
       "orange-juice"
@@ -2799,7 +2715,7 @@ export const COCKTAIL_META: CocktailMeta[] = [
   {
     "slug": "siesta",
     "spiritBase": "tequila",
-    "abvBand": "high",
+    "abvBand": "medium",
     "required": [
       "tequila-blanco",
       "campari",
@@ -2808,7 +2724,7 @@ export const COCKTAIL_META: CocktailMeta[] = [
       "simple-syrup"
     ],
     "optional": [
-      "grapefruit-twist"
+      "grapefruit"
     ],
     "supportedConstraints": [
       "zero-proof",
@@ -2866,7 +2782,7 @@ export const COCKTAIL_META: CocktailMeta[] = [
       "honey-syrup"
     ],
     "optional": [
-      "thin-slices-red-chili-pepper"
+      "chili"
     ],
     "supportedConstraints": [
       "zero-proof",
@@ -2876,7 +2792,7 @@ export const COCKTAIL_META: CocktailMeta[] = [
   {
     "slug": "spicy-margarita",
     "spiritBase": "tequila",
-    "abvBand": "high",
+    "abvBand": "medium",
     "required": [
       "tequila-blanco",
       "orange-liqueur",
@@ -2886,23 +2802,8 @@ export const COCKTAIL_META: CocktailMeta[] = [
     ],
     "optional": [
       "salt",
-      "jalapeno-slice"
+      "jalapeno"
     ],
-    "supportedConstraints": [
-      "zero-proof",
-      "egg-free"
-    ]
-  },
-  {
-    "slug": "spritz",
-    "spiritBase": "other",
-    "abvBand": "high",
-    "required": [
-      "prosecco",
-      "aperol",
-      "soda-water"
-    ],
-    "optional": [],
     "supportedConstraints": [
       "zero-proof",
       "egg-free"
@@ -2926,7 +2827,7 @@ export const COCKTAIL_META: CocktailMeta[] = [
   {
     "slug": "suffering-bastard",
     "spiritBase": "brandy",
-    "abvBand": "low",
+    "abvBand": "medium",
     "required": [
       "brandy",
       "gin",
@@ -2961,7 +2862,7 @@ export const COCKTAIL_META: CocktailMeta[] = [
   {
     "slug": "tequila-sunrise",
     "spiritBase": "tequila",
-    "abvBand": "low",
+    "abvBand": "medium",
     "required": [
       "tequila-blanco",
       "orange-juice",
@@ -3027,7 +2928,7 @@ export const COCKTAIL_META: CocktailMeta[] = [
   {
     "slug": "tommy-kohlrabins",
     "spiritBase": "gin",
-    "abvBand": "low",
+    "abvBand": "medium",
     "required": [
       "old-tom-gin",
       "lemon-juice",
@@ -3110,7 +3011,7 @@ export const COCKTAIL_META: CocktailMeta[] = [
   {
     "slug": "twentieth-century",
     "spiritBase": "gin",
-    "abvBand": "high",
+    "abvBand": "medium",
     "required": [
       "gin",
       "lillet-blanc",

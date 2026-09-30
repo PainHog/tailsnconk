@@ -12,7 +12,7 @@
  * Built-in provider: "adsense" (Google AdSense). Any other provider value falls
  * back to the placeholder until wired.
  */
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Text, View } from 'react-native';
 import { ENV, IS_PROD, IS_WEB } from '@/lib/env';
 import { radius, spacing, useTheme } from '@/constants/theme';
@@ -35,13 +35,14 @@ function ensureAdsenseScript(clientId: string) {
 export function AdSlot({ placement }: { placement: AdPlacement }) {
   const t = useTheme();
   const [mounted, setMounted] = useState(false);
-  const insRef = useRef<HTMLModElement | null>(null);
 
   useEffect(() => setMounted(true), []);
 
   const provider = ENV.adProvider;
   const clientId = ENV.adClientId;
-  const live = IS_WEB && IS_PROD && provider === 'adsense' && Boolean(clientId);
+  const slotId = placement === 'in-feed' ? ENV.adSlotInFeed : ENV.adSlotMidContent;
+  // A display unit needs a real numeric slot id to fill; without one, stay a no-op.
+  const live = IS_WEB && IS_PROD && provider === 'adsense' && Boolean(clientId) && Boolean(slotId);
 
   useEffect(() => {
     if (!mounted || !live) return;
@@ -62,6 +63,7 @@ export function AdSlot({ placement }: { placement: AdPlacement }) {
     return (
       <View
         accessibilityElementsHidden
+        importantForAccessibility="no-hide-descendants"
         style={{
           borderWidth: 1,
           borderStyle: 'dashed',
@@ -78,15 +80,14 @@ export function AdSlot({ placement }: { placement: AdPlacement }) {
   }
 
   // Live AdSense unit. react-native-web renders View->div; we drop to a raw
-  // <ins> via dangerouslySetInnerHTML-free ref for the provider to fill.
+  // <ins> (rendered client-side after mount) for the provider script to fill.
   return (
     <View style={{ marginVertical: spacing.lg, alignItems: 'center' }}>
       {React.createElement('ins', {
-        ref: insRef,
         className: 'adsbygoogle',
         style: { display: 'block', width: '100%' },
         'data-ad-client': clientId,
-        'data-ad-slot': placement === 'in-feed' ? 'auto' : 'auto',
+        'data-ad-slot': slotId,
         'data-ad-format': 'auto',
         'data-full-width-responsive': 'true',
       })}

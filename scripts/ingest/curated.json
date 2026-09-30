@@ -198,5 +198,18 @@
       {"name": "Lime", "type": "garnish", "amount": "1", "unit": "wedge", "optional": true}
     ],
     "sources": ["https://www.drinklab.org/virgin-mojito-classic/", "https://www.thirstybear.com/virgin-mojito-recipe/"]
+  },
+  {
+    "name": "Alexander",
+    "description": "The original 1910s Alexander: equal parts gin, crème de cacao, and cream shaken into a silky, chocolatey nightcap — the gin ancestor of the Brandy Alexander.",
+    "spirit_base": "gin", "abv_band": "medium", "glass": "coupe", "method": "shake",
+    "tags": ["classic", "creamy", "gin", "dessert"],
+    "ingredients": [
+      {"name": "Gin", "type": "spirit", "amount": "1", "unit": "oz", "optional": false},
+      {"name": "Crème de cacao", "type": "liqueur", "amount": "1", "unit": "oz", "optional": false},
+      {"name": "Cream", "type": "other", "amount": "1", "unit": "oz", "optional": false},
+      {"name": "Nutmeg", "type": "garnish", "amount": "1", "unit": "pinch", "optional": true}
+    ],
+    "sources": ["https://en.wikipedia.org/wiki/Alexander_(cocktail)", "https://www.diffordsguide.com/cocktails/recipe/1108/alexander-gin-based"]
   }
 ]

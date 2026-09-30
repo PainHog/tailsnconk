@@ -117,10 +117,10 @@ export default function Account() {
             <Button variant={mkind === 'up' ? 'primary' : 'ghost'} label="Create account" onPress={() => setMkind('up')} />
           </View>
           {mkind === 'up' ? (
-            <TextInput value={name} onChangeText={setName} placeholder="Display name" placeholderTextColor={t.textMuted} style={input} />
+            <TextInput value={name} onChangeText={setName} placeholder="Display name" placeholderTextColor={t.textMuted} accessibilityLabel="Display name" style={input} />
           ) : null}
-          <TextInput value={email} onChangeText={setEmail} placeholder="Email" placeholderTextColor={t.textMuted} autoCapitalize="none" keyboardType="email-address" style={input} />
-          <TextInput value={password} onChangeText={setPassword} placeholder="Password" placeholderTextColor={t.textMuted} secureTextEntry style={input} />
+          <TextInput value={email} onChangeText={setEmail} placeholder="Email" placeholderTextColor={t.textMuted} accessibilityLabel="Email" autoCapitalize="none" keyboardType="email-address" style={input} />
+          <TextInput value={password} onChangeText={setPassword} placeholder="Password" placeholderTextColor={t.textMuted} accessibilityLabel="Password" secureTextEntry style={input} />
           <Button label={mkind === 'up' ? 'Create account' : 'Sign in'} onPress={submit} />
           {err ? <Muted style={{ color: t.cranberry, marginTop: spacing.sm }}>{err}</Muted> : null}
           {mode === 'local' ? <Muted style={{ marginTop: spacing.sm }}>In local mode any email/password works and stays on this device.</Muted> : null}

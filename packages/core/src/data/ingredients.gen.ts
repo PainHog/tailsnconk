@@ -55,7 +55,10 @@ export const INGREDIENTS: Ingredient[] = [
   {
     "slug": "amer-picon",
     "name": "Amer Picon",
-    "type": "other"
+    "type": "liqueur",
+    "contains": [
+      "alcohol"
+    ]
   },
   {
     "slug": "amontillado-sherry",
@@ -105,11 +108,6 @@ export const INGREDIENTS: Ingredient[] = [
     "type": "other"
   },
   {
-    "slug": "basil-sprig",
-    "name": "Basil Sprig",
-    "type": "garnish"
-  },
-  {
     "slug": "benedictine",
     "name": "Bénédictine",
     "type": "liqueur",
@@ -134,11 +132,6 @@ export const INGREDIENTS: Ingredient[] = [
     "contains": [
       "alcohol"
     ]
-  },
-  {
-    "slug": "brandied-cherry",
-    "name": "Brandied Cherry",
-    "type": "garnish"
   },
   {
     "slug": "brandy",
@@ -228,6 +221,11 @@ export const INGREDIENTS: Ingredient[] = [
     "contains": [
       "alcohol"
     ]
+  },
+  {
+    "slug": "chili",
+    "name": "Chili pepper",
+    "type": "garnish"
   },
   {
     "slug": "chocolate",
@@ -387,6 +385,11 @@ export const INGREDIENTS: Ingredient[] = [
     ]
   },
   {
+    "slug": "edible-flower",
+    "name": "Edible flower",
+    "type": "garnish"
+  },
+  {
     "slug": "egg",
     "name": "Whole egg",
     "type": "other",
@@ -481,7 +484,7 @@ export const INGREDIENTS: Ingredient[] = [
   {
     "slug": "grapefruit",
     "name": "Grapefruit",
-    "type": "other"
+    "type": "garnish"
   },
   {
     "slug": "grapefruit-juice",
@@ -492,16 +495,6 @@ export const INGREDIENTS: Ingredient[] = [
     "slug": "grapefruit-soda",
     "name": "Grapefruit soda",
     "type": "mixer"
-  },
-  {
-    "slug": "grapefruit-twist",
-    "name": "Grapefruit Twist",
-    "type": "garnish"
-  },
-  {
-    "slug": "grapefruit-wedge",
-    "name": "Grapefruit Wedge",
-    "type": "garnish"
   },
   {
     "slug": "grappa",
@@ -544,8 +537,12 @@ export const INGREDIENTS: Ingredient[] = [
   },
   {
     "slug": "irish-cream",
-    "name": "Irish Cream",
-    "type": "other"
+    "name": "Irish cream",
+    "type": "liqueur",
+    "contains": [
+      "alcohol",
+      "dairy"
+    ]
   },
   {
     "slug": "irish-whiskey",
@@ -567,11 +564,6 @@ export const INGREDIENTS: Ingredient[] = [
     "slug": "jalapeno",
     "name": "Jalapeño",
     "type": "other"
-  },
-  {
-    "slug": "jalapeno-slice",
-    "name": "JalapeñO Slice",
-    "type": "garnish"
   },
   {
     "slug": "kohlrabi-leaves",
@@ -687,7 +679,7 @@ export const INGREDIENTS: Ingredient[] = [
   {
     "slug": "olive",
     "name": "Olive",
-    "type": "other"
+    "type": "garnish"
   },
   {
     "slug": "orange",
@@ -724,11 +716,6 @@ export const INGREDIENTS: Ingredient[] = [
     "contains": [
       "alcohol"
     ]
-  },
-  {
-    "slug": "orchid",
-    "name": "Orchid",
-    "type": "other"
   },
   {
     "slug": "orgeat",
@@ -910,11 +897,6 @@ export const INGREDIENTS: Ingredient[] = [
     ]
   },
   {
-    "slug": "spent-lime-shell",
-    "name": "Spent Lime Shell",
-    "type": "other"
-  },
-  {
     "slug": "st-germain",
     "name": "Elderflower liqueur",
     "type": "liqueur",
@@ -962,11 +944,6 @@ export const INGREDIENTS: Ingredient[] = [
     ]
   },
   {
-    "slug": "thin-slices-red-chili-pepper",
-    "name": "Thin Slices Red Chili Pepper",
-    "type": "other"
-  },
-  {
     "slug": "tomato-juice",
     "name": "Tomato juice",
     "type": "juice"
@@ -975,11 +952,6 @@ export const INGREDIENTS: Ingredient[] = [
     "slug": "tonic-water",
     "name": "Tonic water",
     "type": "mixer"
-  },
-  {
-    "slug": "vanilla-extract",
-    "name": "Vanilla Extract",
-    "type": "other"
   },
   {
     "slug": "vanilla-syrup",
