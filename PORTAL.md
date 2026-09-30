@@ -10,8 +10,10 @@ Next: Set up the online service so accounts, reviews and photo sharing work for 
 - [x] Browse every cocktail, plus collections by spirit and style
 - [x] Shopping list that shows which bottle to buy next to unlock the most drinks
 - [x] "Make it with a swap" suggestions, like using rye when a recipe calls for bourbon
+- [ ] Set up the app's own database and accounts service
 - [ ] Accounts so your bar is saved and synced across your devices
 - [ ] Ratings, reviews and a shared photo wall of drinks people made
-- [ ] Newsletter sign-up
-- [ ] Final logo, app icon and site wording
-- [ ] Launch the website on its own web address
+- [ ] Optional: newsletter sign-up and ads
+- [ ] Final logo, app icon and site wording, replacing all placeholder text and legal pages
+- [ ] Pick and register the web address
+- [ ] Host the website (on Cloudflare), point the web address at it and launch
