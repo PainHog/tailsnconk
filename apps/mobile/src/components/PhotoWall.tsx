@@ -18,6 +18,11 @@ export function PhotoWall({ cocktailId }: { cocktailId: string }) {
   const [msg, setMsg] = useState<string | null>(null);
   const fileRef = useRef<HTMLInputElement | null>(null);
   const [dataUrl, setDataUrl] = useState<string | null>(null);
+  // Only branch on the platform AFTER mount, so the server render and the first
+  // client render agree (avoids a hydration mismatch — the raw <input> is
+  // web-only and `IS_WEB` is false during SSR).
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => setMounted(true), []);
 
   useEffect(() => {
     backend().listApprovedPhotos(cocktailId).then(setPhotos).catch(() => setPhotos([]));
@@ -76,7 +81,9 @@ export function PhotoWall({ cocktailId }: { cocktailId: string }) {
       )}
 
       <Card>
-        {IS_WEB ? (
+        {!mounted ? (
+          <Muted>Loading…</Muted>
+        ) : IS_WEB ? (
           <>
             {React.createElement('input', {
               ref: fileRef,
