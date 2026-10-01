@@ -2,6 +2,10 @@
 
 Now: Polishing the cocktail pages and the bar screen so everything feels smooth before launch.
 Next: Set up the online service so accounts, reviews and photo sharing work for real.
+Number: Cocktails in the catalog = 192
+Number: Bottles and ingredients to tick off = 154
+Number: Collections to browse = 32
+Number: Swap groups for substitutions = 8
 
 - [x] Tick off the bottles you own and see every cocktail you can make right now
 - [x] A catalog of about 190 checked cocktail recipes
