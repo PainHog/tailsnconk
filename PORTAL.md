@@ -6,6 +6,10 @@ Number: Cocktails in the catalog = 192
 Number: Bottles and ingredients to tick off = 154
 Number: Collections to browse = 32
 Number: Swap groups for substitutions = 8
+Screenshot: docs/portal/home.webp = The My Bar screen: bottles you own, and how many cocktails you can make right now
+Screenshot: docs/portal/cocktail.webp = A cocktail recipe page suggesting a swap, using rye whiskey in place of bourbon
+Screenshot: docs/portal/catalog.webp = The cocktail catalog with filters for base spirit and strength
+Screenshot: docs/portal/phone.webp = The My Bar screen on a phone
 
 - [x] Tick off the bottles you own and see every cocktail you can make right now
 - [x] A catalog of about 190 checked cocktail recipes
