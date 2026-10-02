@@ -39,8 +39,10 @@ export function Seo({
       <meta property="og:description" content={meta.description} />
       <meta property="og:type" content="website" />
       <meta property="og:url" content={meta.canonical} />
+      <meta property="og:site_name" content="Tails 'n Conk" />
       {meta.ogImage ? <meta property="og:image" content={meta.ogImage} /> : null}
       <meta name="twitter:card" content="summary_large_image" />
+      {meta.ogImage ? <meta name="twitter:image" content={meta.ogImage} /> : null}
     </Head>
   );
 }

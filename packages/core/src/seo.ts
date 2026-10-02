@@ -20,6 +20,9 @@ export const SITE_AUTHOR = {
 /** Social profiles for schema.org `sameAs` (placeholder — fill or leave empty). */
 export const SOCIAL_LINKS: string[] = [];
 
+/** Default social-share card shipped in public/ — used when a page sets no image. */
+export const DEFAULT_OG_IMAGE = '/og-default.png';
+
 export interface PageMeta {
   title: string;
   description: string;
@@ -48,11 +51,13 @@ export function buildMeta(opts: {
   noindex?: boolean;
 }): PageMeta {
   const fullTitle = opts.path === '/' ? `${SITE_NAME} — ${SITE_TAGLINE}` : `${opts.title} · ${SITE_NAME}`;
+  // Per-page image if given, else the shipped brand card — always absolute.
+  const ogImage = opts.ogImage ? joinUrl(opts.origin, ogJpg(opts.ogImage)) : joinUrl(opts.origin, DEFAULT_OG_IMAGE);
   return {
     title: fullTitle,
     description: opts.description ?? SITE_DESCRIPTION,
     canonical: joinUrl(opts.origin, opts.path),
-    ogImage: opts.ogImage ? joinUrl(opts.origin, ogJpg(opts.ogImage)) : undefined,
+    ogImage,
     robots: opts.noindex ? 'noindex, nofollow' : 'index, follow',
   };
 }
