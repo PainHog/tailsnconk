@@ -1,6 +1,6 @@
 # Tails 'n Conk progress
 
-Now: Polishing the cocktail pages and the bar screen so everything feels smooth before launch.
+Now: Finishing touches before launch — placeholder branding, link-preview cards, and an age check.
 Next: Set up the online service so accounts, reviews and photo sharing work for real.
 Number: Cocktails in the catalog = 192
 Number: Bottles and ingredients to tick off = 154
@@ -14,6 +14,7 @@ Number: Swap groups for substitutions = 8
 - [x] Browse every cocktail, plus collections by spirit and style
 - [x] Shopping list that shows which bottle to buy next to unlock the most drinks
 - [x] "Make it with a swap" suggestions, like using rye when a recipe calls for bourbon
+- [x] A tidy tab icon, a link-preview card for when pages are shared, and an "are you of legal drinking age?" check
 - [ ] Set up the app's own database and accounts service
 - [ ] Accounts so your bar is saved and synced across your devices
 - [ ] Ratings, reviews and a shared photo wall of drinks people made
