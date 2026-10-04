@@ -77,6 +77,26 @@ function ensure404() {
   console.log('finalize-export: wrote a minimal dist/404.html');
 }
 
+function hoistCharset() {
+  // expo-router/head injects <title>/<meta> (data-rh) at the very start of
+  // <head>, pushing our static <meta charset> past the first 1024 bytes — which
+  // fails the Lighthouse "charset declared early" best-practice. Make <meta
+  // charset="utf-8"> the first child of <head> in every page.
+  let fixed = 0;
+  for (const f of walk(DIST)) {
+    if (!f.endsWith('.html')) continue;
+    const text = readFileSync(f, 'utf8');
+    if (!/<head[^>]*>/i.test(text)) continue;
+    const stripped = text.replace(/\s*<meta[^>]*charset=["']?utf-8["']?[^>]*>/gi, '');
+    const next = stripped.replace(/(<head[^>]*>)/i, '$1<meta charset="utf-8">');
+    if (next !== text) {
+      writeFileSync(f, next);
+      fixed++;
+    }
+  }
+  console.log(`finalize-export: hoisted <meta charset> to first in <head> on ${fixed} page(s).`);
+}
+
 function stripSourceMaps() {
   const files = walk(DIST);
   let removed = 0;
@@ -159,6 +179,7 @@ function main() {
     return;
   }
   ensure404();
+  hoistCharset();
   stripSourceMaps();
   finalizeHeaders();
 }

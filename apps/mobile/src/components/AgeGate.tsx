@@ -71,7 +71,7 @@ export function AgeGate() {
               <Pressable
                 onPress={confirm}
                 accessibilityRole="button"
-                accessibilityLabel="Yes, I am of legal drinking age"
+                accessibilityLabel="Yes, I’m 21+ and of legal drinking age"
                 style={({ pressed }) => ({ flex: 1, backgroundColor: t.accent, borderRadius: radius.pill, paddingVertical: spacing.md, alignItems: 'center', opacity: pressed ? 0.85 : 1 })}
               >
                 <Text style={{ color: t.accentText, fontFamily: font.family.body, fontWeight: '700', fontSize: font.size.md }}>Yes, I’m 21+</Text>
