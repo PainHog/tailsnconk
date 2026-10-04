@@ -19,7 +19,7 @@
   # --- Content Security Policy ---
   # 'unsafe-inline' on script/style is required by the Expo web runtime (it
   # injects an inline bootstrap + inline styles). Everything else is allow-listed.
-  Content-Security-Policy: default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'self'; form-action 'self'; img-src 'self' data: blob: https:; font-src 'self' https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self' 'unsafe-inline'; connect-src 'self' https://YOUR-PROJECT.supabase.co wss://YOUR-PROJECT.supabase.co; frame-src 'self'; manifest-src 'self'; worker-src 'self' blob:; upgrade-insecure-requests
+  Content-Security-Policy: default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'self'; form-action 'self'; img-src 'self' data: blob: https:; font-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; connect-src 'self' https://YOUR-PROJECT.supabase.co wss://YOUR-PROJECT.supabase.co; frame-src 'self'; manifest-src 'self'; worker-src 'self' blob:; upgrade-insecure-requests
   # --- Security headers ---
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
@@ -46,6 +46,8 @@
   Cache-Control: public, max-age=31536000, immutable
 
 # ---- Brand assets (favicon, app icons, share card, manifest): day cache -----
+/fonts.css
+  Cache-Control: public, max-age=86400
 /favicon.svg
   Cache-Control: public, max-age=86400
 /favicon-32.png

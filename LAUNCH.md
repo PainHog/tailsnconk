@@ -128,6 +128,7 @@ the CSP finalize are all produced by `npm run build`.
   everything else is server/CI. See `.env.example`.
 - **Rollback:** it's a static export — redeploy the previous Pages build. The SQL
   migrations are idempotent, so re-applying `policies.sql` is safe.
-- **Fonts:** the site currently loads Fraunces + Inter from Google Fonts
-  (render-blocking + an external dependency). Self-hosting them under
-  `public/fonts/` is a worthwhile post-launch performance + privacy win.
+- **Fonts:** Fraunces + Inter are **self-hosted** under `public/fonts/` (served
+  same-origin via `public/fonts.css`) — no Google Fonts dependency, so there's no
+  third-party request, cookie, or cert surface, and nothing to allow-list in the
+  CSP.

@@ -21,12 +21,9 @@ export default function Root({ children }: PropsWithChildren) {
         <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/site.webmanifest" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,900&family=Inter:wght@400;500;600;700&display=swap"
-        />
+        {/* Self-hosted Fraunces + Inter (see public/fonts.css). No external font
+            CDN — faster, private, and no third-party dependency. */}
+        <link rel="stylesheet" href="/fonts.css" />
         <ScrollViewStyleReset />
         <style dangerouslySetInnerHTML={{ __html: BASE_CSS }} />
         <style dangerouslySetInnerHTML={{ __html: BACKDROP_CSS }} />
