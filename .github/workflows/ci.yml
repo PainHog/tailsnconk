@@ -50,6 +50,9 @@ jobs:
       - name: Test (core)
         run: npm run test:core
 
+      - name: Test (edge functions)
+        run: npm run test:functions
+
       # Data-level SEO audit (no dist/ in CI — this uses @tailsnconk/core).
       - name: SEO audit
         run: npm run seo:audit

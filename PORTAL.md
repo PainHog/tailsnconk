@@ -1,6 +1,6 @@
 # Tails 'n Conk progress
 
-Now: Finishing touches before launch — placeholder branding, link-preview cards, and an age check.
+Now: Getting the online service ready: photo walls show the right cocktail, new accounts always get a profile, and shared photos stay as they were approved.
 Next: Set up the online service so accounts, reviews and photo sharing work for real.
 Number: Cocktails in the catalog = 192
 Number: Bottles and ingredients to tick off = 154

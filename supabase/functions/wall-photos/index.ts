@@ -5,28 +5,26 @@
 // single controlled read path for the community "wall". A valid JWT is required
 // to call it (enforced by the platform via verify_jwt).
 //
-// GET (or POST) with optional filters: ?cocktail_id=<slug>&week_key=<key>&limit=<n>
+// Optional filters cocktail_id, week_key, limit — as a query string
+// (?cocktail_id=<slug>&week_key=<key>&limit=<n>) and/or a JSON body
+// ({ "cocktail_id": "<slug>", ... }), which is what the app sends via
+// functions.invoke. Parsing lives in params.ts.
 
 import { handlePreflight } from "../_shared/cors.ts";
-import { json, serverError } from "../_shared/json.ts";
+import { badRequest, json, serverError } from "../_shared/json.ts";
 import { serviceClient } from "../_shared/supabase.ts";
+import { readWallParams } from "./params.ts";
 
 const BUCKET = "made-photos";
 const SIGNED_URL_TTL_SECONDS = 3600; // 1 hour
-const DEFAULT_LIMIT = 60;
-const MAX_LIMIT = 200;
 
 Deno.serve(async (req) => {
   const pre = handlePreflight(req);
   if (pre) return pre;
 
-  const url = new URL(req.url);
-  const cocktailId = url.searchParams.get("cocktail_id");
-  const weekKey = url.searchParams.get("week_key");
-  const limitRaw = parseInt(url.searchParams.get("limit") ?? "", 10);
-  const limit = Number.isFinite(limitRaw)
-    ? Math.min(Math.max(limitRaw, 1), MAX_LIMIT)
-    : DEFAULT_LIMIT;
+  const params = await readWallParams(req);
+  if (!params) return badRequest("body must be a JSON object");
+  const { cocktailId, weekKey, limit } = params;
 
   try {
     const db = serviceClient();

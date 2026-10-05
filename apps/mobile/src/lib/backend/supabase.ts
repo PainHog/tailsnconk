@@ -50,8 +50,14 @@ export class SupabaseBackend implements Backend {
       options: { data: { name } },
     });
     if (error || !data.user) throw error ?? new Error('Sign-up failed');
-    // Best-effort profile row (a DB trigger may also create it).
-    await this.client.from('profiles').upsert({ user_id: data.user.id, name }, { onConflict: 'user_id' });
+    // The on_auth_user_created DB trigger creates the profile row, even when
+    // email confirmation leaves us without a session. This is only a fallback
+    // when we do have one; it never overwrites an existing row.
+    if (data.session) {
+      await this.client
+        .from('profiles')
+        .upsert({ user_id: data.user.id, name }, { onConflict: 'user_id', ignoreDuplicates: true });
+    }
     return { id: data.user.id, email: data.user.email ?? undefined };
   }
 
